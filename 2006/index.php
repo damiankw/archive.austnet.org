@@ -20,7 +20,7 @@
       <p>AustNet emphasises your safety while you are on our network. Unlike other IRC networks, we have introduced Virtual World, which masks your real address and prevents attacks - keeping you safe. You can find out more information about Virtual World on the information page <a href="vw.php">here</a>.</p>      </div>
     </div>
     <div id="news">
-<a href="http://www.austnet.org/news.php?action=fullnews&id=1">The new AustNet.org web site is here</a>, by Austnet posted on 14 September, 2005<br />    </div>
+<a href="/news.php?action=fullnews&id=1">The new AustNet.org web site is here</a>, by Austnet posted on 14 September, 2005<br />    </div>
     <div id="navMenu">
       <div id="navMenu2">
         <div id="lselect">

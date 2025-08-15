@@ -30,6 +30,46 @@ function get_local_links($html, $base_dir, &$external_links = []) {
     return array_unique($links);
 }
 
+// Recursive crawl for subpages and folders
+function crawl_and_collect_links($folder, $start_files = ['index.html', 'index.php'], &$visited = [], &$all_links = [], &$sources = [], &$external_links = []) {
+    foreach ($start_files as $file) {
+        $path = rtrim($folder, '/') . '/' . $file;
+        if (file_exists($path) && !in_array($path, $visited)) {
+            $visited[] = $path;
+            $html = file_get_contents($path);
+            $links = get_local_links($html, $folder, $external_links);
+            foreach ($links as $l) {
+                if (!in_array($l, $all_links)) {
+                    $all_links[] = $l;
+                    $sources[$l] = $file;
+                }
+                // If it's a local HTML/PHP page, crawl it too
+                if (preg_match('/\.(html?|php)$/i', $l)) {
+                    $sub_path = $folder . '/' . ltrim($l, '/');
+                    if (file_exists($sub_path) && !in_array($sub_path, $visited)) {
+                        crawl_and_collect_links($folder, [ltrim($l, '/')], $visited, $all_links, $sources, $external_links);
+                    }
+                }
+                // If it's a folder (ends with /), crawl its index.html and index.php, and only mark as OK if one exists
+                if (substr($l, -1) === '/') {
+                    $subfolder = $folder . '/' . ltrim($l, '/');
+                    $found_index = false;
+                    foreach (['index.html', 'index.php'] as $subfile) {
+                        $subfile_path = $subfolder . $subfile;
+                        if (file_exists($subfile_path)) {
+                            $found_index = true;
+                            if (!in_array($subfile_path, $visited)) {
+                                crawl_and_collect_links($folder, [ltrim($l, '/') . $subfile], $visited, $all_links, $sources, $external_links);
+                            }
+                        }
+                    }
+                    // If no index file, treat as missing (handled in check_resources)
+                }
+            }
+        }
+    }
+}
+
 function check_resources($folder) {
     $all_folders = array_filter(glob('[0-9][0-9][0-9][0-9]', GLOB_ONLYDIR), function($f) { return is_dir($f); });
     $all_years = array_map('intval', array_map('basename', $all_folders));
@@ -84,6 +124,22 @@ function check_resources($folder) {
         $depth = substr_count(trim($link, '/'), '/');
         $indent = str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;', $depth);
         $arrow = $depth === 0 ? '<span class="arrow arrow-root">&#9679;</span>' : '<span class="arrow">&#8594;</span>';
+        // Special handling for folder links
+        if (substr($link, -1) === '/') {
+            $has_index = false;
+            foreach (["index.html", "index.php"] as $subfile) {
+                if (file_exists($resource . $subfile)) {
+                    $has_index = true;
+                    break;
+                }
+            }
+            if ($has_index) {
+                echo "<tr><td><span class='badge ok'>OK</span></td><td>$indent$arrow $link</td></tr>\n";
+            } else {
+                echo "<tr><td><span class='badge missing'>MISSING</span></td><td>$indent$arrow $link</td></tr>\n";
+            }
+            continue;
+        }
         if (file_exists($resource)) {
             echo "<tr><td><span class='badge ok'>OK</span></td><td>$indent$arrow $link</td></tr>\n";
             continue;
@@ -134,7 +190,18 @@ function check_resources($folder) {
     if (!empty($external_links)) {
         echo "<h3>External Links Found</h3><ul style='margin-bottom:24px;'>";
         foreach ($external_links as $elink) {
-            echo "<li style='word-break:break-all;'><a href='".htmlspecialchars($elink)."' target='_blank'>".htmlspecialchars($elink)."</a></li>";
+            $is_austnet = preg_match('#^https?://(www\\.)?austnet\\.org/#i', $elink);
+            echo "<li style='word-break:break-all;'>";
+            echo "<a href='".htmlspecialchars($elink)."' target='_blank'>".htmlspecialchars($elink)."</a>";
+            if ($is_austnet) {
+                echo " <form method='post' style='display:inline;margin-left:10px;' class='remove-austnet-form'>";
+                echo "<input type='hidden' name='remove_austnet' value='1'>";
+                echo "<input type='hidden' name='link' value='".htmlspecialchars($elink, ENT_QUOTES)."'>";
+                echo "<input type='hidden' name='dir' value='".htmlspecialchars($folder, ENT_QUOTES)."'>";
+                echo "<button type='submit' style='padding:2px 10px;border-radius:5px;border:1px solid #bbb;background:#fff;color:#222;cursor:pointer;'>Remove Prefix</button>";
+                echo "</form>";
+            }
+            echo "</li>";
         }
         echo "</ul>";
     }
@@ -170,14 +237,20 @@ $(function() {
     var $form = $(this);
     var $row = $("#row_" + $form.attr("id"));
     $.post("", $form.serialize(), function(data) {
-      // Replace the entire row with the returned row
       var newRow = $(data).filter("tr").add($(data).find("tr")).first();
       if (newRow.length) {
         $row.replaceWith(newRow);
       } else {
-        // fallback: reload the page if something went wrong
         location.reload();
       }
+    });
+  });
+  $(".remove-austnet-form").on("submit", function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post("", $form.serialize(), function(data) {
+      $(".container").prepend(data);
+      setTimeout(function(){ location.reload(); }, 1200);
     });
   });
 });
@@ -213,9 +286,9 @@ if (
             // Recursively copy directory
             $copy_result = copy_directory_recursive($from, $to);
             if ($copy_result) {
-                echo "<tr id='row_$form_id'><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+                echo "<tr id='row_$form_id><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
             } else {
-                echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR (dir)</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+                echo "<tr id='row_$form_id><td><span class='badge missing'>ERROR (dir)</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
             }
         } else {
             $to_dir = dirname($to);
@@ -223,13 +296,34 @@ if (
                 mkdir($to_dir, 0777, true);
             }
             if (copy($from, $to)) {
-                echo "<tr id='row_$form_id'><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+                echo "<tr id='row_$form_id><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
             } else {
-                echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+                echo "<tr id='row_$form_id><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
             }
         }
     } else {
-        echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+        echo "<tr id='row_$form_id><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+    }
+    exit;
+}
+
+// Handle remove_austnet POST
+if (
+    isset($_POST['remove_austnet'], $_POST['link'], $_POST['dir']) &&
+    preg_match('/^[0-9]{4}$/', $_POST['dir'])
+) {
+    $folder = $_POST['dir'];
+    $updated = false;
+    foreach (['index.html', 'index.php'] as $file) {
+        $path = rtrim($folder, '/') . '/' . $file;
+        if (remove_austnet_prefix_in_file($path)) {
+            $updated = true;
+        }
+    }
+    if ($updated) {
+        echo "<div style='background:#d4f7d4;color:#185b18;padding:10px 18px;border-radius:6px;margin-bottom:18px;'>Prefix removed from austnet.org links in $folder/index.html and/or index.php. <script>setTimeout(function(){location.reload();}, 800);</script></div>";
+    } else {
+        echo "<div style='background:#fbe3e4;color:#b94a48;padding:10px 18px;border-radius:6px;margin-bottom:18px;'>No changes made to $folder/index.html or index.php.</div>";
     }
     exit;
 }
@@ -256,4 +350,16 @@ function copy_directory_recursive($src, $dst) {
     }
     closedir($dir);
     return true;
+}
+
+// Add this helper to update austnet.org links in a file
+function remove_austnet_prefix_in_file($file) {
+    if (!file_exists($file)) return false;
+    $content = file_get_contents($file);
+    $pattern = '#https?://(www\\.)?austnet\\.org/#i';
+    $new_content = preg_replace($pattern, '/', $content);
+    if ($new_content !== null && $new_content !== $content) {
+        return file_put_contents($file, $new_content) !== false;
+    }
+    return false;
 }

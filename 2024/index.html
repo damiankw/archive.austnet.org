@@ -69,7 +69,7 @@
               <!-- name-and-slogan -->
               <!--
               <div class="site-name-and-slogan smooth-scroll">
-                <div class="site-name"><a href="https://www.austnet.org/index.php" style="text-decoration:none"><img src="images/logo.png"></a></div>
+                <div class="site-name"><a href="/index.php" style="text-decoration:none"><img src="images/logo.png"></a></div>
               </div>
 -->
             </div>
@@ -104,32 +104,32 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.austnet.org/index.php#about">About</a></li>
-                        <li><a href="https://www.austnet.org/index.php#services">Services</a></li>
-                        <li><a href="https://www.austnet.org/index.php#portfolio">Servers</a></li>
+                        <li><a href="/index.php#about">About</a></li>
+                        <li><a href="/index.php#services">Services</a></li>
+                        <li><a href="/index.php#portfolio">Servers</a></li>
                                                 <li class="dropdown">
                                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client</a>
                                                   <ul class="dropdown-menu">
-                                                    <li><a href="https://www.austnet.org/index.php#clients">Software</a></li>
+                                                    <li><a href="/index.php#clients">Software</a></li>
                                                     <li><a href="https://webchat.austnet.org">Web Chat</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="https://www.austnet.org/vhosts.php">Free vHosts</a></li>
-                                                    <li><a href="https://www.austnet.org/openport.php">Open Port Exemption</a></li>
-                                                    <li><a href="https://www.austnet.org/modes.php">Modes and Commands</a></li>
+                                                    <li><a href="/vhosts.php">Free vHosts</a></li>
+                                                    <li><a href="/openport.php">Open Port Exemption</a></li>
+                                                    <li><a href="/modes.php">Modes and Commands</a></li>
                                                   </ul>
                                                 </li>                        
-                        <li><a href="https://www.austnet.org/index.php#contact">Contact</a></li>
+                        <li><a href="/index.php#contact">Contact</a></li>
                                                 <li class="dropdown">
                                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                                   <ul class="dropdown-menu">
-                                                    <!-- <li><a href="https://www.austnet.org/irc_stats.php">IRC Statistics</a></li> -->
+                                                    <!-- <li><a href="/irc_stats.php">IRC Statistics</a></li> -->
                                                     <!-- <li role="separator" class="divider"></li> -->
-                                                    <li><a href="https://www.austnet.org/staff.php">Staff</a></li>
-                                                    <li><a href="https://www.austnet.org/aup.php">Acceptable Use Policy</a></li>
-                                                    <li><a href="https://www.austnet.org/asd.php">ASD Application</a></li>
+                                                    <li><a href="/staff.php">Staff</a></li>
+                                                    <li><a href="/aup.php">Acceptable Use Policy</a></li>
+                                                    <li><a href="/asd.php">ASD Application</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="https://support.austnet.org/" target="_blank">Support</a></li>
-                                                    <li><a href="https://www.austnet.org/donate.php">Donate</a></li>
+                                                    <li><a href="/donate.php">Donate</a></li>
                                                   </ul>
                                                 </li>                        
                       </ul>
