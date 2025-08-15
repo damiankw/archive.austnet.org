@@ -2,7 +2,7 @@
 // check_resources.php
 // Scans a given folder's index.html, follows all local links, and checks if the resources exist.
 
-function get_local_links($html, $base_dir) {
+function get_local_links($html, $base_dir, &$external_links = []) {
     if (empty($html)) return [];
     $dom = new DOMDocument();
     @$dom->loadHTML($html);
@@ -16,7 +16,13 @@ function get_local_links($html, $base_dir) {
     foreach ($tags as $tag => $attr) {
         foreach ($dom->getElementsByTagName($tag) as $element) {
             $url = $element->getAttribute($attr);
-            if ($url && !preg_match('#^(https?:)?//#', $url) && strpos($url, 'mailto:') !== 0 && strpos($url, 'javascript:') !== 0) {
+            if (!$url) continue;
+            // Collect web.archive.org and austnet.org links
+            if (preg_match('#^https?://web\\.archive\\.org#i', $url) || preg_match('#^https?://(www\\.)?austnet\\.org#i', $url)) {
+                if (!in_array($url, $external_links)) $external_links[] = $url;
+            }
+            // Local resource
+            if (!preg_match('#^(https?:)?//#', $url) && strpos($url, 'mailto:') !== 0 && strpos($url, 'javascript:') !== 0) {
                 $links[] = $url;
             }
         }
@@ -32,12 +38,13 @@ function check_resources($folder) {
     $checked_files = [];
     $links = [];
     $sources = [];
+    $external_links = [];
     // Check both index.html and index.php
     foreach (['index.html', 'index.php'] as $index_file) {
         $index = rtrim($folder, '/') . '/' . $index_file;
         if (file_exists($index)) {
             $html = file_get_contents($index);
-            $these_links = get_local_links($html, $folder);
+            $these_links = get_local_links($html, $folder, $external_links);
             foreach ($these_links as $l) {
                 if (!in_array($l, $links)) {
                     $links[] = $l;
@@ -69,10 +76,16 @@ function check_resources($folder) {
     
     echo "<h2>Checking resources in <span style='color:#2a7ae2'>$folder/index.html</span> & <span style='color:#2a7ae2'>$folder/index.php</span></h2>\n";
     echo "<table style='width:100%; border-collapse:collapse; margin-bottom:20px;'>\n<tr><th style='text-align:left;padding:6px 8px;border-bottom:2px solid #eee;'>Status</th><th style='text-align:left;padding:6px 8px;border-bottom:2px solid #eee;'>Resource</th></tr>";
+    // Add CSS for arrows
+    echo '<style>.arrow { display:inline-block; width:1em; text-align:center; color:#888; font-size:1em; user-select:none; } .arrow-root { color:#2a7ae2; font-weight:bold; } </style>';
     foreach ($links as $link) {
         $resource = $folder . '/' . ltrim($link, '/');
+        // Calculate indent and arrow based on folder depth
+        $depth = substr_count(trim($link, '/'), '/');
+        $indent = str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;', $depth);
+        $arrow = $depth === 0 ? '<span class="arrow arrow-root">&#9679;</span>' : '<span class="arrow">&#8594;</span>';
         if (file_exists($resource)) {
-            echo "<tr><td><span class='badge ok'>OK</span></td><td>$link</td></tr>\n";
+            echo "<tr><td><span class='badge ok'>OK</span></td><td>$indent$arrow $link</td></tr>\n";
             continue;
         }
         // Not found, check previous two years
@@ -111,12 +124,20 @@ function check_resources($folder) {
             echo "<input type='hidden' name='from_year' value='$found_year'>";
             echo "<input type='hidden' name='to_year' value='$year'>";
             echo "<button type='submit' style='margin-left:8px;padding:2px 10px;border-radius:5px;border:1px solid #bbb;background:#fff;color:#222;cursor:pointer;'>Restore</button>";
-            echo "</form></td><td>$link</td></tr>\n";
+            echo "</form></td><td>$indent$arrow $link</td></tr>\n";
         } else {
-            echo "<tr><td><span class='badge missing'>MISSING</span></td><td>$link</td></tr>\n";
+            echo "<tr><td><span class='badge missing'>MISSING</span></td><td>$indent$arrow $link</td></tr>\n";
         }
     }
     echo "</table>";
+    // After the table, show external links if any
+    if (!empty($external_links)) {
+        echo "<h3>External Links Found</h3><ul style='margin-bottom:24px;'>";
+        foreach ($external_links as $elink) {
+            echo "<li style='word-break:break-all;'><a href='".htmlspecialchars($elink)."' target='_blank'>".htmlspecialchars($elink)."</a></li>";
+        }
+        echo "</ul>";
+    }
 }
 
 // UI header and CSS
@@ -188,14 +209,24 @@ if (
     $form_id = 'restore_' . md5($_POST['resource'] . $_POST['from_year'] . $_POST['to_year']);
     // Output the row with all classes and inline styles for consistency
     if (file_exists($from)) {
-        $to_dir = dirname($to);
-        if (!is_dir($to_dir)) {
-            mkdir($to_dir, 0777, true);
-        }
-        if (copy($from, $to)) {
-            echo "<tr id='row_$form_id'><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+        if (is_dir($from)) {
+            // Recursively copy directory
+            $copy_result = copy_directory_recursive($from, $to);
+            if ($copy_result) {
+                echo "<tr id='row_$form_id'><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+            } else {
+                echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR (dir)</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+            }
         } else {
-            echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+            $to_dir = dirname($to);
+            if (!is_dir($to_dir)) {
+                mkdir($to_dir, 0777, true);
+            }
+            if (copy($from, $to)) {
+                echo "<tr id='row_$form_id'><td><span class='badge ok'>OK</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+            } else {
+                echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
+            }
         }
     } else {
         echo "<tr id='row_$form_id'><td><span class='badge missing'>ERROR</span></td><td style='padding:6px 8px;'>".htmlspecialchars($_POST['resource'])."</td></tr>";
@@ -205,4 +236,24 @@ if (
 
 echo '</div></body></html>';
 return; // Prevent old output
-?>
+
+// Helper function to recursively copy directories
+function copy_directory_recursive($src, $dst) {
+    $dir = opendir($src);
+    if (!is_dir($dst)) {
+        if (!mkdir($dst, 0777, true)) return false;
+    }
+    while(false !== ($file = readdir($dir))) {
+        if (($file != '.') && ($file != '..')) {
+            $src_path = "$src/$file";
+            $dst_path = "$dst/$file";
+            if (is_dir($src_path)) {
+                if (!copy_directory_recursive($src_path, $dst_path)) return false;
+            } else {
+                if (!copy($src_path, $dst_path)) return false;
+            }
+        }
+    }
+    closedir($dir);
+    return true;
+}
