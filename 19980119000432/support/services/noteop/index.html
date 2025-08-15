@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+  <TITLE>AustNet Support - NoteOP FAQ</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LINK=#FF0000 VLINK=#FF0000 TOPMARGIN=10 LEFTMARGIN=0 STYLE="background: #000000">
+<CENTER>
+
+<TABLE BGCOLOR="#FFFFFF" WIDTH=580 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+
+	<TR BGCOLOR="#CCCCCC">	
+	<TD WIDTH=20 HEIGHT=18><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">&nbsp;</FONT></TD>
+	<TD COLSPAN=2 WIDTH=520><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">
+        <A HREF="/support.html">AustNet Support</A> | 
+        <A HREF="/support/services/index.html">FAQ Catalogue</A> | 
+        NoteOP Frequently Asked Questions </FONT></TD>
+	<TD WIDTH=40><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">&nbsp;</FONT></TD>
+	</TR>
+
+	<TR>
+        <TD WIDTH=20></TD>
+	<TD COLSPAN=2 WIDTH=520 HEIGHT=150>
+<MAP NAME="faqs">
+<AREA SHAPE=RECT COORDS="2,24,80,53" HREF="/support/services/chanop/" ALT="chanop faq">
+<AREA SHAPE=RECT COORDS="90,24,173,52" HREF="/support/services/nickop/" ALT="nickop faq">
+<AREA SHAPE=RECT COORDS="184,22,250,55" HREF="/support/services/noteop/" ALT="noteop faq">
+<AREA SHAPE=RECT COORDS="264,24,354,52" HREF="/support/services/chanop/managers/" ALT="channel managers faq">
+<AREA SHAPE=RECT COORDS="366,23,458,52" HREF="/asd/" ALT="austnet services department">
+</MAP>
+<center><img src="services.jpg" usemap="#faqs" ismap border="0"></center>
+	<TD WIDTH=40></TD>
+	</TR>
+
+	<TR>
+	<TD WIDTH=20>&nbsp;</TD>
+        <TD WIDTH=60 VALIGN=TOP ALIGN=RIGHT></TD>
+        <TD WIDTH=460 VALIGN=TOP>
+<font FACE="Arial, Helvetica" font=arial size=2>
+
+<center>
+<b>AustNet Services Frequently Asked Questions</b><br>
+<i>NoteOP Node -- Document Revision 0.91 (30 Aug 97)</i><br><br>
+
+</font><font size=2>
+This FAQ answers the burning questions of many users of the AustNet
+Service, NoteOP.  Simply select the relevant topic from the table of
+contents below.<br><br>
+
+</center><font FACE="Arial, Helvetica" font=arial size=2>
+
+<b>General Information</b><hr>
+<MENU>
+1.1 <A HREF="#1.1">What is NoteOP?</A><BR>
+1.2 <A HREF="#1.2">How do I send somebody a note?</A><BR>
+1.3 <A HREF="#1.3">How do I check my own notes?</A><BR>
+1.4 <A HREF="#1.4">How do I read a note?</A><BR>
+1.5 <A HREF="#1.5">How do I delete a note when I'm done?</A><BR>
+</MENU>
+<br>
+<b>Using NoteOP</b><hr>
+<MENU>
+2.1 <A HREF="#2.1">How do I send to users with access on a certain channel?</A><BR>
+2.2 <A HREF="#2.2">How do I block notes from a certain source?</A><BR>
+2.3 <A HREF="#2.3">Why do I have a note I can't delete?</A><BR>
+</MENU>
+
+<b>General Information</b><hr>
+
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.1"><B>1.1 What is NoteOP?</a></b></font></td></tr>
+</table>
+<ul>
+NoteOP (the Notebook Operator) allows users who are identified with the NickOP 
+to send short notes to each other.  If the
+user is not online, he will be notified of new notes when he returns.<P>
+NoteOP is run by the ASD (AustNet Services Department), a group of volunteers
+who devote their time to assisting users with services.
+<br><br><ul><li>
+If you need online support from the ASD, simply:
+<br><tt>/join #Help</tt>  (while connected to an AustNet server)
+</li></ul>
+<ul><li>
+If you need to mail the ASD, they can be contacted at <tt><a href="mailto:services@austnet.org">services@austnet.org</a></tt>
+</li></ul>
+<ul><li>
+If you wish to participate in the ASD, simply mail <tt><a href="majordomo@austnet.org">majordomo@austnet.org</a></tt> with the body
+<tt>"subscribe services"</tt> (do not include quotation marks)
+</li></ul>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.2"><B>1.2 How do I send somebody a note?</a></b></font></td></tr>
+</table>
+<ul>
+Use this syntax:<P>
+<kbd>/msg NoteOP send <Var>[nickname] note text</Var></KBD><P>
+or to send to several people at once:<P>
+<kbd>/msg NoteOP send <Var>[nickname],[nickname],[nickname] note text</Var></KBD><P>
+Also see <A HREF="#2.1">section 2.1</A> for more advanced use of this command. 
+
+
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.3"><B>1.3 How do I check my own notes?</a></b></font></td></tr>
+</table>
+<ul>
+Usually you will be alerted of new notes when you identify with the NickOP or mark yourself
+back after being away. However to see if you have new notes and whom they are from type:<P>
+<kbd>/msg NoteOP list</KBD><P>
+The notes are listed by number and you will need this number to read them. If you are in 
+the habit of not deleting notes you may prefer<P>
+<kbd>/msg NoteOP list new</KBD><P>
+which lists only new notes.
+</ul>
+
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.4"><B>1.4 How do I read a note?</a></b></font></td></tr>
+</table>
+<ul>
+Using the note number from the previous step type:<P>
+<kbd>/msg NoteOP read <var>[number]</var></KBD><P>
+or to read multiple notes use:<P>
+<kbd>/msg NoteOP read <var>[number],[number],[number]</var></KBD><P>
+and to read all your notes try:<P>
+<kbd>/msg NoteOP read all</KBD><P>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.5"><B>1.5 How do I delete a note when I'm done?</a></b></font></td></tr>
+</table>
+<ul>
+First use: <P>
+<kbd>/msg NoteOP del <var>[number]</var></KBD><P>
+to mark it as Deleted. Then type:<P>
+<kbd>/msg NoteOP purge</KBD> <P>
+to permanently erase all Deleted notes. To delete multiple notes at once say<P>
+<kbd>/msg NoteOP del <var>[number],[number],[number]</var></KBD><P>
+and as usual to delete all notes type:<P>
+<kbd>/msg NoteOP del all</KBD><P>
+</ul>
+
+<P><b>Service Commands</b><hr>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.1"><B>2.1 How do I send to users with access on a certain channel?</a></b></font></td></tr>
+</table>
+<ul>
+Use the command:<P>
+<kbd>/msg NoteOP send <var>[#channel] note text</var></KBD><P>
+to send to everyone, or the more advanced syntaxes:<P>
+<kbd>/msg NoteOP send <var>[#channel] &gt;[access] note text</var></KBD><P>
+and<P>
+<kbd>/msg NoteOP send <var>[#channel] &lt;[access] note text</var></KBD><P>
+to indicate which levels of users should receive the note. Also see <A HREF="#1.2">section 1.2</A> for the basic send command. 
+You can even combine both usages:<P>
+<kbd>/msg NoteOP send <var>[#channel],[#channel],[nickname],[nickname] note text</var></KBD><P>
+
+
+
+
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.2"><B>2.2 How do I block notes from a certain source?</a></b></font></td></tr>
+</table>
+<ul>
+Use the Block instruction if you are being annoyed by a person or channel from whom you 
+no longer wish to receive notes. <P>
+To block a nickname: <P>
+<kbd>/msg NoteOP block add <var>[nickname]</var></KBD><P>
+or a hostmask:<P>
+<kbd>/msg NoteOP block add <var>[*@*.isp.net.au]</var></KBD><P>
+or a channel:<P>
+<kbd>/msg NoteOP block add <var>[#*channel*]</var></KBD><P>
+To list the blocks you have set:<P>
+<kbd>/msg NoteOP block list</KBD><P>
+and to remove a block:<P>
+<kbd>/msg NoteOP block del <var>[block]</var></KBD><P>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.3"><B>2.3 Why do I have a note I can't delete?</a></b></font></td></tr>
+</table>
+<ul>
+Occasionally (usually as a result of linking nicknames through NickOP) you will receive
+an undeletable note. Allow it to expire by itself, which usually takes one week.
+</ul>
+
+</ul>
+
+<P><BR><BR><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">
+back to <A HREF="/support/services/index.html">FAQ Catalogue</A> | <A HREF="/support.html">AustNet Support</A><BR>back to the <A HREF="http://www.austnet.org">AustNet Home Page</A>
+<P>
+<P>this page last updated 30 August 1997<BR>&copy; 1997 AustNet IRC Network. All rights reserved. <br>comments to the austnet services department: <A HREF="mailto:services@austnet.org">services@austnet.org</A><br>FAQ written by <a href="mailto:marauder@viper.net.au">marauder@viper.net.au</a><BR>&nbsp;</FONT>
+	
+</TABLE>
+</CENTER>
+<P><BR>&nbsp;
+</BODY>
+</HTML>

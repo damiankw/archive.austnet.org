@@ -1,0 +1,252 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>AustNet Server Application Form</title>
+</head>
+
+<body bgcolor="#FFFFFF" vlink="#FF0000">
+
+<!--webbot bot="GeneratedScript" preview=" " startspan --><script language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.ipaddr.value == "")
+  {
+    alert("Please enter a value for the \"ipaddr\" field.");
+    theForm.ipaddr.focus();
+    return (false);
+  }
+
+  if (theForm.ipaddr.value.length > 15)
+  {
+    alert("Please enter at most 15 characters in the \"ipaddr\" field.");
+    theForm.ipaddr.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.ipaddr.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ".")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ipaddr\" field.");
+    theForm.ipaddr.focus();
+    return (false);
+  }
+
+  if (theForm.password.value == "")
+  {
+    alert("Please enter a value for the \"password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  if (theForm.password.value.length < 4)
+  {
+    alert("Please enter at least 4 characters in the \"password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  if (theForm.password.value.length > 8)
+  {
+    alert("Please enter at most 8 characters in the \"password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒšœŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ0123456789-";
+  var checkStr = theForm.password.value;
+  var allValid = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter and digit characters in the \"password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot bot="GeneratedScript" endspan --><form action="http://203.20.102.29:8080/cgi-bin/servapp.pl" method="POST" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1">
+    <p align="center"><font size="5"><strong>AustNet Server
+    Application</strong></font></p>
+    <p align="left"><font size="3">Before filling out an
+    application form, make sure you have read the policies and
+    minimum requirements </font><a href="../../../../../apply/"><font size="3">here</font></a><font size="3">.</font></p>
+    <p align="left"><font size="3">Examples or syntax are given
+    in the boxes (where required). Please delete the examples
+    before putting in the required information. Fill in every
+    field (unless marked otherwise) and supply current and
+    correct information. All details such as ping times and
+    traceroutes are checked by routing administrators.</font></p>
+    <p align="left"><font size="3">Future upgrades should not be
+    detailed on this form - they will not be taken into
+    consideration when the routing administrator reviews the
+    application.</font></p>
+    <p align="left"><font size="3">Comments and questions should
+    go in the comments field at the end of this form.</font></p>
+    <hr>
+    <p><font size="4">Section A: Server Specifics</font></p>
+    <p>Full server hostname:<br>
+    <input type="text" size="30" name="hostname" value="au.webmaster.com" rows="1"></p>
+    <p>Server IP address:<br>
+    <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="." b-value-required="TRUE" i-maximum-length="15" --><input type="text" size="30" maxlength="15" name="ipaddr" value="204.156.143.251" rows="1"></p>
+    <p>Intended server name:<br>
+    <input type="text" size="30" name="iname" value="name.state.country.austnet.org" rows="1"></p>
+    <p>Available ports:<br>
+    <input type="checkbox" checked name="p6667" value="Yes">6667 <input type="checkbox" checked name="p8888" value="Yes">8888</p>
+    <p>Other ports: <font size="1">(optional)</font><br>
+    <input type="text" size="30" name="ports" value="6668, 7000"></p>
+    <p>Operating system:<br>
+    <input type="text" size="30" name="os" value="FreeBSD 2.2.1-RELEASE"></p>
+    <p>Processor/CPU speed:<br>
+    <input type="text" size="30" name="cpu" value="Intel PII 266"></p>
+    <p>Memory available:<br>
+    <input type="text" size="30" name="ram" value="256 MB"></p>
+    <p>Other taks that run on this mahcine:<br>
+    <input type="text" size="30" name="tasks" value="named, ssh"></p>
+    <p>Connection speed to the internet:<br>
+    <input type="text" size="30" name="speed" value="T3"></p>
+    <p>Backbone(s) this connection is on:<br>
+    <input type="text" size="30" name="backbones" value="Sprintlink"></p>
+    <p>Server's geographic location:<br>
+    <input type="text" size="30" name="location" value="City, State, Country"></p>
+    <hr>
+    <p><font size="4">Section B: Administrative Details</font></p>
+    <p>Administrator's e-mail address:<br>
+    <input type="text" size="30" name="from"></p>
+    <p>Administrator's real name:<br>
+    <input type="text" size="30" name="name"></p>
+    <p>Administrator's nickname:<br>
+    <input type="text" size="30" maxlength="15" name="nick"></p>
+    <p>Is the administrator root?<br>
+    <input type="radio" checked name="root" value="Yes">Yes <input type="radio" name="root" value="No">No</p>
+    <p>Why are you applying for a server application to AustNet?<br>
+    <textarea name="body" rows="5" cols="50"></textarea></p>
+    <p>Please describe any past experience with IRC:<br>
+    <textarea name="experience" rows="3" cols="50"></textarea></p>
+    <p>How much active time would you estimate you will be able
+    to dedicate&nbsp;to AustNet per week? This means actually
+    being at your keyboard. Idling does not count.<br>
+    <select name="ontime" size="1">
+        <option value>Make selection</option>
+        <option>None</option>
+        <option>1-10 hours</option>
+        <option>10-20 hours</option>
+        <option>20-30 hours</option>
+        <option>30-40 hours</option>
+        <option>40-60 hours</option>
+        <option>More than 60 hours</option>
+    </select></p>
+    <p>How many other O-lines do you have in mind?<br>
+    <select name="olines" size="1">
+        <option value>Make selection</option>
+        <option>None</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>More than 5</option>
+    </select></p>
+    <p>Nicknames and e-mail addresses of opers: <font size="1">(Comma separated)</font><br>
+    <input type="text" size="30" name="operinfo" value="Nick &lt;nick@austnet.org&gt;"></p>
+    <p>Machine owner's e-mail address:<br>
+    <input type="text" size="30" name="owner"></p>
+    <p>Machine owner's real name:<br>
+    <input type="text" size="30" name="ownern"></p>
+    <p>Machine owner's telephone (voice) number:<br>
+    <input type="text" size="30" name="ownerph" value="+1 999 555-1234"></p>
+    <hr>
+    <p><font size="4">Section C: Connectivity<br>
+    </font><font size="2">Note: If a server appears to be down,
+    not working, or the DNS points to a server which it does not
+    belong, please try again shortly. If it does not appear to
+    have been fixed after a reasonable duration, please make
+    mention of this in the field where the data is required.</font></p>
+    <p>Please TRACEROUTE the following servers:</p>
+    <p>firstlink.nsw.au.austnet.org:<br>
+    <textarea name="trace1" rows="4" cols="40"></textarea></p>
+    <p>ozemail.nsw.au.austnet.org:<br>
+    <textarea name="trace2" rows="4" cols="40"></textarea></p>
+    <p>aone.vic.au.austnet.org:<br>
+    <textarea name="trace3" rows="4" cols="40"></textarea></p>
+    <p><a name="#TRACE4">webmaster.ca.us.austnet.org:</a><br>
+    <textarea name="trace4" rows="4" cols="40"></textarea></p>
+    <p>atlas.oh.us.austnet.org:<br>
+    <textarea name="trace5" rows="4" cols="40"></textarea></p>
+    <p>tavern.oh.us.austnet.org:<br>
+    <textarea name="trace6" rows="4" cols="40"></textarea></p>
+    <p>explorer.ca.us.austnet.org:<br>
+    <textarea name="trace7" rows="4" cols="40"></textarea></p>
+    <p>cyberway.sg.austnet.org:<br>
+    <textarea name="trace8" rows="4" cols="40"></textarea></p>
+    <p>scv.sg.austnet.org:<br>
+    <textarea name="trace9" rows="4" cols="40"></textarea></p>
+    <p>&nbsp;</p>
+    <p>Please PING the following servers (100 packets each):</p>
+    <p>firstlink.nsw.au.austnet.org:<br>
+    <textarea name="ping1" rows="3" cols="40"></textarea></p>
+    <p>ozemail.nsw.au.austnet.org:<br>
+    <textarea name="ping2" rows="3" cols="40"></textarea></p>
+    <p>aone.vic.au.austnet.org:<br>
+    <textarea name="ping3" rows="3" cols="40"></textarea></p>
+    <p>webmaster.ca.us.austnet.org:<br> <font size="1"><b>Note:</b> Because this server is firewalled, please submit ping times to the last hop or prior to the server as seen on the <a href="#trace4">traceroute</a>.</font><br>
+    <textarea name="ping4" rows="3" cols="40"></textarea></p>
+    <p>atlas.oh.us.austnet.org:<br>
+    <textarea name="ping5" rows="3" cols="40"></textarea></p>
+    <p>tavern.oh.us.austnet.org:<br>
+    <textarea name="ping6" rows="3" cols="40"></textarea></p>
+    <p>explorer.ca.us.austnet.org:<br>
+    <textarea name="ping7" rows="3" cols="40"></textarea></p>
+    <p>cyberway.sg.austnet.org:<br>
+    <textarea name="ping8" rows="3" cols="40"></textarea></p>
+    <p>scv.sg.austnet.org:<br>
+    <textarea name="ping9" rows="3" cols="40"></textarea></p>
+    <hr>
+    <p><font size="4">Authentication</font><br>
+    <font size="2">In case you wish to modify or cancel an
+    application, please supply a string consisting of letters and
+    numbers (no other characters or whitespaces) no less than 4
+    characters and no more than 8.</font></p>
+    <p><font size="3">Password:<br>
+    </font><!--webbot bot="Validation" s-data-type="String" b-allow-letters="TRUE" b-allow-digits="TRUE" b-value-required="TRUE" i-minimum-length="4" i-maximum-length="8" --><input type="password" size="20" maxlength="8" name="password"></p>
+    <hr>
+    <p>Comments: <font size="1">(optional)</font><br>
+    <textarea name="comments" rows="5" cols="40" size="50"></textarea></p>
+    <p><font size="2">By submitting this Server Application form,
+    you accept the policies above and have read and undersood
+    them. Please wait a few moments for the form to process after
+    clicking on the Submit Application button. </font></p>
+    <p align="center"><input type="submit" value="Submit Application"></p>
+</form>
+</body>
+</html>

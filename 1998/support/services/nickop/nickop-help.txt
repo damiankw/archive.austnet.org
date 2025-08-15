@@ -1,0 +1,199 @@
+*** About this Service ***
+The nickname operator server is a service offered to all
+AUSTnet users.  We ask that clients do not register more
+than three nicknames.  Expiration of these nicknames is
+a week after non-usage.
+
+*** Services News ***
+Information on upgrades and maintenance of this service can
+be viewed via /msg NickOP help news.  The news file is
+upgraded sequently in accordance to software upgrades.
+
+*** Command Help ***
+Use this command if you want to give up any ownership of your
+currently used nickname.  NickOP will remove all data regarding to
+the nickname, and make it available for someone else to register.
+
+*** Command Syntax ***
+   Syntax: DROP
+   Access: You must be identified
+ Examples: o /MSG NickOP DROP
+ See Also: IDENTIFY, REGISTER
+ [About]  [Help]  [Commands]  [News]  [Date]
+
+*** Command Help ***
+This command is used to maintain your access list which
+services recognises you from. The main uses of this list is
+to avoid a MODNICK when the option is turned on, to get AutoOped
+in channels based on hostmask, and for other things like locating
+protect matches, ban checks etc.
+
+Hosts are stored in a nick!user@host format, for more flexibility.
+
+*** Command Syntax ***
+   Syntax: HOST ADD|DEL|LIST <mask>
+   Access: You must be identified as the owner.
+ Examples: o /MSG NickOP HOST LIST
+               (Will list all your current hosts)
+           o /MSG NickOP HOST DEL *!*ensign@*.fl.net.au
+               (Will delete *!*ensign@*.fl.net.au from hostlist)
+           o /MSG NickOP HOST ADD *!myother@shell.com.au
+               (Will add *!myother@shell.com.au to hostlist)
+ See Also: IDENTIFY
+
+
+*** Command Help ***
+The IDENTIFY command is used to authenticate yourself
+to the nickname server, thus giving you completely control
+over the nickname.  This command is required to be done
+when changing nickname settings, or even using ChanOP.
+You MUST message this command to NickOP@austnet.org and be
+the nickname you are trying to identify.
+
+*** Command Syntax ***
+   Syntax: IDENTIFY <password>
+ Examples: o /MSG NickOP@austnet.org IDENTIFY mYPasSWord
+ See Also: REGISTER, SET
+
+
+*** Command Help ***
+Use the INFO command to display information concerning the 
+registration and configuration of a nickname.  This also reports
+when this nickname was used last, and from what address.
+
+*** Command Syntax ***
+   Syntax: INFO <nickname>
+   Access: You must be identified as the owner of your nick.
+ Examples: o /MSG NickOP INFO Dairenn
+           (Display information on Dairenn)
+ See Also: REGISTER, SET, IDENTIFY
+
+
+*** Command Help ***
+This command is used to forceably remove your registered nickname
+from the IRC network.  If the password matches the nickname
+specified, then that nickname is disconnected from the network.
+Services puts the nickname you have just killed on IRC online
+to prevent someone else from using the nickname (a jupe).
+If you want to use the nick after issuing KILL, then 
+use the RELEASE command.
+
+*** Command Syntax ***
+   Syntax: KILL <nickname> <password>
+ Examples: o /MSG NickOP KILL RogerY rogPwoRD
+           (Will kill RogerY if the password matches)
+ See Also: RELEASE
+
+
+*** Command Help ***
+This command is useful for those who have several registered
+nicks and these nicks have access's on other channels.
+If you add nicks to your link nick, the moment you identify, 
+any nicks in your link list are also automatically identified.
+This will mean if you are an owner on another channel with a
+different nick, you will get access to that channel.
+
+*** Command Syntax ***
+   Syntax: LINK LIST|ADD|DEL|REMOVE <nick> [<nick pword>]
+   Access: You must be identified as the owner.
+ Examples: o /MSG NickOP LINK LIST
+               (Will list all your current linked nicks)
+           o /MSG NickOP LINK DEL RogerY
+               (Will delete RogerY from link list)
+           o /MSG NickOP LINK ADD zenrog zenpword
+               (Will add zenrog to my linklist if 
+                password matches)
+           o /MSG NickOP LINK REMOVE zenrog
+               (Would remove my nick from zenrog's link
+                nick list).
+ See Also: DELHOST, LISTHOST, IDENTIFY
+
+
+*** Services News ***
+Post: RogerY Date: Sun Oct 5 Subject: Services Changes
+  - HOST command addition.
+      /msg NickOP host <add|del|list> <mask>
+      Replaces ADDHOST, LISTHOST, DELHOST
+      mask's are now in nick!user@host format for more flexibility :)
+      Currently of 10 hosts max
+  - Multiple languages support coded. Now to put in the languages :P
+  - Identify system improved dramatically. Old services sometimes forgot
+    when you identified as someone :) This means linked nicks finally work
+    *YAY*
+*** End of News
+
+
+*** Service Information ***
+The nickname server allows users the option to register and
+reserve their nickname for their sole usage if desired.  The
+nickname operator will only allow you to use your nickname,
+and disconnect anyone who attempts to use it without the
+correct authorization.
+
+If you forget your password: /join #ASD where someone can assist you
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /msg NickOP HELP <command>. 
+
+          DROP      HOST      INFO      IDENTIFY
+          KILL      REGISTER  SET       LINK
+
+*** Registration Facilities ***
+For further details concerning the ability to register your
+nickname, /msg NickOP HELP Register.  Nicknames expire after
+not being used for four weeks.
+
+
+*** Command Help ***
+This command gives you the ability to register your nickname.  With a 
+registered nick, you may effectivly own it.  This means  that if someone 
+is using your nick when you come online, you may forceably retreive it.
+
+The password is something you make up.  This is used to verify
+your identity.  Please choose one other than your nick, name,
+domain or login name or anything else obvious such as your
+birthday, telephone number or home address.
+It needs to be between 3-10 characters and can be comprised of a
+combination of letters (upper/lower case are seen as different),
+numbers and/or valid characters such as: !@#$%^&*()_+|-=\\<>?,./
+however please be sure you will REMEMBER your password. 
+If you do write it down, keep it in a SECURE and SECRET location.
+Don't use the example below.
+
+If you forget your password: /join #ASD where someone can assist you
+
+*** Command Syntax ***
+   Syntax: REGISTER <password>
+   Access: No access required
+ Examples: o /MSG NickOP REGISTER MypWd!
+           (Registers your current nickname with the password 'MypWd!')
+ See Also: SET, INFO, KILL, LISTHOST
+
+
+*** Command Help ***
+Using the SET command allows you to configure your settings for your 
+registered nickname.  This includes various settings such as autokill,
+email address, your auto-op status, and more.
+The information you specify here can be seen by any AUSTnet user doing
+the /MSG NickOP INFO <your nickname> command. 
+
+Setting    Description                                   
+PASSWORD   Modifies your authentication password
+KILL       Removes anyone else attempting to use your nick
+EMAIL      Specify your internet e-mail address.
+URL        Specify your web page URL (address).
+USEMSG     you will get PRIVMSG from services, not NOTICE's
+AOP        auto-op you on channels without the need for
+           identification to NickOP first.
+
+*** Command Syntax ***
+   Syntax: SET <setting> <variable>|<on>|<off>
+ Examples: o /MSG NickOP SET PASSWORD <new password>
+           o /MSG NickOP SET KILL ON
+           o /MSG NickOP SET EMAIL dlombard@artist-bros.org
+           o /MSG NickOP SET URL http://www.austnet.org/
+           o /MSG NickOP SET USEMSG OFF
+           o /MSG NickOP SET AOP ON
+   Access: You must be identified as the owner.
+ See Also: INFO, IDENTIFY, REGISTER

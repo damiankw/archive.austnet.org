@@ -1,0 +1,285 @@
+22-July-1997	            http://www.austnet.org/gateway/ircgfaq.txt
+
+          d8b                  .d8888b.   I nternet
+          Y8P                 d88P  Y88b  R elay
+                              888    888  C hat
+          888 888d888 .d8888b 888         G ateway
+          888 888P"  d88P"    888  88888 
+          888 888    888      888    888  F requently
+          888 888    Y88b.    Y88b  d88P  A sked
+          888 888     "Y8888P  "Y8888P88  Q uestions
+
+-=- What is ircG? -=-=-
+
+   The Internet Relay Chat Gateway is a project started by the
+   AustNet IRC Network in an attempt to link the various networks
+   out there, without them having to sacrifice DNS/Services/Netname
+   which usually must be comprimised on a link.
+
+-=- So? What does it do? -=-=-
+
+   Basically, it is a gateway between networks. You can message users
+   on another network, without having to be online there. ircG reroutes
+   your message to the appropriate network depending on who you sent
+   the message to.
+
+-=- Oh, so I can talk to all my friends on different networks? -=-=-
+
+   Not exactly. You may only send messages to those who are on 
+   networks that are linked up. If ircG isn't on a network you want
+   it to be on, talk to the administrators of that network about
+   it :-)
+
+-=- Ok, so how do I talk to my friends? -=-=-
+
+   Firstly, you yourself must connect to the gateway. This makes your
+   nick visible on all the other linked networks. To connect:
+
+        /msg GateWay connect
+
+   You will get a message back saying if the connect was successful,
+   and the nickname you will be visible on the other networks.
+
+-=- Whooa, firstly, Who is GateWay? -=-=-
+
+   Gateway is the interaction service between user and ircG. It is a
+   common nick on all networks. GateWay has a few commands available
+   to it.
+
+        /msg GateWay help
+
+-=- Ok i getcha, now it changed my nick when i connected, that right?? -=-=-
+
+   Yes indeed. To avoid complications of nick collisions, as well as to 
+   make gateway'd nicknames easily identifiable, your nick is modified
+   slightly. If your nick is greater than 6 letters long, it only uses
+   the first 6. The last 3 letters are used for your tag.
+
+   eg.  Original Nick          Gateway Nick (assuming client on AustNet)
+        Sam                    Sam|AU
+        RogerY                 RogerY|AU
+        SeEcReT                SeEcRe|AU
+
+   The |AU last 3 letters is reserved for the tag.
+
+-=- Tag? -=-=-
+
+   Yup. This identifies what network you signed on from. It is in format
+
+        |TOKEN   when TOKEN is a 2 letter abbreviation of the network
+                 you connected from. For a listing of networks and their
+                 tags/tokens:
+
+        /msg GateWay list
+
+    -> *gateway* list
+    [Gateway] *** Start of currently linked networks
+    [Gateway]    Token     Network  Total Users  Gateway Users
+    [Gateway]  1    AU     AustNet         1322              6
+    [Gateway]  2    OZ       OzOrg         2143              9 
+    [Gateway] *** End of list. /msg Gateway list [network]
+
+-=- Wow, list even says how many gateway users are on -=-=-
+
+   It does. If you are interested in seeing who is on from a particular
+   network, try doing this:
+
+        /msg GateWay list <network | token>
+
+    -> *gateway* list au
+    [Gateway] *** Start of gateway clients on AustNet
+    [Gateway]      Gateway Nick  Original Nick                 On Server
+    [Gateway]   1     SeNtiN|AU       SeNtiNaL    voyager.nz.austnet.org
+    [Gateway]   2        k-j|AU            k-j    voyager.nz.austnet.org
+    [Gateway]   3     gyliun|AU         juliet aussie.nsw.au.austnet.org
+    [Gateway]   4     RogerY|AU         RogerY firstlink.nsw.au.austnet.org
+    [Gateway]   5     SeecsY|AU         SeecsY wantree.wa.au.austnet.org
+    [Gateway]   6     Gremli|AU        Gremlin firstlink.nsw.au.austnet.org
+    [Gateway] *** End of list
+
+-=- I dont know if my friend is online over elsewhere. Can i check? -=-=-
+
+   Yup. If you have a fair idea what the users nickname is on another
+   network, try doing the following.
+
+        /msg GateWay whois nickname@network
+
+   Substitute 'network' for the network name OR the token (shown on the
+   LIST command)
+
+    -> *gateway* whois rogery@au
+    *** RogerY is ensign@firstlink.nsw.au.austnet.org (Today is a gift, 
+        Thats why its called THE PRESENT)
+    *** on irc via server firstlink.nsw.au.austnet.org (First Link's 
+        Sydney AustNet Server)
+    *** RogerY is an IRC Operator
+    *** RogerY has been idle 49 seconds 
+    *** RogerY has been on-line 1 day 14 hours 17 seconds
+    *** rogery : End of /WHOIS list.(from AustNet.AU)
+
+-=- My friend is over there! But I sent message, says No such nick... -=-=-
+
+   You may only message someone on another network IF they have connected to
+   ircG already. You may send a request to them asking to connect to the
+   ircG. This is called 'paging' them.
+
+-=- Page? Do explain -=-=-
+
+   Ok, once you realise that your friend is over on another network, and they
+   havn't already connected to the ircG, you can ask GateWay to send a request
+   to them to connect.
+
+        /msg GateWay page nickname@network
+
+   Substitute 'network' for the network name OR the token (shown on the
+   LIST command). 
+
+    -> *gateway* page rogery@au
+    [Gateway] rogery has been paged on AustNet 
+
+   RogerY would then see...
+    [Gateway] Woger (Woger|OZ) has requested that you sign yourself onto this 
+              network's gateway.
+    [Gateway] To signon type: "/msg Gateway connect" or send a message to 
+              Woger|OZ which will auto sign you on
+
+   If they want to go ahead and connect to ircG, then they simply have
+   to either
+
+        /msg GateWay connect
+
+   or    send a message to your gateway'd nickname (for auto connection).
+
+-=- Auto connection huh? -=-=-
+
+   Yes, in an attempt to make life easy :-)
+
+-=- Teehee, this means I can 'PAGE' flood my enemies ;-) -=-=-
+
+   Think again :-)  You are limited to one page per minute. We do think ahead
+   you know ;-)
+
+-=- You know, there are some very naughty users out there. Im going
+    to be flooded !!! -=-=-
+
+    Nonsense! ircG has flood protection built in :-)
+
+    CTCP/DCC's are limited to 5 per minute. PRIVMSG/NOTICES are considered 
+    flooding if you send 15 messages in 7 seconds.
+
+-=- No fair, oh well, I can still bother the users with those restrictions -=-=-
+
+   Maybe for a short while, but each network has a special access list, where
+   these users can put masks on ignore!
+
+        /msg GateWay ignore add nick!user@host
+        /msg GateWay ignore del nick!user@host
+        /msg GateWay ignore list
+
+   Thus, you may use the gateway on other nets, but if your host matches the
+   ignore list for this net, well you are blocked from sending messages to 
+   this network.
+
+-=- Bah, but ircG does make a great tool to use when im GLINE/AKILL'd from
+    a certain network *evil smile* -=-=-
+
+   Teehee, do you think we are really that dumb? Any GLINE/AKILL that ircG
+   receives is added to the ignore list automatically for the network :-)
+
+-=- No fair! Anything you havn't thought of? -=-=-
+
+   Maybe, drop us a line :-)  This is all in an effort to have ircG a 
+   service which can be enjoyed, not a mechanism for war/floods.
+
+-=- So why is it different to linking 2 networks directly? -=-=-
+
+   IRCG allows for PRIVMSG's and NOTICES to be transfered from one
+   network to another. It has advantages over a real physical ircd
+   server linking the two, since not ALL of one nets burst data is
+   sent to the other network. Only a few things are sent. This keeps
+   each network effectivly set apart. See below for what the gateway
+   listens for and what it transmits to other networks.
+
+-=- Uhh hang on, I wont be receiving another networks data? -=-=-
+
+   No, there is no need for each network to be told everything about
+   the other networks. Only the gateway would receive the burst of
+   other nets.
+
+-=- So what exactly will ircG receive and send? -=-=-
+
+   Well, ircG will receive everything your network sends out, since 
+   it connects to your network as a SERVER (virtual). Thus it will
+   receive anything that your servers send it. However, it only 
+   listens for certain things, it will ignore the rest. What it does
+   listen for is NICK (USER), MODE, PRIVMSG, SERVER, SQUIT, QUIT,
+   CONNECT, NOTICE, PING, PONG, MOTD, GLINE, AKILL, RAKILL, STATS, 
+   KILL, VERSION, PASS
+
+   These are common commands which are required to interact with clients
+   as well as keep an internal representation of state of network.
+
+   ircG sends out the following. NICK, QUIT (for gateway'd nicks), 
+   SERVER, SQUIT, WALLOPS, PRIVMSG, NOTICE. ircG will NOT send out
+   kills, nor will it oper. It does not nick-collide either (unless
+   its uplink is very lagged, and sends out a NICK which it thought
+   was correct before receiving updated data.)
+
+-=- Ummm, is ircG only compatible with a certain ircd source tree :/ -=-
+
+   No silly :) Every network, no matter what ircd they run, should
+   get a chance. We support networks who have a range of nick sizes
+   too, from 9 characters to whatever yours is :)
+
+   Current irc daemon formats supported are...
+     * ircu 2.9.*  [Undernet]
+     * ircu 2.10.* [Undernet] (SUPPORT SOON. BUT NOT CURRENTLY)
+     * dal  4.4.*  [DALnet] (Previous DALnet versions supported possibly)
+     * ircd 2.8.*  [EFnet] (NICK/USER methods supported as well as NICK)
+     * ircd 2.9.*  [IRCnet]
+     * CR   1.*    [Confroom]
+
+   If your favourite format isn't listed here, drop me a line at 
+   gateway@austnet.org with details about it, and where i may download
+   source OR the syntax formats for PASS/SERVER combination so I may
+   telnet into the server, and see what syntax's it uses :)
+
+-=- Cool, sounds ok. So where do I download ircG? -=-=-
+
+   The source nor the binary is publically available. It is kept
+   under lock and key :-)
+
+-=- Huh? If I cant download it, how to I run it to link up? -=-=-
+
+   You do not need any of ircG's software. ircG only needs a C/N
+   pair on your network. It will then connect as a server.
+
+-=- Ok, so then how do I get c/n pairs for gateway? -=-=-
+   Email the following to gateway-apply@austnet.org and a gateway
+   representative will get back to you either by email or online.
+
+<----------- SNIP ircG Application Form ----------->
+  AustNet IRC Network
+  Internet Relay Chat Gateway Application
+  Version 1.1
+
+  ------------------------------------------------------------------------
+
+* Network Name                  [                 ] (eg AustNet)
+* Network URL (if applicable)   [                 ] (eg http://www.austnet.org)
+* Age of network                [                 ] (eg 10 months)
+* Average client usage          [                 ] (eg 800)
+
+* Prefered Gateway Token/Tag    [                 ] (eg AU)
+* Prefered Gateway server name  [                 ] (eg gateway.austnet.org)
+* Network /version reply and/or [                 ] (eg ircu2.9.31) 
+  base code ircd built on
+
+* Server IP Gateway connects to [                 ] (eg 203.22.184.23)
+* Server name Gateway connects  [                 ] (eg voyager.nz.austnet.org)
+* Link speed of this server     [                 ] (eg T1)
+
+* Who will be your Network      [                 ] (eg rogery@austnet.org)
+  representative (email address)
+* Representatives usual nick    [                 ] (eg RogerY)
+<-------------------------------------------------->

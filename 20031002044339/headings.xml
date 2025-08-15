@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+		<rss version="2.0">
+<channel>
+<title>AustNet.org news</title>
+<link>http://www.austnet.org</link>
+<description>News Feed from austnet.org website</description>
+<language>en-us</language>
+<webMaster>karl@austnet.org</webMaster>
+<docs>http://backend.userland.com/rss</docs>
+<lastBuildDate>Tue, 23 Sep 2003 22:41:29 -0700</lastBuildDate><item>
+<title>#sydney supermeet!</title>
+<author>lolly@austnet.org (Lolly)</author>
+<category>Channel News</category>
+<pubDate>Wed, 24 Sep 2003 15:41:15 -0700</pubDate>
+<link>http://community.austnet.org/news-channel.php#105</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#105</guid>
+</item>
+<item>
+<title>ASD Raises</title>
+<author>mikey@austnet.org (Mikey)</author>
+<category>Administration</category>
+<pubDate>Wed, 24 Sep 2003 15:39:25 -0700</pubDate>
+<link>http://community.austnet.org/news-admin.php#104</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#104</guid>
+</item>
+<item>
+<title>Swiftdsl.* testlink terminated</title>
+<author>cam@austnet.org (cam)</author>
+<category>Network</category>
+<pubDate>Wed, 10 Sep 2003 19:31:35 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#103</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#103</guid>
+</item>
+<item>
+<title>mIRC 6.1 has arrived!</title>
+<author>blase@austnet.org (Blase)</author>
+<category>General Interest</category>
+<pubDate>Sun, 31 Aug 2003 15:59:26 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#102</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#102</guid>
+</item>
+<item>
+<title>Beastclub Australia Car Cruise #3</title>
+<author>beastclub@beastclub.com.au (DJ_Axi)</author>
+<category>Channel News</category>
+<pubDate>Sun, 10 Aug 2003 22:49:17 -0700</pubDate>
+<link>http://community.austnet.org/news-channel.php#101</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#101</guid>
+</item>
+<item>
+<title>ASD additions/raises</title>
+<author>mikey@austnet.org (Mikey)</author>
+<category>Administration</category>
+<pubDate>Sun, 10 Aug 2003 22:45:00 -0700</pubDate>
+<link>http://community.austnet.org/news-admin.php#100</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#100</guid>
+</item>
+<item>
+<title>Microsoft DCOM RPC vulnerability</title>
+<author>blase@austnet.org (Blase)</author>
+<category>Alerts</category>
+<pubDate>Mon,  4 Aug 2003 23:19:09 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#99</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#99</guid>
+</item>
+<item>
+<title>New testlinked server - swiftdsl</title>
+<author>stevie@kas.net.au (Stevie)</author>
+<category>Administration</category>
+<pubDate>Fri,  1 Aug 2003 09:46:19 -0700</pubDate>
+<link>http://community.austnet.org/news-admin.php#97</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#97</guid>
+</item>
+<item>
+<title>xchat 2.0.4</title>
+<author>karl@austnet.org (Karl)</author>
+<category>General Interest</category>
+<pubDate>Thu, 31 Jul 2003 19:17:27 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#96</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#96</guid>
+</item>
+<item>
+<title>Project-Dolphin.nl team passes 30million</title>
+<author>karl@austnet.org (Karl)</author>
+<category>General Interest</category>
+<pubDate>Fri,  4 Jul 2003 17:33:54 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#95</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#95</guid>
+</item>
+</channel></rss>

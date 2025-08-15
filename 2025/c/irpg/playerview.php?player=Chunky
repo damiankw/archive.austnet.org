@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">Chunky</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>42</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>2 days, 07:48:15</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Evil</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Sat Jan 9 15:20:38 2021</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Thu Apr 22 08:13:43 2021</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>20 days, 21:01:10</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>124 x 277</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=Chunky">Chunky</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">28</div>
+            <div class="w3-round-large irpg-item irpg-boots">48</div>
+            <div class="w3-round-large irpg-item irpg-charm">56</div>
+            <div class="w3-round-large irpg-item irpg-gloves">43</div>
+            <div class="w3-round-large irpg-item irpg-helmet">21</div>
+            <div class="w3-round-large irpg-item irpg-leggings">51</div>
+            <div class="w3-round-large irpg-item irpg-ring">67</div>
+            <div class="w3-round-large irpg-item irpg-shield">30</div>
+            <div class="w3-round-large irpg-item irpg-tunic">41</div>
+            <div class="w3-round-large irpg-item irpg-weapon">80</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Juliet's Glorious Ring of Sparkliness</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>3 days, 06:14:18</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 1.6122389564649%"></div>
+                    </div>
+                    <span>0 days, 01:15:41</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?6d5d93993097a53085bda0a44c37b7f6&player=Chunky">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [01/09/21 04:40:40] Chunky [0/4] has challenged damian [241/578] in combat and lost! 0 days, 00:00:48 is added to Chunky&#039;s clock.<br />
+      [01/09/21 05:06:51] Chunky [2/14] has challenged lx [548/577] in combat and lost! 0 days, 00:01:05 is added to Chunky&#039;s clock.<br />
+      [01/09/21 06:26:59] Chunky [13/34] has challenged grem [276/595] in combat and lost! 0 days, 00:01:58 is added to Chunky&#039;s clock.<br />
+      [01/09/21 07:30:00] Chunky [25/50] has challenged ^matty^ [455/533] in combat and lost! 0 days, 00:02:39 is added to Chunky&#039;s clock.<br />
+      [01/10/21 22:31:09] Chunky [22/115] has challenged damian [567/578] in combat and lost! 0 days, 00:06:29 is added to Chunky&#039;s clock.<br />
+      [01/11/21 01:57:47] Chunky [121/131] has challenged idle [702/720] in combat and lost! 0 days, 00:12:27 is added to Chunky&#039;s clock.<br />
+      [01/12/21 03:08:14] Chunky [85/168] has challenged electrohead [88/719] in combat and lost! 0 days, 00:15:47 is added to Chunky&#039;s clock.<br />
+      [01/14/21 06:47:44] brayden [52/609] has challenged Chunky [14/171] in combat and won! 1 day, 06:25:27 is removed from brayden&#039;s clock.<br />
+      [01/14/21 07:50:47] tozza [48/571] has challenged Chunky [78/171] in combat and lost! 0 days, 22:37:39 is added to tozza&#039;s clock.<br />
+      [01/14/21 11:16:06] Chunky [126/194] has challenged idle [68/720] in combat and won! 0 days, 01:10:27 is removed from Chunky&#039;s clock.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=Chunky&amp;allmods=1">View all Character Modifiers</a> (98)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#0763666a6e6669476672747369627329687560">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

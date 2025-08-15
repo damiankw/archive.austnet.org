@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+		<rss version="2.0">
+<channel>
+<title>AustNet.org news</title>
+<link>http://www.austnet.org</link>
+<description>News Feed from austnet.org website</description>
+<language>en-us</language>
+<webMaster>karl@austnet.org</webMaster>
+<docs>http://backend.userland.com/rss</docs>
+<lastBuildDate>Sat,  6 Mar 2004 08:55:45 -0800</lastBuildDate><item>
+<title>#AVA website has a face lift</title>
+<author>none (Rusty^Blade)</author>
+<category>Channel News</category>
+<pubDate>Sun,  7 Mar 2004 01:54:56 -0800</pubDate>
+<link>http://community.austnet.org/news-channel.php#123</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#123</guid>
+</item>
+<item>
+<title>mIRC 6.14 Released</title>
+<author>none (Rusty^Blade)</author>
+<category>General Interest</category>
+<pubDate>Sun,  7 Mar 2004 01:53:16 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#122</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#122</guid>
+</item>
+<item>
+<title>Spin.* Server Name Change</title>
+<author>cam@austnet.org (cam)</author>
+<category>Administration</category>
+<pubDate>Wed, 21 Jan 2004 14:17:39 -0800</pubDate>
+<link>http://community.austnet.org/news-admin.php#121</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#121</guid>
+</item>
+<item>
+<title>ASD Additions and Raises</title>
+<author>ed@austnet.org (ed)</author>
+<category>Administration</category>
+<pubDate>Sun, 28 Dec 2003 17:37:46 -0800</pubDate>
+<link>http://community.austnet.org/news-admin.php#120</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#120</guid>
+</item>
+<item>
+<title>Merry Christmas</title>
+<author>- (AustNet staff)</author>
+<category>General Interest</category>
+<pubDate>Thu, 25 Dec 2003 09:51:32 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#119</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#119</guid>
+</item>
+<item>
+<title>LiveChat this Christmas Eve!</title>
+<author>funkywebguru@msn.com (MediaCorp)</author>
+<category>Events</category>
+<pubDate>Wed, 24 Dec 2003 13:27:44 -0800</pubDate>
+<link>http://community.austnet.org/news-events.php#118</link>
+<guid isPermaLink="true">http://community.austnet.org/news-events.php#118</guid>
+</item>
+<item>
+<title>IRSSI - Potential remote crash</title>
+<author>blase@austnet.org (xmasblase)</author>
+<category>General Interest</category>
+<pubDate>Fri, 12 Dec 2003 06:59:12 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#116</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#116</guid>
+</item>
+<item>
+<title>The Do's and Don'ts of the internet</title>
+<author>blase@austnet.org (xmasblase)</author>
+<category>Website</category>
+<pubDate>Thu, 11 Dec 2003 06:43:27 -0800</pubDate>
+<link>http://community.austnet.org/news-website.php#115</link>
+<guid isPermaLink="true">http://community.austnet.org/news-website.php#115</guid>
+</item>
+<item>
+<title>Beastclub Australia Cruise #5</title>
+<author>beastclub@beastclub.com.au (DJ_Axi)</author>
+<category>Channel News</category>
+<pubDate>Thu,  4 Dec 2003 08:40:24 -0800</pubDate>
+<link>http://community.austnet.org/news-channel.php#114</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#114</guid>
+</item>
+<item>
+<title>New IRSII Release</title>
+<author>blase@austnet.org (Blase)</author>
+<category>General Interest</category>
+<pubDate>Wed,  3 Dec 2003 14:44:59 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#113</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#113</guid>
+</item>
+</channel></rss>

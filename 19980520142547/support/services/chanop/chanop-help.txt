@@ -1,0 +1,843 @@
+*** About this Service ***
+The Channel Operator is a service that the AUSTnet IRC Network
+provides to channel operators and users alike.  On channels
+registered with ChanOP, it can change channel modes, give channel ops
+or voice (user mode +v)to authorized users, maintain access
+restrictions a ban list, and the channel topic.  It also is able
+to sit on or off the channel at the descresion of channel managers.
+
+AUSTnet administration nor the author(s) of this service are not
+responsible for the contents nor the events that occur within
+channels registered with ChanOP.  If you do require assistance or
+wish to ledge a formal complain, you can type /JOIN #AustOP and 
+speak with a services administrator or e-mail austnet@austnet.org.
+
+*** Services News ***
+Information on upgrades and maintenance of this service can be
+viewed via /MSG ChanOP HELP News.  The news file is updated
+sequently in accordance to service upgrades.
+
+
+*** Command Help ***
+The ACCESS command reports user access levels on a specificied
+channel.  You can review the entire channel database or review an
+individual's user records.  For further information relating to user
+levels, /MSG ChanOP HELP Levels.
+Criteria includes [You may use any combination in any order]:
+ -check nick  Will tell you who ChanOP thinks 'nick' matches as
+ -min level   Users greater than the specified level
+ -max level   Users smaller than the specified level
+ -lm          Who last modified (adduser/setuser) record
+ -ls          When were the users last seen
+ *nick*       Users matching wildcard *nick*
+
+*** Command Syntax ***
+   Syntax: ACCESS <channel> <criteria>
+   Access: No channel access is required.
+ Examples: o /MSG ChanOP ACCESS #AustOP Jason
+               (Display Jason's access to #AustOP)
+             o /MSG ChanOP ACCESS #AustOP -check Zack
+               (Display all database records I think Zack matches)
+             o /MSG ChanOP ACCESS #AustOP * -lm
+               (Display all records for #AustOP and last modified)
+             o /MSG ChanOP ACCESS #AustOP * -min 75
+               (Display records with level 75 or higher)
+             o /MSG ChanOP ACCESS #AustOP -max 130 -min 2 *Tom*
+               (Display records with level less than 130 but greater
+                than level 2, and matches wildcard *Tom*)
+ See Also: ADDUSER, SETUSER, DELUSER
+
+
+*** Command Help ***
+The addition of users to a channel database is a simple
+process.  If the user you wish to add to your channel's
+database has a nickname registered with \n, you can
+add them to ChanOP's database of users to automatically
+give channel operator status to, user mode +v (voice) or
+protect (from kicks).
+To add a user to your channel, you must also deligate a
+user level. For further information regarding access levels,
+simply /MSG ChanOP HELP Levels.  If a user level is not
+specified, a default of (100) access is issued. 
+
+*** Command Syntax ***
+   Syntax: ADDUSER <channel> <nick> [level]
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP ADDUSER #AustOP Kimberly 150
+             (Addition of Kimberly to #AustOP at 150 access)
+           o /MSG ChanOP ADDUSER #AustOP Billy
+             (Addition of Billy with 100 access)
+ See Also: DELUSER, SETUSER, ACCESS
+
+
+*** Command Help ***
+Banning a user from the channel not only activates a ban
+on their hostmask, it also adds the user to the internal
+ban list.  This means, in the case when the ban has been
+removed and the user joins once again, ChanOP will place
+the ban once again.  For help on how to remove bans simply
+/MSG ChanOP HELP UNBAN.
+
+Switches include:
+ -level <level>      [Min level require to remove ban]
+ -hours <value>      [How many hours till ban expires]
+ -mins <value>       [How many mins till ban expires]
+ -noexpire           [Do not expire this ban]
+ -nokick             [Just ban user, do not kick them]
+
+*** Command Syntax ***
+   Syntax: BAN <channel> <nick>|<n!u@h> <switches> [<reason>]
+   Access: Requires 75 level channel access.
+ Examples: o /MSG ChanOP BAN #AustOP Dex
+               (Adds Dex to the permanent ban list)
+             o /MSG ChanOP BAN #AustOP *!*asked@*.rider.net
+               (Adds the specified userhost to the ban list)
+             o /MSG ChanOP BAN #AustOP Ferbis -hours 3 Go away.
+               (Adds Ferbis to perm ban list for 3 hours
+                with reason "Go away.")
+             o /MSG ChanOP BAN #AustOP *fighter@*.kabuto.co.jp -hours 10 -level 150
+               (Adds the specified userhost to the banlist
+                for 10 hours and a level 150 user is needed to
+                remove ban)
+ See Also: UNBAN, LISTBAN
+
+
+*** Bans Information ***
+In the event you are left no alternative but to ban a user you have
+kicked from your channel, ChanOP has the ability to maintain a list
+of bans so that when the channel becomes empty, the ban still
+remains.  These commands can be used to manage bans in your channel.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+Command      Short Summary                                 
+BAN          Add a permanent or tempory ban
+UNBAN        Remove a permanent ban, or empty the ban list
+LISTBAN      List your current permanent ban lists
+
+Other Topics Registration, Recovery, Database, Command, Misc.
+
+
+*** Service Information ***
+This service allows \uchannel managers\u to maintain complete
+control of their registered channel.  ChanOP offers a stable
+environment for channels by preventing malicious takeovers,
+while allowing operators the facility of a user database.
+
+*** Service Help Library ***
+For further information on any of these topics, use specific
+help enquiries, /MSG ChanOP HELP <topic>. 
+
+Topic         Short Summary                                   
+Registration  Information pertaining to channel registrations
+Database      Information on how to handle channel databases
+Recovery      Commands to help you recover channel if takeover
+Bans          Ways you can manage your channel ban system
+Command       Listing of all commands available
+Misc          Commands that dont fit in a group
+
+
+*** Command Help ***
+The clean command is used to remove all modes on a
+channel.  These modes include:
+
++k (key channels)     +l (limit no. of users)  +i (invite only)
++m (moderated)        +s (secret)              +p (private)
++n (no outside msgs)  +t (topic change from channel ops only)
+
+ChanOP can remove these modes within or outside the channel.  Ban
+and Op modes, however, are not covered within the clean command,
+for details on removing channel bans, /MSG ChanOP HELP UNBAN,
+and for removing channel ops, /MSG ChanOP help MDEOP.
+
+*** Command Syntax ***
+   Syntax: CLEAN <channel>
+   Access: Requires 100 level channel access.
+ Examples: o /MSG ChanOP CLEAN #angelgrove
+             (Cleans all channel modes on #angelgrove)
+ See Also: UNBAN MDEOP
+
+
+*** Service Information ***
+This service allows \uchannel managers\u to maintain complete
+control of their registered channel.  ChanOP offers a stable
+environment for channels by preventing malicious takeovers,
+while allowing operators the facility of a user database.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+ABOUT     ACCESS    ADDUSER   BAN       CLEAN     COMMANDS
+DELUSER   DEOP      DROP      INFO      INVITE    JOIN
+TOPIC     KICK      LIST      LISTBAN   MDEOP     SETUSER
+NEWS      UNBAN     OP        PART      REGISTER  SET
+
+*** Registration Facilities ***
+For further details concerning the ability to register your
+channel, /MSG ChanOP HELP Registration.  Channel registration
+expires after \utwo weeks\u of no use.
+
+
+*** Command Help ***
+Users have access to certain commands based on their
+access within a particular channel.  COMMANDS displays
+the available commands to you on any given channel.
+
+*** Command Syntax ***
+   Syntax: COMMANDS <channel>
+   Access: No channel access is required.
+ Examples: o /MSG ChanOP COMMANDS #AustOP
+             (Displays available commands on #AustOP)
+ See Also: ACCESS, ADDUSER
+
+
+
+*** Database Information ***
+Channel founders have the option of granting users familiar with
+ChanOP multiple levels of access.  These levels determine
+their access to ChanOP in relationship to your channel.  Primarily
+the commands they are able to use.
+Type /MSG ChanOP HELP LEVELS for detailed information about
+levels and what commands come with them.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+Command      Short Summary                               
+ADDUSER      Used to create a new user entry in database
+DELUSER      Remove a user from database
+SETUSER      Modify a user entry to new values
+ACCESS       Display what access's exist in the database
+
+Other Topics Registration, Recovery, Bans, Command, Misc.
+
+
+*** Command Help ***
+To remove a user from the channel database, use DELUSER
+command.  This command brings permanent removal of the
+specified user from the database, it is not temporary.
+You are required to have a higher access level than that
+of the user you wish to delete in order for this command
+to succeed.
+
+*** Command Syntax ***
+   Syntax: DELUSER <channel> <nick>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP DELUSER #AustOP Tanya
+             (Removes Tanya's access to #AustOP)
+ See Also: ADDUSER, SETUSER, ACCESS
+
+
+*** Command Help ***
+To remove a user's operator status within a channel,
+simply use the DEOP command. The user you deop is
+alerted of who issued the command.
+
+*** Command Syntax ***
+   Syntax: DEOP <channel> <nick>
+   Access: Requires 100 level channel access.
+ Examples: o /MSG ChanOP deop #angelgrove Skull
+             (Removes Skull's access to #angelgrove)
+ See Also: OP, MDEOP
+
+
+*** Command Help ***
+This command is used to remove a channel from registration
+and removes the entire channel database.  Thus, is only
+able to be issued by the channel manager.
+
+*** Command Syntax ***
+   Syntax: DROP <channel>
+   Access: Requires 200 level (founder) channel access.
+ Examples: o /MSG ChanOP DROP #diznee
+             (Removes #diznee from registration)
+ See Also: REGISTER, INFO
+
+
+*** Command Help ***
+Use INFO to display information regarding a registered
+channel.  Along side the registration details, channel
+settings and internet resource locators are indicated.
+
+*** Command Syntax ***
+   Syntax: INFO <channel>
+   Access: No channel access is required.
+ Examples: o /MSG ChanOP INFO #Help
+             (Display information regarding #Help)
+ See Also: REGISTER, SET
+
+
+*** Command Help ***
+Use INVITE to invite yourself into a channel.
+
+*** Command Syntax ***
+   Syntax: INVITE <channel> 
+   Access: Requires 25 level channel access.
+ Examples: o /MSG ChanOP INVITE #AustOP
+             (Invites yourself into #AustOP)
+ See Also: CLEAN
+
+
+*** Command Help ***
+This command is used to make ChanOP join the specified
+channel.  Regardless if the service is on or off the
+channel, it will continue management and issue operator
+status from outside of the channel.  This command gives
+you the innovative choice of having an Undernet X/W or
+DALnet ChanServ style management.
+
+*** Command Syntax ***
+   Syntax: JOIN <channel>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP JOIN #angelgrove
+             (Commands ChanOP to join #angelgrove)
+ See Also: PART
+
+
+*** Command Help ***
+Use the KICK command to remove a user from a registered channel.
+If no reason is specified, the default applies.
+
+*** Command Syntax ***
+   Syntax: KICK <channel> <nick> [reason]
+   Access: Requires 50 level channel access.
+ Examples: o /MSG ChanOP KICK #angelgrove Bulk Go away.
+             (Kicks Bulk for the reason "Go away.")
+ See Also: BAN
+
+
+Level Description                                     
+ 200  Founder (Maintains channel registration)
+      Commands: DROP
+ 190  Co-Founder (Maintains channel configuration)
+      Commands: ACT, MDEOP, SET, SPEAK
+ 150  Channel Administrator (Maintains access records)
+      Commands: ADDUSER, DELUSER, SETUSER, JOIN, PART
+ 100  Channel Operator (Control over channel)
+      Commands: CLEAN, DEOP, OP
+  75  Channel Manager (Manage ban database without ops)
+      Commands: BAN, UNBAN
+  50  Channel Guardian (Limited access)
+      Commands: KICK, TOPIC
+  25  Channel Member (Ability to join channel)
+      Commands: INVITE
+
+
+*** Command Help ***
+The LIST command allows you to view the registered
+channels belonging to a certain nick. 
+
+*** Command Syntax ***
+   Syntax: LIST <nickname>
+   Access: No channel access required.
+ Examples: o /MSG ChanOP LIST Ernie
+             (Lists all commands registered to Ernie)
+ See Also: REGISTER, DROP, INFO
+
+
+*** Command Help ***
+Use the LISTBAN command to view the permanent ban list
+on a specified channel.
+
+Switches include:
+ -whoset         [who set the ban]
+ -whenset        [when was this ban set]
+ -reason         [what is the ban reason]
+
+*** Command Syntax ***
+   Syntax: LISTBAN <channel> <switches> <mask>
+   Access: No channel access required.
+ Examples: o /MSG ChanOP LISTBAN #linux
+             (Lists all bans on #linux)
+ See Also: BAN, UNBAN
+
+
+*** Command Help ***
+This command is used to clear everyone's operator status
+on the specified.  Use this command with caution and
+only in circumstance where the channel needs a MASS DEOP.
+This command is restricted to the channel owner(s) only.
+
+*** Command Syntax ***
+   Syntax: MDEOP <channel>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP MDEOP #angelgrove
+             (Mass deops #angelgrove)
+ See Also: OP, CLEAN
+
+
+*** Database Information ***
+Following are commands do not fit under any other category.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+Command      Short Summary                                   
+ABOUT        Information about ChanOP
+COMMANDS     Used to list all commands you have access to
+INVITE       Invite yourself or specified users to channel
+TOPIC        Change channels topic
+LIST         List channels registered under specified nick
+NEWS         Latest news regarding ChanOP
+LEVELS       Detailed information about various ChanOP levels
+
+Other Topics Registration, Recovery, Bans, Command, Database
+
+
+*** Services News ***
+Post: RogerY Date: Sun Oct 5 Subject: Services Changes
+  - Registration sequence changed. Requires acknowledgment now via YES.
+    Also gives information pertaining to spamming, mass inviting.
+  - Command addition: /msg ChanOP YES <#chan>   This is used to complete
+    the registration of a channel (a way to acknowledge they have read
+    the policies)
+  - INVITE modified so you can only invite yourself. This was because
+    many people were abusing it, to mass invite. Anyone know a better
+    way to handle this problem? :)
+  - LISTBAN heavily modified.
+      /msg ChanOP listban <#chan> <switches> <mask>
+      Switches include: -whoset      (who set the ban)
+                        -whenset     (when was ban set)
+                        -reason      (what was the ban reason)
+      Listban is limited to 15 queries returned if you use '*' mask. You
+      can get around this by doing '*@*' mask :)
+  - TOPIC changed. Random topic has a cookie installed :-) You have a
+    1 in 25 chance of this cookie turning up. Lets see who finds it first
+    :)
+  - BAN heavily modified.
+      /msg ChanOP ban <#chan> <nick>|<mask> <switches> <reason>
+      Switches include: -level <level> (min level to remove ban)
+                        -hours <numb>  (hours till expires)
+                        -mins <numb>   (mins till expires)
+                        -noexpire      (never expire)
+                        -nokick        (ban, but don't kick)
+  - SYNTAX command addition
+      /msg ChanOP syntax <command>  gives you brief syntax summary.
+  - SET #chan TELLADD <on|off>    added (owner gets note on adduser)
+  - Max suspend for a user is 1month (delete user if you want it longer).
+  - Modelock rewritten. hehe uses 500 less lines :P You can now modelock
+    arguments too. ie +k key  and  +l limit 
+  - If a chan is modelock +i, +k then chanop will boot anyone out that
+    recreates it (ie so they do not see key, or in there when +i etc)
+  - Ban handling fixed to avoid auto rejoin loops.
+  - URL's now buffered, saves bandwidth :)
+  - Database system rewritten.
+*** End of News
+[about] [help] [commands] [news]    [  austnet  online help  ]
+
+*** Command Help ***
+Use the listban command to view the permanent ban list
+on a specified channel.
+
+*** Command Syntax ***
+   Syntax: listban <channel> [<*optional wildcard*>]
+   Access: No channel access required.
+ Examples: o /msg ChanOP listban #verbatim
+             (Lists all bans on #verbatim)
+ See Also: BAN, UNBAN, SETUSER
+-
+
+
+*** Command Help ***
+This command gives the specified user on the channnel
+operator status.  If no nickname is given, it presumes
+you are requesting operator status for yourself.  The
+user you specify is notified of who sent the command.
+
+*** Command Syntax ***
+   Syntax: OP <channel> [nick]
+   Access: Requires 100 level channel access.
+ Examples: o /MSG ChanOP OP #AustOP Dairenn
+             (Issues Dairenn ops on #AustOP)
+           o /MSG ChanOP OP #AustOP
+             (Issues yourself ops on #AustOP)
+ See Also: DEOP
+
+
+
+*** Command Help ***
+The PART command is used to make ChanOP leave the specified
+channel.  Regardless if the service is on or off the channel, it
+will continue management and issue operator status from outside
+of the channel.  This command gives you the innovative choice of
+having an Undernet X/W or DALnet ChanServ style management.
+
+*** Command Syntax ***
+   Syntax: PART <channel>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP PART #AustOP
+             (Commands ChanOP to PART #AustOP)
+ See Also: JOIN
+
+
+*** Recovery Information ***
+In the occasion that your channel is taken over, ChanOP can be used
+to bring it back under your control.  The following commands were
+implemented to help you accomplish this.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+Command      Short Summary                                         
+MDEOP        Remove channel operator status from all in the channel
+OP           Issue channel ops to yourself or a specified nickname
+DEOP         Remove channel ops from specified nicknames
+KICK         Kick specified nicknames from channel
+CLEAN        Remove all channel modes (key,limits,invite etc)
+UNBAN        Unban all or specified channel bans
+
+Other Topics Registration, Database, Bans, Command, Misc.
+
+
+*** Command Help ***
+This service allows \uchannel managers\u to maintain complete
+control of their registered channel.  ChanOP offers a stable
+environment for channels by preventing malicious takeovers,
+while allowing operators the facility of a user database.
+
+Registrations make you the channel manager of your channel.
+You should be familiar with users addition, deletion and
+channel configurations as part of your responsibility as
+a channel manager.  Please note that registration expires
+after two weeks of inactivity.
+
+*** Command Syntax ***
+   Syntax: REGISTER <channel>
+   Access: No channel access required.
+ Examples: o /MSG ChanOP REGISTER #toei
+             (Registers #toei to you)
+ See Also: DROP, INFO, ADDUSER, SET
+
+
+*** Registration Information ***
+AUSTnet's registration facility is a service provided for users. 
+Registering your channel ensures that is always kept in your 
+control.  However, please note that channel registration is
+discontinued for channels not used for two weeks.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+Command      Short Summary                                    
+REGISTER     Used to register a new channel wish ChanOP
+INFO         Displays information about registered channels
+DROP         Used to de-register a channel from ChanOP
+SET          Configure special settings on a registered channel
+JOIN         Request ChanOP to join a registered channel
+PART         Request ChanOP to leave a registered channel
+
+Other Topics: Database, Recovery, Bans, Command, Misc.
+
+
+*** Registration Information ***
+AUSTnet's registration facility is a service provided for users. 
+Registering your channel ensures that is always kept in your 
+control.  However, please note that channel registration is
+discontinued for channels not used for two weeks.
+
+*** Service Help Library ***
+For further information on any of these commands, use specific
+help enquiries, /MSG ChanOP HELP <command>. 
+
+Command      Short Summary                                    
+REGISTER     Used to register a new channel wish ChanOP
+INFO         Displays information about registered channels
+DROP         Used to de-register a channel from ChanOP
+SET          Configure special settings on a registered channel
+JOIN         Request ChanOP to join a registered channel
+PART         Request ChanOP to leave a registered channel
+
+Other Topics: Database, Recovery, Bans, Command, Misc.
+
+
+*** Command Help ***
+Using the SET command allows channel managers to configure
+their channel's various settings.  These settings affect status
+and operation of a channel.
+
+For more information on how to use the below settings
+/MSG ChanOP HELP SET <setting>
+
+Setting    Description                                              
+RESTRICT   Require certain access level to join channel
+KEEPTOPIC  Force the topic to remain the same
+URL        Display a web page URL (address) to users who join
+MODE       Set a mode on the channel
+OPRESTRICT Only people in channel database allowed ops
+MUSTID     User in database must IDENTIFY to \n for AutoOp/Protect
+TELLDEL    Founder gets note via \m when someone uses DELUSER
+TELLADD    Founder gets note via \m when someone uses ADDUSER
+NONOTE     Specify minimum level required to send notes to channel
+
+ See Also: INFO
+
+
+*** Command Help ***
+Keeptopic is used to lock your channel topic so that only a 
+specified level may change it.  Also, if ChanOP is re-started or
+re-creates the channel, it will remember your last topic and place
+it back on the channel.  Use level of 0 to deactivate enforcement.
+It doesn't matter what level you use, ChanOP will always remember any
+topic placed on.
+
+*** Command Syntax ***
+   Syntax: SET <#chan> KEEPTOPIC <level>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #toei KEEPTOPIC 150
+             (Only those level 150 or higher may change topic)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+Mode is used to effectivly lock channel modes to specified ones.
+This has advantages in preventing channel takeovers who close
+channels by setting them +k or +l 1.  You can specify a minimum
+level required to override the modelock as well.
+You may not use mode b or o or v, these are set using
+the BAN/UNBAN, OP/DEOP/AOP and AOV commands.
+
+*** Command Syntax ***
+   Syntax: SET <#chan> MODE <level> <modes here>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #tokyo mode 50 +nt-klmp
+             (Only level 50 or higher can override the mode +nt-klmp)
+             o /MSG ChanOP SET #japan mode 75 +nst-iklp
+             (Only level 75 or higher can override the mode +nst-iklp)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+MustID allows the owner to force everyone in their database to 
+identify to services in order to be automatically given channel
+operator status by ChanOP or be protected by ChanOP.
+
+*** Command Syntax ***
+   Syntax: SET <#chan> MUSTID <on/off>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #california MUSTID on
+           (Anyone in #california database must identify for access)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+NoNote command is used to specify what minimum level people in 
+your database must have to be able to send notes to that channel.
+
+*** Command Syntax ***
+   Syntax: SET #<channel> NONOTE <level>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #help nonote 100
+             (Need level 50 or higher to send a note to #help) 
+ See Also: SET, INFO
+
+
+*** Command Help ***
+OpRestrict is used when you want only users in your ChanOP 
+database to have Operator status in your channel.  This reduces
+chances of channel takeovers because if anyone gets channel ops
+and doesn't have access, their channel ops status will be removed
+by ChanOP.
+
+*** Command Syntax ***
+   Syntax: SET <#chan> OPRESTRICT <on/off>
+   Access: Requires 190 list channel access.
+ Examples: o /MSG ChanOP SET #funfactory OPRESTRICT on
+             (Only those on #funfactory's database may have ops)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+Restrict is used to lock your channel so that only a 
+specified level may join.  Someone joining the channel must have the
+restricted level or higher.  If not, ChanOP will kick/ban the user 
+out.  Level can be anywhere from 0 to 200.  Use 0 to turn restrict off.
+
+*** Command Syntax ***
+   Syntax: SET <#chan> RESTRICT <level>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #saban RESTRICT 20
+             (Only those level 20 or higher may join #saban)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+TellAdd is used when you (the founder) wants ChanOP to send you a
+note each time someone in your database has been added by someone
+else.
+
+*** Command Syntax ***
+   Syntax: SET #<channel> TELLADD <on/off>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #springfield TELLADD on
+             (Founder will get a note from ChanOP when user record added)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+Telldel is used when you (the founder) wants ChanOP to send you a
+note each time someone in your database has been deleted by someone
+else.
+If you wish to know who modified records by ADDUSER or SETUSER then
+use /MSG ChanOP ACCESS #<channel> -lm.  (lm means Last Modified).
+
+*** Command Syntax ***
+   Syntax: SET <#chan> TELLDEL <on/off>
+   Access: Requires 190 level channel access.
+ Examples: o /MSG ChanOP SET #springfield TELLDEL on
+             (Founder will get a note from ChanOP when user record deleted)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+URL is used to tag a URL (uniform resource locator) or a short
+message to your channel.  The specified URL will be shown on the
+INFO command, as well as sent to users as they join your channel.
+
+*** Command Syntax ***
+   Syntax: SET <channel> URL <web page address or short message here>
+   Access: Requires 200 (founder) level channel access.
+ Examples: o /MSG ChanOP SET #help URL http://www.austnet.org/
+             (Sets #help's URL to http://www.austnet.org/)
+ See Also: SET, INFO
+
+
+*** Command Help ***
+Use SETUSER to modify access and flags of users in the channel
+database.  These settings affect the status and operation of users
+ability to use the service.
+
+For more information on how to use the below settings, type
+/MSG ChanOP HELP SETUSER <setting>.
+
+Setting    Description                                              
+LEVEL      Modify access level in your registered channel's database
+AOP        Auto-op (mode +o) user when they join your channel
+AOV        Auto-voice (mode +v) user when they join your channel
+PROTECT    Protect user from having channel ops removed and kicks
+SUSPEND    Will suspend a users access for the specified time
+
+ See Also: ADDUSER, DELUSER, ACCESS
+
+
+*** Command Help ***
+The AOP command makes ChanOP automatically give channel operator
+status to a specified nickname joining the channel.
+
+*** Command Syntax ***
+   Syntax: SETUSER <#chan> <nick> AOP <on/off>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP setuser #AustOP Rocky AOP off
+             (Rocky will not get auto oped when joining #AustOP)
+ See Also: ADDUSER, DELUSER, ACCESS
+
+
+*** Command Help ***
+The AOV command makes ChanOP automatically give voice (mode +v)
+status to a specified nickname joining the channel.  Most useful in
+channels that are channel mode +m (moderated) and you do not want to
+give channel ops to people who do not need it.  If AOP is turned on,
+AOV will not be issued as users who have channel ops will be able to
+speak in a moderated (+m) channel.
+
+*** Command Syntax ***
+   Syntax: SETUSER <#chan> <nick> AOV <on/off>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP SETUSER #AustOP Adam AOV on
+             (Adam will get auto voiced when joining #AustOP)
+ See Also: ADDUSER, DELUSER, ACCESS
+
+
+
+*** Command Help ***
+Level is used to modify a users access level on your channel
+registered with ChanOP.
+
+*** Command Syntax ***
+   Syntax: SETUSER <#chan> <nick> LEVEL <newlevel>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP SETUSER #AustOP Trini LEVEL 150
+             (Will modify Trini's level on #AustOP to 150)
+ See Also: ADDUSER, DELUSER, ACCESS
+
+
+*** Command Help ***
+Protect is used as a way of preventing channel takeovers.  A 
+protected user cannot be kicked by a user of lower channel level
+than themselves.  It also protects themselves from being banned
+or having channel operator status removed from them.  However, due
+to fact that databases are stored by nicks only, it is difficult to
+protect users on channel bans.  Use the /MSG ChanOP UNBAN command to
+remove a ban on you.
+
+*** Command Syntax ***
+   Syntax: SETUSER <#chan> <nick> PROTECT <on/off>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP SETUSER #AustOP Aisha PROTECT on
+             (Aisha will be protected on #AustOP)
+ See Also: ADDUSER, DELUSER, ACCESS, UNBAN
+
+
+*** Command Help ***
+Suspend is used to temporarily remove a users access in the
+database of your channel registered with ChanOP.  Suspended users
+cannot access any commands their access level ordinarily allows
+until suspend expires or is removed.
+
+*** Command Syntax ***
+   Syntax: SETUSER <#chan> <nick> SUSPEND <off | number minutes>
+   Access: Requires 150 level channel access.
+ Examples: o /MSG ChanOP SETUSER #AustOP Kat SUSPEND 15
+             (Will suspend Kat on #AustOP for 15 minutes)
+           o /MSG ChanOP SETUSER #AustOP Justin SUSPEND off
+             (will turn off Justin's suspend)
+ See Also: ADDUSER, DELUSER, ACCESS
+
+
+
+*** Command Help ***
+The TOPIC command changes the topic on the channel
+specified.  If the TOPIC is not specified, a random
+topic is selected.
+
+*** Command Syntax ***
+   Syntax: TOPIC <channel> [topic]
+   Access: Requires 50 level channel access.
+ Examples: o /MSG ChanOP TOPIC #angelgrove Now 12% monster free!
+             (Changes topic on #angelgrove to "Now 12% monster free!")
+
+
+*** Command Help ***
+Use UNBAN to remove a ban on a specific channel that
+matches a specific criteria.  This removes the user
+from the internal ban list as well.
+
+*** Command Syntax ***
+   Syntax: UNBAN <channel> <me>|<all>|<userhost>|<nick>
+   Access: Requires 75 level channel access.
+ Examples: o /MSG ChanOP UNBAN #AustOP ALL
+             (Removes all bans on #AustOP)
+           o /MSG ChanOP UNBAN #AustOP ME
+             (Removes your ban from #AustOP)
+           o /MSG ChanOP UNBAN #AustOP *guyferd@*.changerion.co.jp
+             (Removes ban on *guyferd@*.changerion.co.jp)
+ See Also: BAN, LISTBAN
+
+
+*** Command Help ***
+The YES command completes a registration made using
+REGISTER. YES is used to show that you acknowledged
+that you understand the terms of registration
+
+*** Command Syntax ***
+   Syntax: YES <channel>
+   Access: No channel access required.
+ Examples: o /MSG ChanOP YES #toei
+             (Completes registration of #toei to you)
+ See Also: DROP, INFO, ADDUSER, SET, REGISTER

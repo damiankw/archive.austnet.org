@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">Gamebro</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>61</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>116 days, 16:37:58</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Thu Apr 25 07:14:45 2024</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Tue Mar 4 14:03:18 2025</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>140 days, 18:48:42</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>109 x 460</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=Gamebro">Gamebro</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">127</div>
+            <div class="w3-round-large irpg-item irpg-boots">62</div>
+            <div class="w3-round-large irpg-item irpg-charm">59</div>
+            <div class="w3-round-large irpg-item irpg-gloves">50</div>
+            <div class="w3-round-large irpg-item irpg-helmet">70</div>
+            <div class="w3-round-large irpg-item irpg-leggings">116</div>
+            <div class="w3-round-large irpg-item irpg-ring">40</div>
+            <div class="w3-round-large irpg-item irpg-shield">108</div>
+            <div class="w3-round-large irpg-item irpg-tunic">99</div>
+            <div class="w3-round-large irpg-item irpg-weapon">227</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Dwyn's Storm Magic Amulet</li><li>Mattt's Omniscience Grand Crown</li><li>Res0's Protectorate Plate Mail</li><li>Drdink's Cane of Blind Rage</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>9 days, 23:32:13</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 60.006285274946%"></div>
+                    </div>
+                    <span>5 days, 23:44:14</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?e6d02bf2af802f6d555647cfa3c54c37&player=Gamebro">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [04/24/24 21:24:47] Gamebro [0/1] has challenged Lin [28/1317] in combat and lost! 0 days, 00:02:23 is added to Gamebro&#039;s clock.<br />
+      [04/24/24 21:48:45] Gamebro [4/5] has challenged idle [1305/1459] in combat and lost! 0 days, 00:01:20 is added to Gamebro&#039;s clock.<br />
+      [04/24/24 21:49:17] electrohead [822/1415] has challenged Gamebro [4/5] in combat and won! 7 days, 12:02:38 is removed from electrohead&#039;s clock.<br />
+      [04/24/24 22:49:17] electrohead [1244/1415] has challenged Gamebro [22/23] in combat and won! 6 days, 23:22:14 is removed from electrohead&#039;s clock.<br />
+      [04/24/24 23:50:51] Gamebro [15/54] has challenged electrohead [437/1415] in combat and lost! 0 days, 00:08:11 is added to Gamebro&#039;s clock.<br />
+      [04/25/24 01:49:17] lx [1066/1399] has challenged Gamebro [57/69] in combat and won! 7 days, 00:22:44 is removed from lx&#039;s clock.<br />
+      [04/25/24 02:49:16] lx [844/1399] has challenged Gamebro [81/89] in combat and won! 6 days, 12:31:20 is removed from lx&#039;s clock.<br />
+      [04/25/24 04:49:15] kiska [402/1458] has challenged Gamebro [44/97] in combat and won! 4 days, 07:59:55 is removed from kiska&#039;s clock.<br />
+      [04/25/24 10:01:15] lx, electrohead and ibiza [3700/4079] have team battled Gamebro, Lin and kiska [2699/2893] at [381,5] and won! 12 days, 11:10:35 is removed from their clocks.<br />
+      [04/25/24 16:57:17] Gamebro [129/143] has challenged idle [372/1459] in combat and lost! 0 days, 00:19:27 is added to Gamebro&#039;s clock.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=Gamebro&amp;allmods=1">View all Character Modifiers</a> (1231)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#8aeeebe7e3ebe4caebfff9fee4effea4e5f8ed">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

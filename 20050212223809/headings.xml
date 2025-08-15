@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+		<rss version="2.0">
+<channel>
+<title>AustNet.org news</title>
+<link>http://www.austnet.org</link>
+<description>News Feed from austnet.org website</description>
+<language>en-us</language>
+<webMaster>karl@austnet.org</webMaster>
+<docs>http://backend.userland.com/rss</docs>
+<lastBuildDate>Fri, 24 Dec 2004 14:31:55 -0800</lastBuildDate><item>
+<title>Merry Christmas</title>
+<author> (Hippychick)</author>
+<category>General Interest</category>
+<pubDate>Sat, 25 Dec 2004 07:31:25 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#143</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#143</guid>
+</item>
+<item>
+<title>Live Christmas Chat Event</title>
+<author>raiden@austnet.org (Raiden)</author>
+<category>Events</category>
+<pubDate>Tue, 14 Dec 2004 05:21:54 -0800</pubDate>
+<link>http://community.austnet.org/news-events.php#142</link>
+<guid isPermaLink="true">http://community.austnet.org/news-events.php#142</guid>
+</item>
+<item>
+<title>Freeze on Server Applications</title>
+<author>kieran@austnet.org (Kieran)</author>
+<category>Network</category>
+<pubDate>Wed,  1 Dec 2004 14:32:22 -0800</pubDate>
+<link>http://community.austnet.org/news-network.php#141</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#141</guid>
+</item>
+<item>
+<title>New Poll</title>
+<author>hippychick@austnet.org (Hippychick)</author>
+<category>Website</category>
+<pubDate>Wed, 17 Nov 2004 12:28:28 -0800</pubDate>
+<link>http://community.austnet.org/news-website.php#140</link>
+<guid isPermaLink="true">http://community.austnet.org/news-website.php#140</guid>
+</item>
+<item>
+<title>Project Dolphin Update</title>
+<author>phoenix@austnet.org (Karl)</author>
+<category>General Interest</category>
+<pubDate>Wed, 17 Nov 2004 12:26:46 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#139</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#139</guid>
+</item>
+<item>
+<title>New Jersey Institute of Technology Permlinked</title>
+<author>kieran@austnet.org (Kieran)</author>
+<category>Network</category>
+<pubDate>Tue, 26 Oct 2004 16:06:22 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#138</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#138</guid>
+</item>
+<item>
+<title>New European Client Server</title>
+<author>kieran@austnet.org (Kieran)</author>
+<category>Network</category>
+<pubDate>Wed, 20 Oct 2004 10:10:43 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#137</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#137</guid>
+</item>
+<item>
+<title>Winamp users be wary</title>
+<author>blase@austnet.org (Blase)</author>
+<category>Alerts</category>
+<pubDate>Tue,  7 Sep 2004 00:02:08 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#136</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#136</guid>
+</item>
+<item>
+<title>X-Chat for Windows now shareware</title>
+<author>blase@austnet.org (Blase)</author>
+<category>General Interest</category>
+<pubDate>Mon,  6 Sep 2004 23:44:46 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#134</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#134</guid>
+</item>
+<item>
+<title>AustNet improves global connectivity</title>
+<author>cam@austnet.org (cam)</author>
+<category>Network</category>
+<pubDate>Mon, 19 Jul 2004 21:51:47 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#133</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#133</guid>
+</item>
+</channel></rss>

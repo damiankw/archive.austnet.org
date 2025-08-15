@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">decalman</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>42</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>1 day, 11:23:25</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Mon Aug 16 20:51:53 2021</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Sun Sep 19 16:40:54 2021</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>20 days, 09:59:50</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>282 x 19</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=decalman">decalman</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">43</div>
+            <div class="w3-round-large irpg-item irpg-boots">50</div>
+            <div class="w3-round-large irpg-item irpg-charm">20</div>
+            <div class="w3-round-large irpg-item irpg-gloves">41</div>
+            <div class="w3-round-large irpg-item irpg-helmet">39</div>
+            <div class="w3-round-large irpg-item irpg-leggings">18</div>
+            <div class="w3-round-large irpg-item irpg-ring">23</div>
+            <div class="w3-round-large irpg-item irpg-shield">16</div>
+            <div class="w3-round-large irpg-item irpg-tunic">88</div>
+            <div class="w3-round-large irpg-item irpg-weapon">168</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Res0's Protectorate Plate Mail</li><li>Jotun's Fury Colossal Sword</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>0 days, 06:13:22</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 30.849924113918%"></div>
+                    </div>
+                    <span>0 days, 01:55:11</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?db5e1045d6176e67ec5f29bf4a487e75&player=decalman">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [08/16/21 11:36:56] decalman [4/10] has challenged JedStar [667/959] in combat and lost! 0 days, 00:01:24 is added to decalman&#039;s clock.<br />
+      [08/16/21 15:20:31] decalman [6/73] has challenged damian [34/1006] in combat and lost! 0 days, 00:05:07 is added to decalman&#039;s clock.<br />
+      [08/16/21 21:17:31] decalman [151/154] has challenged ^matty^ [149/939] in combat and won! 0 days, 00:16:07 is removed from decalman&#039;s clock.<br />
+      [08/16/21 21:35:56] electrohead, grem and lx [1318/2521] have team battled decalman, tozza and ^matty^ [1629/2024] at [106,262] and lost! 4 days, 09:46:01 is added to their clocks.<br />
+      [08/17/21 02:50:49] ibiza [213/867] has challenged decalman [131/177] in combat and won! 0 days, 01:24:25 is removed from ibiza&#039;s clock.<br />
+      [08/17/21 12:50:46] JedStar [253/959] has challenged decalman [156/195] in combat and won! 1 day, 07:11:41 is removed from JedStar&#039;s clock.<br />
+      [08/17/21 15:50:49] grem [566/697] has challenged decalman [96/195] in combat and won! 1 day, 19:57:05 is removed from grem&#039;s clock.<br />
+      [08/17/21 22:31:51] decalman [117/212] has challenged idle [552/1074] in combat and lost! 0 days, 00:35:14 is added to decalman&#039;s clock.<br />
+      [08/18/21 04:59:26] decalman [207/217] has challenged idle [190/1074] in combat and won! 0 days, 01:21:44 is removed from decalman&#039;s clock.<br />
+      [08/18/21 10:26:28] decalman [162/217] has challenged IRCStats [698/739] in combat and lost! 0 days, 00:42:40 is added to decalman&#039;s clock.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=decalman&amp;allmods=1">View all Character Modifiers</a> (87)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#4622272b2f2728062733353228233268293421">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

@@ -1,0 +1,220 @@
+/* general stuff */
+body {
+  font: 0.7em/1.2em verdana, arial, helvetica, sans-serif;
+  background: #fff url(images/rockbackground.jpg) bottom right repeat;
+  color: #555;
+  padding: 0 140px 0 12px;
+  margin: 0;
+}
+* { /* IE will ignore this if applied to the body */
+  padding:0;
+  margin:0;
+}
+acronym {
+  border-bottom: 1px dotted #19c;
+}
+input, textarea, select {
+  background: #bed6e3;
+  /*border: 1px solid;*/
+  color: #000;
+  font: 11px verdana, arial, helvetica, sans-serif;
+}
+p {
+  margin: 6px 0 0 0;
+  padding: 0 0 6px 0;
+}
+h3 {
+	font-size: 13px;
+}
+ul {
+  padding: 6px 0 6px 0;
+  margin-left: 16px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+ol {
+  padding: 6px 0 6px 0;
+  margin-left: 22px;
+  list-style: decimal outside;
+}
+li {
+  list-style: outside;
+  margin-bottom: 6px;
+}
+ol li {
+  list-style-type: decimal;
+}
+ul li {
+  list-style-type: disc;
+}
+a {
+	color: #19c;
+	background: transparent;
+	text-decoration: none;
+}
+/* more specific rules */
+@media screen {
+  #navMenu {
+    position: fixed;
+  }
+  * html #navMenu {
+    position: absolute;
+  }
+}
+#header {
+  height: 89px;
+  background: #fff url(images/austnetlayout_04.png) right top repeat-x;
+}
+#content {
+  margin-top: 0px;
+  padding: 20px 20px 10px 249px;
+  background: #fff url(images/contentbackground.jpg) bottom right no-repeat;
+  min-height: 360px;
+  border-bottom: solid Black;
+  border-left: solid Black;
+  border-right: solid Black;
+}
+/* The Magic min-height fix happens here */
+*>#content { padding-top: 360px; min-height: 1px; }
+*>#content .wrapper { margin-top: -360px; }
+* html #content {
+/* IE5Mac filter \*/
+  height: 360px;
+/* end filter */
+}
+#navMenu {
+  right: 0;
+  top: 89px;
+  padding: 0 0 0 0;
+  width: 112px;
+  border-right: 1px solid #000;
+  background: #19c fixed;
+  color: #333;
+  text-align: right;
+  font-size: 11px;
+}
+#navMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#navMenu li {
+  margin: 0;
+  border-bottom: 1px solid #19c;
+  list-style: none;
+}
+#navMenu li a {
+  display: block;
+  padding: 5px 5px 5px 5px;
+  border-right: 8px solid #26c;
+  border-left: 8px solid #59d;
+  background-color: #27c;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+html>body #navMenu li a {
+  width: auto;
+}
+#navMenu li a:hover {
+  color: #fff;
+  background-color: #3be;
+  border-right: 8px solid #26d;
+  border-left: 8px solid #6ae;
+}
+#news {
+  top: 260px;
+  position: absolute;
+  padding-right: 15px;
+  padding-left: 20px;
+  width: 200px;
+  border-right: 1px solid #777;
+}
+#footer {
+  font: 10px verdana, arial, helvetica, sans-serif;
+  margin: 12px 0 0 0;
+  padding-top: 1px;
+  border-top: solid Black;
+  border-left: solid Black;
+  border-right: solid Black;
+  background: #fff;
+  text-align: center;
+}
+#footer a:hover {
+  color: #3be;
+}
+#copyright {
+  padding-top: 5px;
+  text-align: right;
+  border-bottom: solid Black;
+  border-left: solid Black;
+  border-right: solid Black;  
+  color: #777;
+  font: 8px verdana, arial, helvetica, sans-serif;
+  background: #fff;
+}
+#tabnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 4px;
+}
+#tabnav a:hover {
+  background: #3be;
+}
+ul#tabnav {
+  font: bold 11px verdana, arial, sans-serif;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #777;
+  margin: 0;
+  list-style: none;
+}
+ul#tabnav li {
+  float: left;
+  height: 21px;
+  background-color: #19c;
+  margin: 2px 2px 0 2px;
+  border: 1px solid #777;
+  list-style: none;
+}
+ul#tabnav li.current {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}
+ul#tabnav li.current a {
+  color: #19c;
+  background-color: #fff;
+}
+#ul#tabnav li.current a:hover {
+  background-color: #fff;
+}
+#fixDiv1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(images/austnetlayout_02.png) no-repeat top left;
+	width: 299px;
+	height: 89px;
+}
+#fixDiv2 {
+  position: absolute;
+  top: 0px;
+  right: 140px; /* IE wants 139px; */
+  background: url(images/austnetlayout_05.png) no-repeat top left;
+  width: 234px;
+  height: 89px;
+  border-right: solid Black;
+}
+* html body #fixDiv2 {
+  right: 139px;
+}
+#fixDiv3 {
+	position: absolute;
+  left: 0px;
+	top: 89px;
+	background: url(images/austnetlayout_07.png) left top no-repeat;
+  width: 264px;
+  height: 171px;
+}

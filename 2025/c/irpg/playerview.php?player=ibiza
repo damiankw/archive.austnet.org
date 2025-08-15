@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">ibiza</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">Yes</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>133</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>6 days, 07:39:50</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Mon Oct 5 14:57:45 2020</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Tue Jan 28 01:28:56 2025</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>965 days, 06:45:51</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>75 x 40</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=ibiza">ibiza</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">110</div>
+            <div class="w3-round-large irpg-item irpg-boots">268</div>
+            <div class="w3-round-large irpg-item irpg-charm">116</div>
+            <div class="w3-round-large irpg-item irpg-gloves">50</div>
+            <div class="w3-round-large irpg-item irpg-helmet">70</div>
+            <div class="w3-round-large irpg-item irpg-leggings">82</div>
+            <div class="w3-round-large irpg-item irpg-ring">69</div>
+            <div class="w3-round-large irpg-item irpg-shield">65</div>
+            <div class="w3-round-large irpg-item irpg-tunic">103</div>
+            <div class="w3-round-large irpg-item irpg-weapon">345</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Dwyn's Storm Magic Amulet</li><li>Mrquick's Magical Boots of Swiftness</li><li>Mattt's Omniscience Grand Crown</li><li>Res0's Protectorate Plate Mail</li><li>Jeff's Cluehammer of Doom</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>171 days, 16:11:09</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 34.618786409917%"></div>
+                    </div>
+                    <span>59 days, 10:21:30</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?8ddd39517ddf37d2abaa4237b2ff22df&player=ibiza">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [10/17/20 09:26:48] tozza [0/1] has challenged ibiza [0/1] in combat and won! 0 days, 00:00:41 is removed from tozza&#039;s clock.<br />
+      [10/17/20 09:48:16] ibiza [4/7] has challenged Bob [0/3] in combat and won! 0 days, 00:00:56 is removed from ibiza&#039;s clock.<br />
+      [10/17/20 10:34:36] ^matty^ [17/22] has challenged ibiza [4/21] in combat and won! 0 days, 00:01:28 is removed from ^matty^&#039;s clock.<br />
+      [10/17/20 10:55:30] ibiza [21/25] has challenged damian [13/30] in combat and won! 0 days, 00:01:42 is removed from ibiza&#039;s clock.<br />
+      [10/17/20 11:50:24] grem [32/37] has challenged ibiza [19/31] in combat and won! 0 days, 00:02:17 is removed from grem&#039;s clock.<br />
+      [10/17/20 12:19:09] ibiza [4/33] has challenged clarkos [41/51] in combat and lost! 0 days, 00:02:39 is added to ibiza&#039;s clock.<br />
+      [10/17/20 19:40:04] grem [70/122] has challenged ibiza [85/87] in combat and lost! 0 days, 00:07:31 is added to grem&#039;s clock.<br />
+      [10/17/20 21:22:11] tozza [45/141] has challenged ibiza [40/87] in combat and won! 0 days, 00:08:43 is removed from tozza&#039;s clock.<br />
+      [10/18/20 01:50:16] ^matty^ [7/126] has challenged ibiza [3/128] in combat and won! 0 days, 00:11:44 is removed from ^matty^&#039;s clock.<br />
+      [10/18/20 04:32:30] ibiza caught a unicorn! This wondrous godsend has accelerated them 0 days, 00:00:48 towards level 21.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=ibiza&amp;allmods=1">View all Character Modifiers</a> (6417)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#d9bdb8b4b0b8b799b8acaaadb7bcadf7b6abbe">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

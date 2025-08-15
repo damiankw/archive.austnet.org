@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">rastajedi</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>61</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>9 days, 15:43:32</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Sun Mar 14 15:09:18 2021</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Wed Jul 28 06:59:55 2021</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>137 days, 20:51:16</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>21 x 302</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=rastajedi">rastajedi</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">119</div>
+            <div class="w3-round-large irpg-item irpg-boots">283</div>
+            <div class="w3-round-large irpg-item irpg-charm">41</div>
+            <div class="w3-round-large irpg-item irpg-gloves">45</div>
+            <div class="w3-round-large irpg-item irpg-helmet">60</div>
+            <div class="w3-round-large irpg-item irpg-leggings">49</div>
+            <div class="w3-round-large irpg-item irpg-ring">74</div>
+            <div class="w3-round-large irpg-item irpg-shield">39</div>
+            <div class="w3-round-large irpg-item irpg-tunic">67</div>
+            <div class="w3-round-large irpg-item irpg-weapon">204</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Dwyn's Storm Magic Amulet</li><li>Mrquick's Magical Boots of Swiftness</li><li>Mattt's Omniscience Grand Crown</li><li>Juliet's Glorious Ring of Sparkliness</li><li>Drdink's Cane of Blind Rage</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>2 days, 16:51:49</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 48.007143193624%"></div>
+                    </div>
+                    <span>1 day, 07:08:21</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-logout" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Logout</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 0.0085649803647825%"></div>
+                    </div>
+                    <span>0 days, 00:00:20</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?fbc2f316452fe15ddd39a5b347e7c939&player=rastajedi">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [03/14/21 04:54:54] rastajedi [5/11] has challenged damian [537/677] in combat and lost! 0 days, 00:01:14 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 06:22:50] JedStar [155/244] has challenged rastajedi [32/47] in combat and won! 0 days, 00:44:39 is removed from JedStar&#039;s clock.<br />
+      [03/14/21 08:38:21] rastajedi [39/138] has challenged tozza [591/696] in combat and lost! 0 days, 00:04:05 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 13:01:41] rastajedi [161/174] has challenged Octane [324/547] in combat and lost! 0 days, 00:07:24 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 14:41:42] rastajedi [172/180] has challenged electrohead [211/797] in combat and lost! 0 days, 00:08:35 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 16:59:52] JedStar [231/244] has challenged rastajedi [15/184] in combat and won! 0 days, 00:51:48 is removed from JedStar&#039;s clock.<br />
+      [03/14/21 22:50:49] lx [502/741] has challenged rastajedi [75/211] in combat and won! 1 day, 13:37:34 is removed from lx&#039;s clock.<br />
+      [03/15/21 01:50:49] Lin [634/743] has challenged rastajedi [113/211] in combat and won! 1 day, 01:21:59 is removed from Lin&#039;s clock.<br />
+      [03/15/21 15:48:08] rastajedi [88/211] has challenged ibiza [81/633] in combat and won! 0 days, 00:49:19 is removed from rastajedi&#039;s clock.<br />
+      [03/15/21 17:15:43] brayden [656/896] has challenged rastajedi [48/211] in combat and won! 3 days, 02:07:32 is removed from brayden&#039;s clock.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=rastajedi&amp;allmods=1">View all Character Modifiers</a> (725)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#4327222e2a222d03223630372d26376d2c3124">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

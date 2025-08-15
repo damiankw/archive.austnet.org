@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">IRCStats</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>128</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>6 days, 11:49:54</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Tue Nov 3 00:25:47 2020</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Sat Dec 30 05:23:44 2023</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>1078 days, 04:03:18</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>235 x 125</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=IRCStats">IRCStats</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">114</div>
+            <div class="w3-round-large irpg-item irpg-boots">258</div>
+            <div class="w3-round-large irpg-item irpg-charm">63</div>
+            <div class="w3-round-large irpg-item irpg-gloves">51</div>
+            <div class="w3-round-large irpg-item irpg-helmet">88</div>
+            <div class="w3-round-large irpg-item irpg-leggings">74</div>
+            <div class="w3-round-large irpg-item irpg-ring">71</div>
+            <div class="w3-round-large irpg-item irpg-shield">82</div>
+            <div class="w3-round-large irpg-item irpg-tunic">107</div>
+            <div class="w3-round-large irpg-item irpg-weapon">251</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Dwyn's Storm Magic Amulet</li><li>Mrquick's Magical Boots of Swiftness</li><li>Juliet's Glorious Ring of Sparkliness</li><li>Res0's Protectorate Plate Mail</li><li>Jeff's Cluehammer of Doom</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>222 days, 18:50:00</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 73.280612615982%"></div>
+                    </div>
+                    <span>163 days, 06:11:32</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?164ea0783cf265b3f5d1d24fb6a192b7&player=IRCStats">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [11/02/20 13:35:48] IRCStats [0/1] has challenged grem [162/208] in combat and lost! 0 days, 00:00:41 is added to IRCStats&#039;s clock.<br />
+      [11/02/20 15:19:44] clarkos [100/245] has challenged IRCStats [24/26] in combat and won! 0 days, 00:33:11 is removed from clarkos&#039;s clock.<br />
+      [11/02/20 23:02:52] grem [136/228] has challenged IRCStats [40/111] in combat and won! 0 days, 00:38:30 is removed from grem&#039;s clock.<br />
+      [11/02/20 23:24:32] electrohead [214/225] has challenged IRCStats [34/111] in combat and won! 0 days, 00:38:29 is removed from electrohead&#039;s clock.<br />
+      [11/02/20 23:45:36] IRCStats [89/117] has challenged tozza [219/243] in combat and lost! 0 days, 00:07:31 is added to IRCStats&#039;s clock.<br />
+      [11/03/20 03:45:17] IRCStats [111/127] has challenged Lin [209/218] in combat and lost! 0 days, 00:10:07 is added to IRCStats&#039;s clock.<br />
+      [11/03/20 04:26:23] tozza [173/243] has challenged IRCStats [10/127] in combat and won! 0 days, 00:44:39 is removed from tozza&#039;s clock.<br />
+      [11/03/20 06:20:01] IRCStats [104/136] has challenged brayden [120/216] in combat and lost! 0 days, 00:11:44 is added to IRCStats&#039;s clock.<br />
+      [11/03/20 09:19:28] IRCStats [58/142] has challenged HellFury [73/89] in combat and lost! 0 days, 00:13:37 is added to IRCStats&#039;s clock.<br />
+      [11/03/20 09:58:39] HellFury [2/89] has challenged IRCStats [90/142] in combat and lost! 0 days, 00:06:28 is added to HellFury&#039;s clock.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=IRCStats&amp;allmods=1">View all Character Modifiers</a> (7039)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#1a7e7b77737b745a7b6f696e747f6e3475687d">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

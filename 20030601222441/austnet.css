@@ -1,0 +1,68 @@
+/* austnet.css style sheet by Dreamerie Design http://www.dreamerie.net */ 
+ 
+BODY, TD, DIV, P { 
+	font-family: verdana,arial,sans-serif; 
+	font-size: 10pt; color #000033; 
+	} 
+	 
+.commands { 
+	font-family: Georgia,Times New Roman,times,serif; 
+	font-size: 10pt; color #000033; } 
+	 
+.channelheading { 
+	font-family: verdana,arial,sans-serif; 
+	font-size: 15pt;  
+	color: #0000CC; 
+	text-align: center; } 
+ 
+TD.small { 
+	font-family: verdana,arial,sans-serif; 
+	font-size: 8.5pt; color #000033; 
+	} 
+	 
+TD.bottom { 
+	font-family: verdana,arial,sans-serif;  
+	font-size: 8pt; color #000033;  
+	text-align: left;  
+	border-bottom: 1px solid #000099; } 
+	 
+TD.bottomleft { 
+	font-family: verdana,arial,sans-serif;  
+	font-size: 8pt; color #000033;  
+	text-align: left;  
+	border-bottom: 1px solid #000099;  
+	border-left: 1px solid #000099; } 
+	 
+TD.left { 
+	font-family: verdana,arial,sans-serif;  
+	font-size: 8pt; color #000033;  
+	text-align: left;  
+	border-left: 1px solid #000099; } 
+	 
+A { text-decoration: none; color: #000099; }   
+A:hover { text-decoration: underline; }   
+ 
+.pagebottom {   
+	font-size: 8pt; color: #FF9900;  
+	font-family: verdana,arial,sans-serif;  
+	text-decoration: none; }   
+ 
+A.bottomlink {   
+	font-size: 8pt;  
+	font-family: verdana,arial,sans-serif;  
+	text-decoration: none; }   
+	 
+TD.interactive { 
+	font-size: 9pt; color #000033; 
+	text-align: left; 
+	padding-left: 4px; } 
+ 
+.newscredits { 
+	font-size: 8pt; color #000033; 
+	text-align: left; 
+	font-style: italic; } 
+	 
+.oldernews { 
+	font-size: 8pt; color #000033; }.indent { 
+	padding-left: 3px; 
+} 

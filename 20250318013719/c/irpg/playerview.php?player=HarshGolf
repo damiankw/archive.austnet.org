@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">HarshGolf</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>29</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>0 days, 01:30:57</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Tue Jul 13 03:02:54 2021</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Mon Sep 6 02:47:40 2021</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>3 days, 09:34:39</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>278 x 481</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=HarshGolf">HarshGolf</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">37</div>
+            <div class="w3-round-large irpg-item irpg-boots">10</div>
+            <div class="w3-round-large irpg-item irpg-charm">38</div>
+            <div class="w3-round-large irpg-item irpg-gloves">35</div>
+            <div class="w3-round-large irpg-item irpg-helmet">35</div>
+            <div class="w3-round-large irpg-item irpg-leggings">7</div>
+            <div class="w3-round-large irpg-item irpg-ring">35</div>
+            <div class="w3-round-large irpg-item irpg-shield">24</div>
+            <div class="w3-round-large irpg-item irpg-tunic">30</div>
+            <div class="w3-round-large irpg-item irpg-weapon">26</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>HarshGolf has no special items.</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>0 days, 02:07:45</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 7.6712328767123%"></div>
+                    </div>
+                    <span>0 days, 00:09:48</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-mesg" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Channel Message</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 0.039138943248532%"></div>
+                    </div>
+                    <span>0 days, 00:00:03</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?5f60a116af4fd92eef30343a65b0f355&player=HarshGolf">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [07/12/21 17:12:52] HarshGolf [0/1] has challenged IRCStats [650/733] in combat and lost! 0 days, 00:00:54 is added to HarshGolf&#039;s clock.<br />
+      [07/12/21 17:23:48] HarshGolf [1/2] has challenged brayden [55/692] in combat and lost! 0 days, 00:01:09 is added to HarshGolf&#039;s clock.<br />
+      [07/12/21 18:41:44] HarshGolf [5/11] has challenged grem [462/688] in combat and lost! 0 days, 00:01:33 is added to HarshGolf&#039;s clock.<br />
+      [08/29/21 18:33:07] HarshGolf [65/69] has challenged Lin [551/784] in combat and lost! 0 days, 00:04:24 is added to HarshGolf&#039;s clock.<br />
+      [08/30/21 07:30:13] HarshGolf [127/150] has challenged JedStar [784/951] in combat and lost! 0 days, 00:15:05 is added to HarshGolf&#039;s clock.<br />
+      [08/30/21 07:50:48] ^matty^ [265/939] has challenged HarshGolf [108/150] in combat and won! 0 days, 13:28:05 is removed from ^matty^&#039;s clock.<br />
+      [08/30/21 09:50:47] ibiza [697/879] has challenged HarshGolf [130/150] in combat and won! 1 day, 22:25:06 is removed from ibiza&#039;s clock.<br />
+      [08/30/21 18:07:38] HarshGolf [121/204] has challenged lx [932/1073] in combat and lost! 0 days, 00:26:11 is added to HarshGolf&#039;s clock.<br />
+      [08/30/21 21:39:13] ibiza [639/879] has come upon HarshGolf [6/204] and taken them in combat! 1 day, 22:37:03 is removed from ibiza&#039;s clock.<br />
+      [08/30/21 21:50:47] tozza [831/937] has challenged HarshGolf [10/204] in combat and won! 2 days, 09:11:02 is removed from tozza&#039;s clock.<br />
+      <br />
+      <br />
+      [<a href="/c/irpg/playerview.php?player=HarshGolf&amp;allmods=1">View all Character Modifiers</a> (24)]
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#85e1e4e8ece4ebc5e4f0f6f1ebe0f1abeaf7e2">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+

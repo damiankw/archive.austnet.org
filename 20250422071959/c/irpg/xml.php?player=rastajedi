@@ -1,0 +1,37 @@
+
+<player>
+    <username>rastajedi</username>
+    <isadmin>0</isadmin>
+    <level>61</level>
+    <class>rastafarian</class>
+    <ttl>834212</ttl>
+    <userhost>rastajedi!~rastajedi@07db2528.jedimasters.net</userhost>
+    <online>0</online>
+    <totalidled>11911876</totalidled>
+    <xpos>21</xpos>
+    <ypos>302</ypos>
+    <alignment>n</alignment>
+    <penalties>
+        <mesg>0</mesg>
+        <nick>0</nick>
+        <part>0</part>
+        <kick>0</kick>
+        <quit>112101</quit>
+        <quest>233509</quest>
+        <logout>20</logout>
+        <total>345630</total>
+    </penalties>
+    <items>
+        <amulet>119c</amulet>
+        <charm>41</charm>
+        <helm>60a</helm>
+        <boots>283f</boots>
+        <gloves>45</gloves>
+        <ring>74h</ring>
+        <leggings>49</leggings>
+        <shield>39</shield>
+        <tunic>67</tunic>
+        <weapon>204e</weapon>
+        <total>981</total>
+    </items>
+</player>

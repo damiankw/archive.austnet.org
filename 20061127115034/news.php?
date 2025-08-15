@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  <title>AustNet.org :: News</title>
+  <script type="text/javascript"></script>
+  <style type="text/css" title="currentStyle" media="screen">
+    @import "austnet.css";
+  </style>
+</head>
+<body id="austnet">
+  <div id="container">
+    <div id="header">
+    </div>
+    <div id="content">
+      <div class="wrapper">
+<br />
+      <h3 id="ni2">New US Server, shadow.*</h3>
+      <p> April 06, 2006, 09:34:14 PM by <a href="mailto:trip@austnet.org">Trip</a> in .  </p>
+      <p><strong>Please welcome shadow.mi.us.austnet.org as a testlink Austnet Server.</strong></p>
+      <p> <a href="/news.php?action=fullnews&amp;id=2">Full Story</a> | 2167 views </p>
+      <hr />
+      <br />
+<br />
+      <h3 id="ni1">The new AustNet.org web site is here</h3>
+      <p> September 14, 2005, 10:22:16 PM by <a href="mailto:">Austnet</a> in .  </p>
+      <p><strong>AustNet has undergone some big changes recently and the web site is just one of many.</strong></p>
+      <p> <a href="/news.php?action=fullnews&amp;id=1">Full Story</a> | 5205 views </p>
+      <hr />
+      <br />
+      </div>
+    </div>
+    <div id="news">
+<a href="http://www.austnet.org/news.php?action=fullnews&id=2">New US Server, shadow.*</a>, by Trip posted on 06 April, 2006<br />
+<br /><a href="http://www.austnet.org/news.php?action=fullnews&id=1">The new AustNet.org web site is here</a>, by Austnet posted on 14 September, 2005<br />
+<br />    </div>
+    <div id="navMenu">
+      <div id="navMenu2">
+        <div id="lselect">
+          <ul>
+            <li><a href="index.php" title="Home" accesskey="a">Home</a></li>
+            <li><a href="about_us.php" title="About Us" accesskey="b">About Us</a></li>
+            <li><a href="contact_us.php" title="Contact Us" accesskey="c">Contact Us</a></li>
+            <li><a href="servers.php" title="Servers" accesskey="d">Servers</a></li>
+            <li><a href="austnet_board.php" title="Administration" accesskey="e">Administration</a></li>
+            <li><a href="routing.php" title="Routing" accesskey="f">Routing</a></li>
+            <li><a href="services.php" title="Services" accesskey="g">Services</a></li>
+            <li><a href="#" title="Support" accesskey="h">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <a href="index.php" title="Home">Home</a> &nbsp;&nbsp;
+    <a href="user_agreement.php" title="User Agreement">User Agreement</a> &nbsp;&nbsp;
+    <a href="privacy.php" title="Privacy">Privacy</a> &nbsp;&nbsp;
+    <a href="about_us.php" title="About Us">About Us</a> &nbsp;&nbsp;
+    <a href="contact_us.php" title="Contact Us">Contact Us</a> 
+  </div>
+  <div id="copyright">
+    <span>Copyright &copy; 2006 AustNet. All rights reserved.</span>
+  </div>  
+  <div id="fixDiv1"><span></span></div>
+  <div id="fixDiv2"><span></span></div>
+  <div id="fixDiv3"><span></span></div>
+</body>
+</html>

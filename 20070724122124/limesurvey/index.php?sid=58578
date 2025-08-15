@@ -1,0 +1,81 @@
+<?xml version="1.0"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<link type="text/css" rel="StyleSheet" href="http://www.austnet.org/limesurvey/scripts/slider/swing.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.austnet.org/limesurvey/scripts/calendar/calendar-blue.css" title="win2k-cold-1" /><script type="text/javascript" src="http://www.austnet.org/limesurvey/scripts/slider/range.js"></script>
+<script type="text/javascript" src="http://www.austnet.org/limesurvey/scripts/slider/timer.js"></script>
+<script type="text/javascript" src="http://www.austnet.org/limesurvey/scripts/slider/slider.js"></script>
+<script type="text/javascript" src="http://www.austnet.org/limesurvey/scripts/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://www.austnet.org/limesurvey/scripts/calendar/lang/calendar-en.js"></script>
+<script type="text/javascript" src="http://www.austnet.org/limesurvey/scripts/calendar/calendar-setup.js"></script>
+<title>AustNet User Survey :: </title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="LimeSurvey http://www.limesurvey.org" />
+<style type='text/css'>
+body { font-family: arial, verdana, sans-serif; font-size: 14px; line-height: 17px; background-color: #999999; }
+table { border: 0; }
+table.question { border: 1; border-color: #aaaaaa; }
+td { font-family: arial, verdana, sans-serif; font-size: 14px; line-height: 17px; }
+td.tenpoint { font-size: 12px; line-height: 15px; }
+img { border: 0; }
+.b3 { background-color: #333333; }
+.b9 { background-color: #999999; }
+.ba { background-color: #aaaaaa; }
+.bd { background-color: #dddddd; }
+.be { background-color: #eeeeee; }
+.bf { background-color: #ffffff; }
+.array1 { background-color: #eeeeee; }
+.array2 { background-color: #ffffff; }
+.errormandatory { font-size: 13px; font-weight: bold; color:#ff0000; }
+.warningjs { font-size: 13px; font-weight: bold; color:#ff0000; }
+.asterisk
+    {
+    color: #FF0000;
+    font-size: 9pt;
+    font-family: verdana;
+    }
+</style>
+<script type="text/javascript"><!-- 
+var DOM1;
+window.onload=function() {
+  DOM1 = (typeof document.getElementsByTagName!='undefined');
+  if (typeof checkconditions!='undefined') checkconditions();
+  if (typeof template_onload!='undefined') template_onload();
+}
+//--></script>
+</head>
+<body>
+
+<table width="80%" align='center' class='bf' cellpadding='0' cellspacing='0'>
+<tr>
+	<td rowspan='2'><table width='100%' cellspacing='10'>
+		<tr>
+			<td>
+<table width='100%' cellpadding='2'>
+</table>
+<br />
+<center>
+<font color='red'><strong></strong></font>
+<p><strong>You must be registered to complete this survey</strong></p>
+<p>You may register for this survey if you wish to take part.<br />
+Enter your details below, and an email containing the link to participate in this survey will be sent immediately.</p>
+<form method='post' action='register.php'>
+<table class='register'>
+<tr><td align='right'><input type='hidden' name='sid' value='58578' id='sid' />
+First Name:</td><td align='left'><input class='text' type='text' name='register_firstname' /></td></tr><tr><td align='right'>Last Name:</td>
+<td align='left'><input class='text' type='text' name='register_lastname' /></td></tr>
+<tr><td align='right'>Email Address:</td>
+<td align='left'><input class='text' type='text' name='register_email' /></td></tr>
+<tr><td align='right'>Security Question:</td><td><table><tr><td valign='center'><img src='verification.php'></td><td valign='center'><input type='text' size='5' maxlength='3' name='loadsecurity' value=''></td></tr></table></td></tr>
+<tr><td align='right'><input type='hidden' name='lang' value='en'></td><td></td></tr>
+<tr><td></td><td><input class='submit' type='submit' value='Continue'></td></tr>
+</form>
+</table>
+<br />
+</center>
+			</td>
+		</tr>
+	</table>
+	</td>
+	<td width='3' height='3' class='b9'></td>
+</tr>
+</table>

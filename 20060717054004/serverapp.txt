@@ -1,0 +1,87 @@
+##############################################################################
+# AustNet Server Application Form : Last Reviewed by Trip (trip@austnet.org) #
+##############################################################################
+##############################################################################
+# Please Read the AustNet Routing Policy and the AustNet Charter before 
+# filling out this Application Form.
+#
+# AustNet Routing Policy: http://www.austnet.org/routing_policies.php 
+# AustNet Charter : http://www.austnet.org/charter.php
+# 
+# Please send Completed Application to routing@austnet.org
+#
+##############################################################################
+# Caution!!!  Leaving questions blank will result in decline of your server
+#             application.
+#             
+#             Please Check with your NOC that you are allowed to run an IRC
+#             Server.                                          
+##############################################################################
+
+Section 1) 
+Administrator Details
+
+Admin's full name: 	
+Admin's e-mail: 	
+Admin's Phone number: 	
+Admin's nickname(s): 	
+How long have you been on IRC
+and how long on Austnet: 	
+What experience do you have as a Server Admin:
+Do you have root access:	Yes/No
+Do you have physical access:	Yes/No
+
+
+Section 2) 
+Machine owner details
+
+Machine owners full name: 	
+Machine owners e-mail: 	
+Machine owners phone number: 	
+
+
+Section 3) 
+Server information
+
+Server hostname (null if there isn't one): 	
+Server IP: 
+Server Physical Location: 	
+Servers intended name: 
+Server CPU Type: 	
+Server CPU speed: 	MHz
+Server RAM type: 	
+Amount of RAM: 	MB
+Server OS: 	
+Please provide the "uname -a" output of your server:
+Server connectivity: 	
+Can you server act as a hub: 	Yes/No
+Servers current uptime & loads: 	
+Servers average uptime & loads: 	
+Reason for last reboot: 	
+Ports dedicated to IRCd (min. 6667,8888): 	
+Current or intended user load: 	
+Current file descriptor limit per process: 	
+Which name resolver and version do you use?:
+Maximum local bandwidth (NIC speed, cable speed to switch/router): 	
+Please describe how the physical connection to the network (switched vlan, switched ethernet hub or other: 	
+URL to network map (if availble): 	
+Please provide the full dmesg output: 	
+Please provide output of "ps -fax": 	
+What kind of packet filtering do you have on this server?: 	
+
+Section 4) 
+Ping / Traceroute:
+
+Please attach your Ping / Traceroute to the following IPs:
+
+www.iinet.net.au (AU)
+www.netspace.net.au (AU)
+www.sharktech.net (US)
+www.pacific.net.sg (SG)
+www.starhub.net.sg (SG)
+
+Section 5) 
+More Questions
+
+Why do you want to link to AustNet?:
+How do you think this server will benefit AustNet?:

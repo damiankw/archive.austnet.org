@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <title>AustNet Turf Club</title>
+
+  <!--  -->
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  
+  <div class="container-fluid">
+    <div class="row turf-head">
+      <div class="col-md-12 turf-menu turf-head-1">
+        <div style="position: absolute; left: 0px; top: 0px; z-index: 100; user-select: none;"><img src="images/horse.png"></div>
+        <div style="padding-top: 20px;"><a href="index.php">Getting Started</a> | <a href="rules.php">Rules</a> | <a href="commands.php">Commands</a> | <a href="leaderboard.php">Leaderboard</a> | <a href="vacant.php">Vacant Listing</a> | <a href="staff.php">Staff</a></div>
+      </div>
+      <div class="col-md-12 turf-head-2">
+        
+      </div>
+      <div class="col-md-12 turf-head-3">
+        
+      </div>
+      <div class="col-md-12 turf-head-4">
+        <span class="title-big">IRC HORSE RACING</span><br />
+        <span class="title-small">2018-2023</span>
+      </div>
+      <div class="col-md-12 turf-head-5">
+        
+      </div>
+    </div>
+    <div class="row turf-body">      <div class="col-md-8 col-md-offset-2">
+        <h2>IRC Horse Racing</h2>
+        <p>IRC Horse Racing was created originally as a Flash movie, however due to the lack of user interaction, it was converted later down the track to a very sophisticated IRC scripted version. The script itself offers 200 horses in a local competition, #HorseRacing.</p>
+        <p>These horses compete around every 5 minutes in a race of unique distance and unique prize money. You have the ability to bet on these horses, and to assist your judgement you are given numerous statistics to help you. As you earn more and more money, you are given the option of purchasing a horse for a considerable amount. Your horse will then earn you money without the risk of betting, but it will also cost money for the upkeep of the horse. The object is obviously to have the most money in the game.</p>
+
+        <h2>New Players</h2>
+        <p>We'll give you $100,000 just for joining and registering! IRC cash of course.. only valid for our channel. If you lose all this money, you'll have to wait 15-30 minutes to be given more.</p>
+
+        <h2>Why Do People Play?</h2>
+        <p>Much like trivia, IRC Horse Racing allows you the option of a less stressful method of competing, however a heavy level of strategy is still involved. There is no point betting on the 'favourite' horse simply because he is 'favourite', if you've done your research you may find that a certain horse runs well over a certain distance and ran a strong second last time it raced, hence it would be a smarter bet. Ownership of your own horse is a feat that is not (usually) achieved in a day, so hence you will be proud to own a successful horse and will find the most rewarding victories are the ones over other horses, that are owned by other members of the channel. Group and Listed races are the prestigous races run weekly or fortnightly in IRC Horseracing and the excitement and thrill of winning one of these races is definitely an experience.</p>
+
+        <h2>Horse Ownership</h2>
+        <p>It's one thing to roll $100k on a horse and win back a substancial amount, however you can't be betting all the time. So how does one ensure full time profit? Horse ownership. Horses compete every 3 minutes in races with varying class and prizemoney standard races. Whether you're present or not, your horses will be striving to win you money, which you can withdraw when online again. However, horses are not cheap and range from $750,000 to millions. Horses are also sold privately, which can often be the best method of purchasing a horse. However, horses cost to race also, the amount is dependant on the jockey, so make sure you've been playing for a while and have a healthy bank account to cater for your stable.</p>
+        <p>If you are looking to purchase a vacant horse, check out the <a href="vacant.php">Vacant List</a></p>
+
+        <h2>Taxation</h2>
+        <p>To keep people on their toes, taxation occurs every so often. The reasons are usually just jokingly and stupid, but a player can be fined a random amount between 1% - 15% of their total cash. However, if you have less than $200,000 or are logged out, you will not be taxed.</p>
+
+        <h2>Bookies</h2>
+        <p>Bookies were developed later in the game, setting themselves up in #Bookie allowed rich users to attempt to prove their high success rate by offering improved odds on horses in a race. For example if Pure Diva was 2/1 on the bot, but thriller was offering 5/1 in #Bookie, then it would be more productive to bet with a bookie. You pay him the cash up front using !givecash and if it wins he owes you 5 times that amount, because they were the odds he was offering. A dangerous business, but a real money maker for both Bookie and Better. An authorised bookie is governed by the game, in other words if he or she refuses to pay, the Admins will force payment to the user and deduct the bookie. Unauthorised bookies can act under false pretences, and users should only bet with the Bookie if they trust him or her. If you win with an unauthorised bookie and he or she refuses to pay, too bad!</p>
+
+        <h2>Statistics That Effect The Game</h2>
+        <p>
+          <strong>Overall Career Record</strong> - If the horse has a very successful career, it will benefit it in an individual manner.<br>
+          <strong>Recent Form Record</strong> - If the horse has recently run in the a good race, this can be anywhere between 1st to 5th, then it will effect its next performance.<br>
+          <strong>Breeding</strong> - The quality of the horses that produced the runner.<br>
+          <strong>Distance</strong> - Horses who prefer long distance races (stayers) will often over come the sprinters in a race over 2000m, however that said a class performer will usually out do a distance-suited horse.<br>
+          <strong>Age</strong> - The age of the horse. Can work in both directions however, some get better with maturity, others are better younger.<br>
+          <strong>Type</strong> - As mentioned the type of the horse, such as Sprinter (sp), Pacer (pc), Stayer (st), Front-runner (fr) will effect their chances of the race.<br>
+          <strong>Fatigue</strong> - How fresh is the horse, or is he tired and worn out. See Statistic Explanations below for more detail.<br>
+          <strong>Prizemoney</strong> - If a horse has won a lot of high quality races (such as any race over $10,000) then they will often have a much more successful run.<br>
+          <strong>Jockey</strong> - What sort of jockey is riding your horse? There's three to choose from and each has their positive and negative points. Description of jockeys is in the Commands section and below.<br>
+          <strong>Barrier</strong> - What barrier did the horse draw? The barrier is the number before the horses name, and determines whether he has an inside run or an outside run. Barriers 1 - 5 are best, 6 - 10 are okay, and 10 - 16 are worst.<br>
+          <strong>Track</strong> - Track conditions play an important part in IRCHr, as a wet runner will always run a strong race on a heavy day. Most horses love the fast and good tracks, but if it starts to pour the results could be a little bit more interesting!<br>
+          <strong>Weight</strong> - As horses continue to win races, they are given a racing handicap which is more weight. For example 52kg is the default weight, but a very successful horse could carry 59kg or over! This gives the horse a disadvantage, and a better chance for the lighter weights.<br>
+          <strong>Luck</strong> - If a horse has a low luck factor (decided for each race) then no matter how skilled they are or deserving of winning this will effect their chance of winning.<br>
+          <strong>Other Horses</strong> - Obviously class horses will always prevail, so if the favourite who has an excellent record and won last start and is suited to the distance is up against a horse with a "pretty good" chance, the result will usually be obvious.<br>
+        </p>
+
+        <h2>Statistic Explanations</h2>
+        <p>
+          <strong>Type</strong> - what type of horse is it? If it's a sprinter, it prefers shorter distances (less than 1600m) - if it's a Stayer, it likes longer distances (over 1800m) - A pacer can usually run all kinds, and a Front-runner usually doesn't suit any. This appears next to the horses name in an abbreviated form - Sprinter (sp), Stayer (st), Pacer (pc), Front Runner (fc).<br>
+          <strong>Record</strong> - Starts equal how many races the horse has had. <br>
+          - <i>Example:</i> 18 starts. 1 - 1 - 3 -- This means the horse has had 18 races for 1 win (first number) 1 second (second number) and 3 thirds (third number)<br>
+          <strong>Form</strong> - 1 represents a win in a race, a 4 represents a 4th in a race and a 0 represents 10th or worst. When you see a string of numbers such as 2893901, these are the race results from this horse.<br>
+          <strong>Fatigue</strong> - Fatigue is an important factor. As horses race a lot, they lose their freshness and hence don't run as well as they could. By spelling your horse (setting STATUS to NO), you can increase their freshness. For every 15 minutes that a horse is spelled, you regain 1% of freshness. Freshness also decreases based on the track, a HEAVY track is a lot more damaging than a FAST track to the freshness of a horse. If a horse reaches below 0% in freshness, they will be injured. Horses can still win with low freshness if their luck is high, but more often than not they'll fail miserabley.<br>
+          <strong>Prize Money</strong> - The total amount of money the horse has won from racing, whether it be finishing first, second or third.<br>
+          <strong>Barrier</strong> - What barrier did the horse draw? The barrier is the number before the horses name, and determines whether he has an inside run or an outside run. Barriers 1 - 5 are best, 6 - 10 are okay, and 10 - 16 are worst.<br>
+          <strong>Track</strong> - Is the track dry and fast or is bogged down from rain and therefore a heavy track, horses are suited to different types of conditions and hence will run better according to the conditions on the day.<br>
+          <strong>Purchase Price</strong> - How much the horse costs to buy, and for you to become owner.
+        </p>
+
+        <h2>Meet The Jockeys!</h2>
+        <p>
+          <strong>Johnny Default</strong> - He doesn't charge much, but he always tries his hardest. He continually rides winners on a consistent basis, however usually doesn't win several in a row. Johnny Default is your day-to-day slogger, taking whatever rides he can, and riding his best to pay the bills. A horse in good form only needs a rider to get him over the line, and Johnny is more than capable of doing that.<br>
+          <strong>Michael Hall</strong> - Michael is the leading jockey in IRC Horse Racing. For the past three seasons he has won the jockey premiership, riding several winners in big races. Michael Hall can ride the worst horses to victory over the best when he's in his groove, and that's also why his price isn't cheap, but like buying meat from the butcher, you soon understand why you paid the extra.<br>
+          <strong>Kristen O'Hara</strong> - Kristen O'Hara is still learning the ropes as an apprentice. She's been known to ride very well on her day, but sometimes make some strange decisions which can lead to 'good things being beaten'. Kristen is an up and comer with big races, but she has been known to struggle at times when the pressure is on. However Kristen as an apprenticeship, has one very positive point about her - she has a weight reduction claim. As an apprentice on your horse, she will remove 2.0 kg off the horses handicap weight, making her a very attractive proposition.<br>
+          <strong>Robby Ryder</strong> - A former sheriff, this cowboy type individual has been known to take risks and pull off maneuvers that just didn't seem possible on a horse. Wild and out of control sometimes with his riding, can sometimes see Robby ruin chances for horses, but with riding ability matched only by Michael Hall, Robby Ryder is a very experienced and successful rider. Luck is usually not an issue with Robby, as he'll find a way around any sticky situation.<br>
+          <strong>Lou Tan</strong> - Japanese Apprentice of the year, Lou Tan offers a 3.0kg claim to your horses weight. With excellent riding ability, Lou Tan is capable of matching it with the big boys, however his inexperience can sometimes be costly. Brilliant on his day, and always improving.<br>
+          <strong>Alana Simpson</strong> - A very attractive and talanted female jockey. After a succesful international career as a qualified jockey, Alana has ventured over to IRC Horseracing AustIRC in an attempt to steal the racing title from Michael Hall. With silky riding skills, Alana is a treat to watch, but sometimes struggles to be aggressive in her racing.
+        </p>
+      </div>
+    </div>
+    <div class="row text-right turf-pi" id="pi-classic">
+      <small>&pi;</small>
+    </div>
+    <div class="row turf-foot text-center">
+      &copy; 2017-2023 <a href="https://www.austnet.org/">AustNet</a> | <a href="irc://irc.austnet.org/horseracing/">IRC Horse Racing</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.js"></script>
+  <script src="js/classic.js"></script>
+
+  <script>
+  </script>
+
+</body>
+
+</html>

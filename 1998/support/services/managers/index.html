@@ -1,0 +1,273 @@
+<HTML>
+<HEAD>
+  <TITLE>AustNet Support - Channel Manager's FAQ</TITLE>
+</HEAD>
+<BODY BGCOLOR=#000000 LINK=#FF0000 VLINK=#FF0000 TOPMARGIN=10 LEFTMARGIN=0 STYLE="background: #000000">
+<CENTER>
+
+<TABLE BGCOLOR="#FFFFFF" WIDTH=580 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+
+	<TR BGCOLOR="#CCCCCC">	
+	<TD WIDTH=20 HEIGHT=18><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">&nbsp;</FONT></TD>
+	<TD COLSPAN=2 WIDTH=520><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">
+        <A HREF="../../index.html">AustNet Support</A> | 
+        <A HREF="../index.html">FAQ Catalogue</A> | 
+        NoteOP Frequently Asked Questions </FONT></TD>
+	<TD WIDTH=40><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">&nbsp;</FONT></TD>
+	</TR>
+
+	<TR BGCOLOR="#FFFFFF">
+        <TD WIDTH=20 BGCOLOR="#FFFFFF">&nbsp;</TD>
+	<TD COLSPAN=2 WIDTH=520 HEIGHT=150 BGCOLOR="#FFFFFF">
+<MAP NAME="faqs">
+<AREA SHAPE=RECT COORDS="2,24,80,53" HREF="../chanop/index.html" ALT="chanop faq">
+<AREA SHAPE=RECT COORDS="90,24,173,52" HREF="../nickop/index.html" ALT="nickop faq">
+<AREA SHAPE=RECT COORDS="184,22,250,55" HREF="../noteop/index.html" ALT="noteop faq">
+<AREA SHAPE=RECT COORDS="264,24,354,52" HREF="../managers/index.html" ALT="channel managers faq">
+<AREA SHAPE=RECT COORDS="366,23,458,52" HREF="../asd/index.html" ALT="austnet services department">
+</MAP>
+<center><img src="services.jpg" usemap="#faqs" ismap border="0"></center>
+	<TD WIDTH=40>&nbsp;</TD>
+	</TR>
+
+	<TR BGCOLOR="#FFFFFF">
+	<TD WIDTH=20>&nbsp;</TD>
+        <TD WIDTH=60 VALIGN=TOP ALIGN=RIGHT>&nbsp;</TD>
+        <TD WIDTH=460 VALIGN=TOP>
+<font FACE="Arial, Helvetica" font=arial size=2>
+
+<center>
+<b>AustNet Services Frequently Asked Questions</b><br>
+<i>Channel Manager Node -- Document Revision 0.90 (30 Oct 97)</i><br><br>
+
+</font><font size=2>
+This FAQ addresses the questions of AustNet channel managers.  Simply select the relevant topic from the table of
+contents below.<br><br>
+
+</center><FONT SIZE=2><font FACE="Arial, Helvetica" font=arial>
+
+<b>Network and Channel Policies</b><hr>
+<MENU>
+1.1 <A HREF="#1.1">What AustNet policies do I need to be aware of?</A><BR>
+1.2 <A HREF="#1.2">What channel policies can I make?</A><BR>
+</MENU>
+<br>
+<b>Channel Settings and Bot Control</b><hr>
+<MENU>
+2.1 <A HREF="#2.1">How do I alter channel settings?</A><BR>
+2.2 <A HREF="#2.2">How do I drop a channel?</A><BR>
+2.3 <A HREF="#2.3">How do I make the bot join and part?</A><BR>
+2.4 <A HREF="#2.4">How do I make the bot speak?</A><BR>
+</MENU>
+<br>
+<b>Channel Recovery</b><hr>
+<MENU>
+3.1 <A HREF="#3.1">How do I clear the modes set in my channel?</A><BR>
+3.2 <A HREF="#3.2">How do I deop all the ops in my channel?</A><BR>
+3.3 <A HREF="#3.3">How do I clear all the bans set in my channel?</A><BR>
+</MENU>
+<br>
+<b>User Management</b><hr>
+<MENU>
+4.1 <A HREF="#4.1">How do I add users to my channel?</A><BR>
+4.2 <A HREF="#4.2">How do I change a user's settings?</A><BR>
+4.3 <A HREF="#4.3">How do I delete users?</A><BR>
+</MENU>
+<br>
+
+<P><B>Network and Channel Policies</b><hr></FONT>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.1"><B>1.1 What AustNet policies do I need to be aware of?</a></b></font></td></tr>
+</table>
+
+<ul>
+<UL>
+	<LI>No clones
+	<LI>No Abusive behaviour
+	<LI>No Flooding
+	<LI><STRONG>No Mass messaging/advertising/inviting</STRONG>
+</UL>
+If you or any member of your channel is found to be doing any of these things you face suspension of your 
+channel and possible ejection from AustNet completely. It is tempting for new managers to mass advertise
+their channels but such behaviour is greatly annoying to users and is not permitted.
+<br>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.2"><B>1.2 What channel policies can I make?</a></b></font></td></tr>
+</table>
+
+<ul>
+Your channel is free to make and enforce any rules it chooses, provided that its activities
+do not conflict with the <A href="#1.1">AustNet policies</A>. Channel operators aren't 
+required to have any reason for banning users, and server admins will not interfere with 
+the normal business of your channel.
+</ul>
+
+<font FACE="Arial, Helvetica" font=arial><P><B>Channel Settings and Bot Control</b><hr></FONT>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.1"><B>2.1 How do I alter channel settings?</a></b></font></td></tr>
+</table>
+
+<ul>
+Use the command <KBD>/msg ChanOP set <var>#channel setting value</var></KBD>, where <VAR>setting</VAR> is one of:
+<UL>
+	<LI><KBD>restrict <VAR>level</VAR></KBD> require certain access to join channel 
+	<LI><KBD>keeptopic <VAR>level</VAR></KBD> set the level of users who may change the topic
+	<LI><KBD>url <VAR>URL</VAR></KBD> display a URL or short message to people who join 
+	<LI><KBD>mode <VAR>level modes</VAR></KBD> set and lock modes on the channel
+	<LI><KBD>oprestrict <VAR>on|off</VAR></KBD>  only channel members may hold ops
+	<LI><KBD>mustid  <VAR>on|off</VAR></KBD> users must identify for ops/protection
+	<LI><KBD>telldel <VAR>on|off</VAR></KBD> owner gets note when someone uses deluser 
+	<LI><KBD>nonote <VAR>on|off</VAR></KBD> only the manager may send notes to the channel
+</UL>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.2"><B>2.2 How do I drop a channel?</a></b></font></td></tr>
+</table>
+
+<ul>
+The command <KBD>/msg ChanOP drop <VAR>#channel</VAR></KBD> will cause ChanOP to deregister the channel. If you wish to transfer ownership
+to another person you should instead see an ASD admin who can transfer the channel without deleting its database.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.3"><B>2.3 How do I make the bot join and part?</a></b></font></td></tr>
+</table>
+
+<ul>
+<KBD>/msg ChanOP join <VAR>#channel</VAR></KBD> and <KBD>/msg ChanOP part <VAR>#channel</VAR></KBD> make ChanOP join and part. All commands work as normal
+even if ChanOP is not on channel, but you cannot use <KBD>`command</KBD>-style in-channel instructions. Do not abuse these
+commands.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.4"><B>2.4 How do I make the bot speak?</a></b></font></td></tr>
+</table>
+
+<ul>
+The commands <KBD>/msg ChanOP speak <VAR>#channel</VAR></KBD> and <KBD>/msg ChanOP act <VAR>#channel</VAR></KBD> have been disabled due to user abuse. There
+are no plans for them to be re-enabled. 
+</ul>
+
+
+<font FACE="Arial, Helvetica" font=arial><P><B>Channel Recovery</b><hr></FONT>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="3.1"><B>3.1 How do I clear the modes set in my channel?</a></b></font></td></tr>
+</table>
+
+<ul>
+If you find yourself locked out of your own channel use <KBD>/msg ChanOP clean <VAR>#channel</VAR></KBD> to
+clear modes s, t, i, n, k, p, l and m. For modes <A href="#3.2">o</A> and <A href="#3.3">b</A> see below.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="3.2"><B>3.2 How do I deop all the ops in my channel?</a></b></font></td></tr>
+</table>
+
+<ul>
+The command <KBD>/msg ChanOP mdeop <VAR>#channel</VAR></KBD> will deop all the ops lower than your level. Do
+not abuse this command.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="3.3"><B>3.3 How do I clear all the bans set in my channel?</a></b></font></td></tr>
+</table>
+
+<ul>
+The instruction <KBD>/msg ChanOP unban <VAR>#channel</VAR> all</KBD> will clear all bans set lower than your level. 
+</ul>
+
+<font FACE="Arial, Helvetica" font=arial><P><B>User Management</b><hr></FONT>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="4.1"><B>4.1 How do I add users to my channel?</a></b></font></td></tr>
+
+</table>
+
+<ul>
+Use the command <KBD>/msg ChanOP adduser <VAR>#channel nick level</VAR></KBD> to add the user and set auto-op on. If you
+do not specify a level the user is added at level 100. The level at which you set a user determines what commands he may 
+use; to see a list of commands and their levels use <KBD>/msg ChanOP commands <VAR>#channel</VAR></KBD>. Users of levels above 150
+can add users themselves so issue this authority with care. <KBD>/msg ChanOP help levels</KBD> also provides a useful reference for access levels.
+
+<P>All users must be registered with NickOP before they can be added to channel databases.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="4.2"><B>4.2 How do I change a user's settings?</a></b></font></td></tr>
+</table>
+
+<ul>
+The command <KBD>/msg ChanOP setuser <VAR>#channel nick setting value</VAR></KBD> alters user settings, where <VAR>setting</VAR> is one of:
+<UL>
+	<LI><KBD>level <VAR>newlevel</VAR></KBD> modify user's access level 
+	<LI><KBD>aop <VAR>on|off</VAR></KBD> set user +o on join
+	<LI><KBD>aov <VAR>on|off</VAR></KBD> set user +v on join (only if AOP is not set)
+	<LI><KBD>protect <VAR>on|off</VAR></KBD> protect the user from kicks and deops 
+	<LI><KBD>suspend <VAR>off|time in minutes</VAR></KBD> will suspend a user's access for the specified time period
+</UL>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="4.3"><B>4.3 How do I delete users?</a></b></font></td></tr>
+</table>
+
+<ul>
+Use the command <KBD>/msg ChanOP deluser <VAR>#channel nick</VAR></KBD> to delete users.
+</ul>
+
+<P><BR><BR><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">
+<P><BR><BR><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">back to <A HREF="../index.html">FAQ Catalogue</A> | <A HREF="../../index.html">AustNet Support</A><BR>back to the <A HREF="../../../index.html">AustNet Home Page</A>
+<P>
+<P>this page last updated 30 October 1997<BR>&copy; 1997 AustNet IRC Network. All rights reserved. <br>comments to the austnet services department: <A HREF="mailto:services@austnet.org">services@austnet.org</A><br>FAQ written by <a href="mailto:marauder@viper.net.au">marauder@viper.net.au</a><BR>&nbsp;</FONT>
+
+
+
+<TD>&nbsp;
+
+</TABLE>
+</CENTER>
+<P><BR>&nbsp;
+</BODY>
+</HTML>

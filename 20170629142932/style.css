@@ -1,0 +1,699 @@
+/* CSS Document */
+
+body{background:#fff; color:#0F0F0F; font:15px/20px Arial, Helvetica, sans-serif; margin:32px 0 0; padding:0;}
+div, ul, h1, h2, h3, li, p, img{margin:0; padding:0;}
+ul{list-style-type:none;}
+
+/* TOP PANEL*/
+#topPanel{width:762px; height:373px; position:relative; margin:0 auto; padding:0;}
+#topPanel img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+
+/* MENU PANEL*/
+#topPanel ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* HEADER PANEL*/
+#topPanel #headerPanelfirst{width:246px; height:263px; position:absolute; top:0; left:0; margin:110px 0 0; padding:0px; background:url(images/orange-normal.jpg) no-repeat 0 0 #FC5F00; color:#fff;}
+#topPanel #headerPanelfirst a{width:246px; height:263px; display:block; text-decoration:none; }
+#topPanel #headerPanelfirst a:hover{width:246px; height:263px; background:url(images/orange-hover.jpg) no-repeat 0 0 #FC5F00; color:#fff; text-decoration:none;}
+#topPanel #headerPanelfirst h2{display:block; width:90px; height:47px; margin:54px 0 0 120px; font:28px/28px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold; text-transform:uppercase; position:absolute; top:0px; left:0px; z-index:1;}
+#topPanel #headerPanelfirst p{width:163px; display:block; font:12px/18px Arial, Helvetica, sans-serif; font-weight:bold;  position:absolute; top:0px; left:0px; z-index:1; padding:0; margin:105px 50px 0 38px;}
+
+#topPanel #headerPanelsecond{width:246px; height:263px; position:absolute; top:0; left:258px; margin:110px 0 0; padding:0px; background:url(images/green-normal.jpg) no-repeat 0 0 #FC5F00; color:#fff;}
+#topPanel #headerPanelsecond a{width:246px; height:263px; display:block; text-decoration:none; }
+#topPanel #headerPanelsecond a:hover{width:246px; height:263px; background:url(images/green-hover.jpg) no-repeat 0 0 #FC5F00; color:#fff; text-decoration:none;}
+#topPanel #headerPanelsecond h2{display:block; width:90px; height:47px; background:none; margin:54px 0 0 103px; font:28px/28px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold; text-transform:uppercase; padding:0; position:absolute; z-index:1;}
+#topPanel #headerPanelsecond p{width:163px; display:block; font:12px/18px Arial, Helvetica, sans-serif; font-weight:bold;  position:absolute; top:0px; left:0px; z-index:1; padding:0; margin:105px 50px 0 38px;}
+
+#topPanel #headerPanelthird{width:246px; height:263px; position:absolute; top:0; right:0; margin:110px 0 0; padding:0px; background:url(images/blue-normal.jpg) no-repeat 0 0 #FC5F00; color:#fff;}
+#topPanel #headerPanelthird a{width:246px; height:263px; display:block; text-decoration:none; }
+#topPanel #headerPanelthird a:hover{width:246px; height:263px; background:url(images/blue-hover.jpg) no-repeat 0 0 #FC5F00; color:#fff; text-decoration:none;}
+#topPanel #headerPanelthird h2{display:block; width:90px; height:47px; background:none; margin:54px 0 0 93px; font:28px/28px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold; text-transform:uppercase; padding:0; position:absolute; z-index:1;}
+#topPanel #headerPanelthird p{width:163px; display:block; font:12px/18px Arial, Helvetica, sans-serif; font-weight:bold;  position:absolute; top:0px; left:0px; z-index:1; padding:0; margin:105px 50px 0 38px;}
+
+/* TOP PANEL*/
+
+/* TOP PANEL about_us.html*/
+#topPanel_about_us{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_about_us img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_about_us ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_about_us ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_about_us ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_about_us ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_about_us ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL servers.html*/
+#topPanel_servers{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_servers img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_servers ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_servers ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_servers ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_servers ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_servers ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL staff.html*/
+#topPanel_staff{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_staff img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_staff ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_staff ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_staff ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_staff ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_staff ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL contact_us.php*/
+#topPanel_contact_us{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_contact_us img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_contact_us ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_contact_us ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_contact_us ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_contact_us ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_contact_us ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL signup.php*/
+#topPanel_signup{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_signup img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_signup ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_signup ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_signups ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_signup ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_signup ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL clients.html*/
+#topPanel_clients{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_clients img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_clients ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_clients ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_clients ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_clients ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_clients ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL uap.html*/
+#topPanel_uap{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_uap img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_uap ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_uap ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_uap ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_uap ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_uap ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL chat.html*/
+#topPanel_chat{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_chat img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_chat ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_chat ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_chat ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_chat ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_chat ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL services.html*/
+#topPanel_services{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_services img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_services ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_services ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_services ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_services ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_services ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL policy.html*/
+#topPanel_policy{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_policy img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_policy ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_policy ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_policy ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_policy ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_policy ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL privacy.html*/
+#topPanel_privacy{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_privacy img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_privacy ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_privacy ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_privacy ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_privacy ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_privacy ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL aup.html*/
+#topPanel_aup{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_aup img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_aup ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_aup ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_aup ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_aup ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_aup ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL ircop.html*/
+#topPanel_ircop{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_ircop img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_ircop ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_ircop ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_ircop ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_ircop ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_ircop ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL server_admin.html*/
+#topPanel_server_admin{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_server_admin img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_server_admin ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_server_admin ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_server_admin ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_server_admin ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_server_admin ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL voting.html*/
+#topPanel_voting{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_voting img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_voting ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_voting ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_voting ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_voting ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_voting ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL services_ops.html*/
+#topPanel_services_ops{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_services_ops img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_services_ops ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_services_ops ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_services_ops ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_services_ops ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_services_ops ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL routing.html*/
+#topPanel_routing{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_routing img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_routing ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_routing ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_routing ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_routing ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_routing ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL departmental.html*/
+#topPanel_departmental{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_departmental img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_departmental ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_departmental ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_departmental ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_departmental ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_departmental ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL vhosts.html*/
+#topPanel_vhosts{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_vhosts img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_vhosts ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_vhosts ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_vhosts ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_vhosts ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_vhosts ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL resources.html*/
+#topPanel_resources{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_resources img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_resources ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_resources ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_resources ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_resources ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_resources ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL voting_booth.html*/
+#topPanel_voting_booth{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_voting_booth img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_voting_booth ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_voting_booth ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_voting_booth ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_voting_booth ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_voting_booth ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL ipv6.html*/
+#topPanel_ipv6{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_ipv6 img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_ipv6 ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_ipv6 ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_ipv6 ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_ipv6 ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_ipv6 ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL modes.html*/
+#topPanel_modes{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_modes img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_modes ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_modes ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_modes ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_modes ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_modes ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL weather_*_*.html*/
+#topPanel_weather{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_weather img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_weather ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_weather ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_weather ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_weather ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_weather ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL comments.php*/
+#topPanel_comments{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_comments img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_comments ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_comments ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_comments ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_comments ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_comments ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL comment-form.php*/
+#topPanel_comment-form{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_comment-form img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_comment-form ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_comment-form ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_comment-form ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_comment-form ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_comment-form ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL staff_portal.html*/
+#topPanel_staff_portal{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_staff_portal img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_staff_portal ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_staff_portal ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_staff_portal ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_staff_portal ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_staff_portal ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL op_request.php*/
+#topPanel_op_request{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_op_request img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_op_request ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_op_request ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_op_request ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_op_request ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_op_request ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL asd_app.php*/
+#topPanel_asd_app{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_asd_app img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_asd_app ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_asd_app ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_asd_app ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_asd_app ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_asd_app ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL eaup.html*/
+#topPanel_eaup{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_eaup img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_eaup ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_eaup ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_eaup ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_eaup ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_eaup ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL user_modes.html*/
+#topPanel_user_modes{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_user_modes img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_user_modes ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_user_modes ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_user_modes ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_user_modes ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_user_modes ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL channel_modes.html*/
+#topPanel_channel_modes{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_channel_modes img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_channel_modes ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_channel_modes ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_channel_modes ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_channel_modes ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_channel_modes ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL service_status.html*/
+#topPanel_service_status{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_service_status img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_service_status ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_service_status ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_service_status ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_service_status ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_service_status ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL melbourne.html*/
+#topPanel_melb_ch{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_melb_ch img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_melb_ch ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_melb_ch ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_melb_ch ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_melb_ch ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(/images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_melb_ch ul li.active{width:74px; display:block; height:36px; background:url(/images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL contact_us_ty.html*/
+#topPanel_contact_us_ty{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_contact_us_ty img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_contact_us_ty ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_contact_us_ty ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_contact_us_ty ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_contact_us_ty ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_contact_us_ty ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL irc_stats.html*/
+#topPanel_irc_stats{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_irc_stats img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_irc_stats ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_irc_stats ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_irc_stats ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_irc_stats ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_irc_stats ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL mail_server_settings.html*/
+#topPanel_mail_server_settings{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_mail_server_settings img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_mail_server_settings ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_mail_server_settings ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_mail_server_settings ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_mail_server_settings ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_mail_server_settings ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* TOP PANEL donate.html*/
+#topPanel_donate{width:762px; height:104px; position:relative; margin:0 auto; padding:0;}
+#topPanel_donate img{width:230px; height:80px; z-index:1; padding:0; position:absolute; margin:0 0 0 21px;}
+#topPanel_donate ul{display:block; width:732px; height:36px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:1px solid #AEAEAE;}
+#topPanel_donate ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;}
+#topPanel_donate ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;}
+#topPanel_donate ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;}
+#topPanel_donate ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;}
+
+/* BODY PANEL*/
+#bodyPanel{width:712px; height:322px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel h2{background:#fff; display:block; width:250px; height:35px; margin:0; padding:4px 0 0 0px;}
+/* #bodyPanel p{background:url(images/question-mark.png) 0 0 no-repeat #fff; margin:0 0 0 54px; padding:0 42px 60px 150px;} */
+
+/* #bodyPanel p span{font-weight:bold;}
+#bodyPanel p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel p.capstext{font:18px/24px Georgia, "Times New Roman", Times, serif; font-style:italic; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel p.capstext{background: url(images/test2.gif) bottom right no-repeat #fff; font:18px/24px Georgia, "Times New Roman", Times, serif; font-style:italic; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel p.more{height:26px; padding:0; background:none; margin:0;}
+#bodyPanel p.more a{width:76px; height:26px; display:block; margin:314px 20px 19px 618px; background:url(images/more.gif) 0 0 no-repeat #fff; color:#555; text-decoration:none; font:15px/26px "Trebuchet MS",Arial, Helvetica, sans-serif; padding:0 0 0 10px; text-transform:uppercase; position:absolute; top:0px; right:0px;}
+#bodyPanel p.more a:hover{background:url(images/more.gif) 0 0 no-repeat #fff; color:#216EBD; text-decoration:none;} 
+#bodyPanel h3{background:#fff; display:block; width:250px; height:34px; margin:34px 0 12px 0; font:30px/30px Georgia, "Times New Roman", Times, serif; font-weight:normal; padding:0 0 0 20px; color:#FF7113;}
+#bodyPanel #testimonial{width:283px; height:162px; display:block; background:url(images/testimonial-bg.gif) 0 0 no-repeat #FFF6DB; padding:32px 33px 0 148px; margin:0 0 0 20px; color:#786321;}
+#bodyPanel #testimonial p{background:none; margin:0; padding:0 0 5px 0;}
+#bodyPanel #testimonial p span{color:#786321 !Important; background:#FFFAED !Important;}
+#bodyPanel p.moretwo{height:26px; padding:0; background:none; margin:0;}
+#bodyPanel p.moretwo a{width:76px; height:26px; display:block; margin:0px 0px 0px 196px; background:url(images/more2.gif) 0 0 no-repeat #FFF5D6; color:#555; text-decoration:none; font:15px/26px "Trebuchet MS",Arial, Helvetica, sans-serif; text-transform:uppercase; padding:0 0 0 10px; top:0px; right:0px;}
+#bodyPanel p.moretwo a:hover{background:url(images/more2.gif) 0 0 no-repeat #FFF5D6; color:#216EBD; text-decoration:none;}
+#bodyPanel h4{ background:#fff; width:250px; height:30px; position:absolute; top:361px; right:5px; margin:0; font:30px/30px Georgia, "Times New Roman", Times, serif; font-weight:normal; padding:0px; color:#FF7113;}
+#bodyPanel ul{width:225px; display:block; position:absolute; right:30px; top:405px; }
+#bodyPanel ul li{font:12px/25px Arial, Helvetica, sans-serif; font-weight:normal; background:url(images/symbol2.gif) 0 8px no-repeat; padding:0 0 0 30px;} */
+
+
+/* BODY PANEL 2*/
+#bodyPanel_2{width:712px; height:242px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_2 h2{background:#fff; display:block; width:250px; height:35px; margin:0; padding:4px 0 0 0px;}
+/* #bodyPanel_2 p{background:#fff; margin:0 0 0 54px; padding:0 42px 60px 150px; color:#0F0F0F;} */
+
+/* BODY PANEL 3*/
+#bodyPanel_3{width:712px; height:182px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_3 h2{background:#fff; display:block; width:250px; height:35px; margin:0; padding:4px 0 0 0px;}
+/* #bodyPanel_2 p{background:#fff; margin:0 0 0 54px; padding:0 42px 60px 150px; color:#0F0F0F;} */
+
+
+/* BODY PANEL about_us.html*/
+#bodyPanel_about_us{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_about_us p span{font-weight:bold;}
+#bodyPanel_about_us p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_about_us p.capstext_about_us{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL servers.html*/
+#bodyPanel_servers{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_servers p span{font-weight:bold;}
+#bodyPanel_servers p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_servers p.capstext_servers{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL staff.html*/
+#bodyPanel_staff{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_staff p span{font-weight:bold;}
+#bodyPanel_staff p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_staff p.capstext_staff{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL contact_us.php*/
+#bodyPanel_contact_us{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_contact_us p span{font-weight:bold;}
+#bodyPanel_contact_us p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_contact_us p.capstext_contact_us{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL signup.php*/
+#bodyPanel_signup{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_signup p span{font-weight:bold;}
+#bodyPanel_signup p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_signup p.capstext_signup{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL clients.html*/
+#bodyPanel_clients{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_clients p span{font-weight:bold;}
+#bodyPanel_clients p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_clients p.capstext_clients{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL uap.html*/
+#bodyPanel_uap{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_uap p span{font-weight:bold;}
+#bodyPanel_uap p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_uap p.capstext_uap{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL chat.html*/
+#bodyPanel_chat{width:820px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_chat p span{font-weight:bold;}
+#bodyPanel_chat p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_chat p.capstext_chat{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL services.html*/
+#bodyPanel_services{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_services p span{font-weight:bold;}
+#bodyPanel_services p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_services p.capstext_services{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL policy.html*/
+#bodyPanel_policy{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_policy p span{font-weight:bold;}
+#bodyPanel_policy p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_policy p.capstext_policy{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL privacy.html*/
+#bodyPanel_privacy{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_privacy p span{font-weight:bold;}
+#bodyPanel_privacy p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_privacy p.capstext_privacy{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL aup.html*/
+#bodyPanel_aup{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_aup p span{font-weight:bold;}
+#bodyPanel_aup p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_aup p.capstext_aup{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL ircop.html*/
+#bodyPanel_ircop{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_ircop p span{font-weight:bold;}
+#bodyPanel_ircop p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_ircop p.capstext_ircop{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL server_admin.html*/
+#bodyPanel_server_admin{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_server_admin p span{font-weight:bold;}
+#bodyPanel_server_admin p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_server_admin p.capstext_server_admin{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL voting.html*/
+#bodyPanel_voting{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_voting p span{font-weight:bold;}
+#bodyPanel_voting p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_voting p.capstext_voting{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL services_ops.html*/
+#bodyPanel_services_ops{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_services_ops p span{font-weight:bold;}
+#bodyPanel_services_ops p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_services_ops p.capstext_services_ops{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL routing.html*/
+#bodyPanel_routing{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_routing p span{font-weight:bold;}
+#bodyPanel_routing p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_routing p.capstext_routing{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL departmental.html*/
+#bodyPanel_departmental{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_departmental p span{font-weight:bold;}
+#bodyPanel_departmental p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_departmental p.capstext_departmental{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL vhosts.html*/
+#bodyPanel_vhosts{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_vhosts p span{font-weight:bold;}
+#bodyPanel_vhosts p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_vhosts p.capstext_vhosts{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL resources.html*/
+#bodyPanel_resources{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_resources p span{font-weight:bold;}
+#bodyPanel_resources p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_resources p.capstext_resources{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL voting_booth.html*/
+#bodyPanel_voting_booth{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_voting_booth p span{font-weight:bold;}
+#bodyPanel_voting_booth p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_voting_booth p.capstext_voting_booth{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL ipv6.html*/
+#bodyPanel_ipv6{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_ipv6 p span{font-weight:bold;}
+#bodyPanel_ipv6 p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_ipv6 p.capstext_ipv6{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL modes.html*/
+#bodyPanel_modes{width:762px; height:3821px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_modes p span{font-weight:bold;}
+#bodyPanel_modes p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_modes p.capstext_modes{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL weather_*_*.html*/
+#bodyPanel_weather{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_weather p span{font-weight:bold;}
+#bodyPanel_weather p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_weather p.capstext_weather{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL comments.php*/
+#bodyPanel_comments{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_comments p span{font-weight:bold;}
+#bodyPanel_comments p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_comments p.capstext_comments{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL comment-form.php*/
+#bodyPanel_comment-form{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_comment-form p span{font-weight:bold;}
+#bodyPanel_comment-form p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_comment-form p.capstext_comment-form{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL staff_portal.html*/
+#bodyPanel_staff_portal{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_staff_portal p span{font-weight:bold;}
+#bodyPanel_staff_portal p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_staff_portal p.capstext_staff_portal{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL op_request.php*/
+#bodyPanel_op_request{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_op_request p span{font-weight:bold;}
+#bodyPanel_op_request p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_op_request p.capstext_op_request{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL asd_app.php*/
+#bodyPanel_asd_app{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_asd_app p span{font-weight:bold;}
+#bodyPanel_asd_app p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_asd_app p.capstext_asd_app{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL eaup.html*/
+#bodyPanel_eaup{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_eaup p span{font-weight:bold;}
+#bodyPanel_eaup p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_eaup p.capstext_eaup{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL user_modes.html*/
+#bodyPanel_user_modes{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_user_modes p span{font-weight:bold;}
+#bodyPanel_user_modes p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_user_modes p.capstext_user_modes{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL channel_modes.html*/
+#bodyPanel_channel_modes{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_channel_modes p span{font-weight:bold;}
+#bodyPanel_channel_modes p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_channel_modes p.capstext_channel_modes{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL service_status.html*/
+#bodyPanel_service_status{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_service_status p span{font-weight:bold;}
+#bodyPanel_service_status p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_service_status p.capstext_service_status{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL melbourne.html*/
+#bodyPanel_melb_ch{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_melb_ch p span{font-weight:bold;}
+#bodyPanel_melb_ch p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_melb_ch p.capstext_melb_ch{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL contact_us_ty.html*/
+#bodyPanel_contact_us_ty{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_contact_us_ty p span{font-weight:bold;}
+#bodyPanel_contact_us_ty p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_contact_us_ty p.capstext_contact_us_ty{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL irc_stats.html*/
+#bodyPanel_irc_stats{width:762px; height:2321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_irc_stats p span{font-weight:bold;}
+#bodyPanel_irc_stats p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_irc_stats p.capstext_irc_stats{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL mail_server_settings.html*/
+#bodyPanel_mail_server_settings{width:762px; height:3321px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_mail_server_settings p span{font-weight:bold;}
+#bodyPanel_mail_server_settings p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_mail_server_settings p.capstext_mail_server_settings{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* BODY PANEL donate.html*/
+#bodyPanel_donate{width:762px; height:710px; position:relative; margin:0 auto; padding:0;}
+#bodyPanel_donate p span{font-weight:bold;}
+#bodyPanel_donate p.dotline{background:url(images/dot-line.gif) 0 0 repeat-x #fff; padding:0; margin:0 40px 0 25px; color:#000;}
+#bodyPanel_donate p.capstext_donate{background:none; font:15px/26px Arial, Helvetica, sans-serif; color:#555555; padding:2px 10px 0 25px ; margin:0 35px 10px 0; }
+#bodyPanel ul span{ background:url(images/dot-line.gif) repeat-x 0 100%; height:25px; display:block;}
+
+/* FOOTER PANEL*/
+#footerPanel{width:100%;  background:#DCDCDC; color:#4C4C4C; font-size:12px;}
+#footerbodyPanel{width:762px;height:133px; position:relative; margin:0 auto; padding:0;}
+#footerPanel ul{width:320px; display:block; position:absolute; right:10px; top:33px; }
+#footerPanel li{float:left; font:12px/15px Arial, Helvetica, sans-serif; font-weight:normal;}
+#footerPanel ul li a{padding:0 6px; color:#4C4C4C; background:#DCDCDC; text-decoration:none;}
+#footerPanel ul li a:hover{text-decoration:underline;}
+#footerPanel ul li a.padl{padding:0 0 0 6px;}
+#footerPanel p.copyright{background:#DCDCDC; display:block; position:absolute; top:54px; right:45px; color:#A64200;}
+#footerPanel ul.templateworld{width:158px; background:#DCDCDC; color:#4C4C4C; display:block; position:absolute; top:74px; right:40px;}
+#footerPanel ul.templateworld li a{background:#DCDCDC; display:block; color:#4C4C4C; text-decoration:none;}
+#footerPanel ul.templateworld li a:hover{text-decoration:underline;}
+#footerhtmlPanel{ width:86px; height:31px; display:block; position:absolute; top:34px; left:29px; margin:0; padding:0;} 
+#footerhtmlPanel a{ width:86px; height:31px; display:block; background:url(images/valid-xhtml10.png) no-repeat 0 0 #DCDCDC; text-decoration:none; padding:0 0 0 10px; position:absolute; top:0px; right:0px;}
+#footercssPanel{ width:86px; height:31px; display:block; position:absolute; top:34px; left:115px; margin:0; padding:0;} 
+#footercssPanel a{ width:86px; height:31px; display:block; background:url(images/vcss-blue.gif) no-repeat 0 0 #DCDCDC; text-decoration:none; padding:0 0 0 10px; position:absolute; top:0px; right:0px;}
+#footersslPanel{ width:86px; height:55px; display:block; position:absolute; top:24px; left:265px; margin:0; padding:0;} 
+#footersslPanel a{ width:86px; height:55px; display:block; background:url(images/comodo_secure_113x59_transp.png) no-repeat 0 0 #DCDCDC; text-decoration:none; padding:0 0 0 10px; position:absolute; top:0px; right:0px;}

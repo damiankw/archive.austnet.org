@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.austnet.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>AustNet.org</title>
+ <link>http://www.austnet.org</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Social Media, and other such things</title>
+ <link>http://www.austnet.org/?q=node/23</link>
+ <description></description>
+ <pubDate>Wed, 22 Jun 2011 13:39:43 +0000</pubDate>
+ <dc:creator>knifebunny</dc:creator>
+ <guid isPermaLink="false">23 at http://www.austnet.org</guid>
+ <comments>http://www.austnet.org/?q=node/23#comments</comments>
+</item>
+<item>
+ <title>channel statistics</title>
+ <link>http://www.austnet.org/?q=node/22</link>
+ <description></description>
+ <pubDate>Thu, 12 May 2011 14:09:25 +0000</pubDate>
+ <dc:creator>knifebunny</dc:creator>
+ <guid isPermaLink="false">22 at http://www.austnet.org</guid>
+ <comments>http://www.austnet.org/?q=node/22#comments</comments>
+</item>
+<item>
+ <title>New AustNet website</title>
+ <link>http://www.austnet.org/?q=node/18</link>
+ <description></description>
+ <pubDate>Wed, 11 May 2011 14:55:08 +0000</pubDate>
+ <dc:creator>knifebunny</dc:creator>
+ <guid isPermaLink="false">18 at http://www.austnet.org</guid>
+ <comments>http://www.austnet.org/?q=node/18#comments</comments>
+</item>
+<item>
+ <title>pidgin - multi-platform chat</title>
+ <link>http://www.austnet.org/?q=node/17</link>
+ <description></description>
+ <pubDate>Wed, 11 May 2011 14:38:43 +0000</pubDate>
+ <dc:creator>knifebunny</dc:creator>
+ <guid isPermaLink="false">17 at http://www.austnet.org</guid>
+ <comments>http://www.austnet.org/?q=node/17#comments</comments>
+</item>
+</channel>
+</rss>

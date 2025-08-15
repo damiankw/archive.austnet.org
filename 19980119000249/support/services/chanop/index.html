@@ -1,0 +1,350 @@
+<HTML>
+<HEAD>
+  <TITLE>AustNet Support - ChanOP FAQ</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LINK=#FF0000 VLINK=#FF0000 TOPMARGIN=10 LEFTMARGIN=0 STYLE="background: #000000">
+<CENTER>
+
+<TABLE BGCOLOR="#FFFFFF" WIDTH=580 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+
+	<TR BGCOLOR="#CCCCCC">	
+	<TD WIDTH=20 HEIGHT=18><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">&nbsp;</FONT></TD>
+	<TD COLSPAN=2 WIDTH=520><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">
+        <A HREF="/support.html">AustNet Support</A> | 
+        <A HREF="/support/services/index.html">FAQ Catalogue</A> | 
+        ChanOP Frequently Asked Questions </FONT></TD>
+	<TD WIDTH=40><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">&nbsp;</FONT></TD>
+	</TR>
+
+	<TR>
+        <TD WIDTH=20></TD>
+	<TD COLSPAN=2 WIDTH=520 HEIGHT=150>
+<MAP NAME="faqs">
+<AREA SHAPE=RECT COORDS="2,24,80,53" HREF="/support/services/chanop/" ALT="chanop faq">
+<AREA SHAPE=RECT COORDS="90,24,173,52" HREF="/support/services/nickop/" ALT="nickop faq">
+<AREA SHAPE=RECT COORDS="184,22,250,55" HREF="/support/services/noteop/" ALT="noteop faq">
+<AREA SHAPE=RECT COORDS="264,24,354,52" HREF="/support/services/chanop/managers/" ALT="channel managers faq">
+<AREA SHAPE=RECT COORDS="366,23,458,52" HREF="/asd/" ALT="austnet services department">
+</MAP>
+<center><img src="services.jpg" usemap="#faqs" ismap border="0"></center>
+	<TD WIDTH=40></TD>
+	</TR>
+
+	<TR>
+	<TD WIDTH=20>&nbsp;</TD>
+        <TD WIDTH=60 VALIGN=TOP ALIGN=RIGHT></TD>
+        <TD WIDTH=460 VALIGN=TOP>
+<font FACE="Arial, Helvetica" font=arial size=2>
+
+<center>
+<b>AustNet Services Frequently Asked Questions</b><br>
+<i>ChanOP Node -- Document Revision 1.58 (97-07-06)</i><br><br>
+
+<b><font color=red><a href="chanop-help.txt">Click here to download ChanOP Help Pages</a></font></b><br><br>
+
+</font><font size=2>
+This FAQ answers the burning questions of many users of the AustNet
+Service, ChanOP.  Simply select the relevant topic from the table of
+contents below.<br><br>
+
+</center><font FACE="Arial, Helvetica" font=arial size=2>
+
+<b>General Information</b><hr>
+<MENU>
+1.1 <A HREF="#1.1">What is ChanOP?</A><BR>
+1.2 <A HREF="#1.2">How does it protect channels?</A><BR>
+1.3 <A HREF="#1.3">How does it differ from other bots?</A><BR>
+1.4 <A HREF="#1.4">How do I get myself a ChanOP?</A><BR>
+1.5 <A HREF="#1.5">What channels are legible for ChanOP?</A><BR>
+1.6 <A HREF="#1.6">Can I register more than one channel?</A><BR>
+1.7 <A HREF="#1.7">How can I complain about ChanOP being on a channel?</A><BR>
+1.8 <A HREF="#1.8">I've registered my channel, what now?</A><BR>
+</MENU>
+<br>
+<b>Service Commands</b><hr>
+<MENU>
+2.1 <A HREF="#2.1">What is ChanOP access?</A><BR>
+2.2 <A HREF="#2.2">How do I receive access to a channel?</A><BR>
+2.3 <A HREF="#2.3">How do I know if I have access?</A><BR>
+2.4 <A HREF="#2.4">I have access, what can I do with it?</A><BR>
+2.5 <A HREF="#2.5">How do I use basic commands through ChanOP?</A><BR>
+2.4 <A HREF="#2.4">I need to be invited to a channel by ChanOP, how can I?</A><BR>
+</MENU>
+
+<b>General Information</b><hr>
+
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.1"><B>1.1 What is ChanOP?</a></b></font></td></tr>
+</table>
+<ul>
+ChanOP (also known as the Channel Operator) is quite simply, an IRC robot. It
+is <b>not</b> a real person, it is an automated service that ensures channel
+integrity and protection from malicious takeover attempts.  The ChanOP service
+allows users to register their channels and maintain a secure method of
+issuing operator status amongst the channel.  More than a mere "bot", ChanOP
+is also a server, effectively allowing it to maintain every aspect of your
+channel according to your wishes.<br><br>
+ChanOP is run by the ASD (AustNet Services Department), a group of volunteers
+who devote their time to assisting users with services.
+<br><br><ul><li>
+If you need online support from the ASD, simply:
+<br><tt>/join #Help</tt>  (while connected to an AustNet server)
+</li></ul>
+<ul><li>
+If you need to mail the ASD, they can be contacted at <tt><a href="mailto:services@austnet.org">services@austnet.org</a></tt>
+</li></ul>
+<ul><li>
+If you wish to participate in the ASD, simply mail <tt><a href="majordomo@austnet.org">majordomo@austnet.org</a></tt> with the body
+<tt>"subscribe services"</tt> (do not include quotation marks)
+</li></ul>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.2"><B>1.2 How does it protect channels?</a></b></font></td></tr>
+</table>
+<ul>
+
+ChanOP monitors who receives operator priviliges on all registered
+channels. It also has the ability to unban, kick and deop users on request,
+and has inbuilt automated facilities that ensure correct channel usage.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.3"><B>1.3 How does it differ from other bots?</a></b></font></td></tr>
+</table>
+<ul>
+ChanOP differs from other bots simply because it is not a bot.  ChanOP is a
+server.  AustNet servers
+are built with special functions that dissallow users kicking and banning
+ChanOP from channels. It also has special privilidges that allow it to gain
+operator status on any channel. It can not be flooded nor nick-collided off IRC.<br><br>
+
+ChanOP's completely automated channel registeration eliminates the
+lengthy application process found on other networks.  ChanOP is easy to use,
+very responsive, and above all provides seamless channel security that
+other IRC network's bots cannot always provide.
+</ul>
+
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.4"><B>1.4 How do I get myself a ChanOP?</a></b></font></td></tr>
+</table>
+<ul>
+ChanOP is a service provided by AustNet, it is not a piece of software
+available for distribution. ChanOP is part of an IRC process generated by a
+50Mb+ program for Unix called "AustNet services", written by Roger Yerammsetti.  This
+program acts as a pseudo-server called services.austnet.org, running on
+a 200MHz Pentium with 128Mb RAM and a 3.2GB HDD.  It consumes on average
+5% CPU and 16-20Mb RAM.  ChanOP is one of the many services that this
+program provides, so essentially you do not "get" a ChanOP.  Rather,
+ChanOP has the ability to sit on or off thousands of registered channels.
+If you would like ChanOP to monitor your channel, you must first register it.
+<br><br>
+<ul><li>Firstly, check to see if the channel you are interested in
+is already registered:<br><br>
+<tt>/msg ChanOP info #[channel]</tt>
+<br><br>
+   This will display information about the channel in question if
+   it is registered, if it is not, you will be told so.<br><br>
+</li></ul><ul><li>
+  Registration is done quickly, to do so, simply:<br><br>
+<tt>/msg ChanOP register #[channel]</tt>
+</li></ul>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.5"><B>1.5 What channels are legible for ChanOP?</a></b></font></td></tr>
+</table>
+<ul>
+ChanOP will not allow illegal content channels to be registered. At the
+time of writing, ChanOP will not allow any <tt>#*warez*</tt> channels to
+be registered.  If this genre of channel was permitted to be registered,
+we would be legally bound by endoursing such activities, consequently, we
+must at all times disclaim any legal liability against such channels and
+therefore must not allow them to be endorsed by our services.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.6"><B>1.6 Can I register more than one channel?</a></b></font></td></tr>
+</table>
+<ul>
+Due to AustNet's "first in first served" channel registration policy,
+we do not permit any users to register more than one channel.  If this was
+the case, we would find ourselves with next to no channels left for
+registration by other users.  Consequently, we have a <b>strictly one
+channel per user</b> policy.  Channel ownership is cross-referenced monthly
+against nickname userhosts, and we review how many channels a particular
+userhost has registered frequently.  If we do find that a userhost has
+registered more than one channel, via registering more than one nickname,
+we will simply terminate registration for those channels and ban that
+userhost from registering any further channels.  <b>You have been warned</b>.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.7"><B>1.7 How can I complain about ChanOP being on a channel?</a></b></font></td></tr>
+</table>
+<ul>
+Simply mail the ASD at <tt><a href="mailto:services@austnet.org">services@austnet.org</a></tt>,
+stating the nature of your complaint, the email addresses and nicknames of
+those who support your complaint.  If the complaint is found to be legitimate,
+the ASD will suspend the channel's registration, and action will be taken to
+resolve any pending issue.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="1.8"><B>1.8 I've registered my channel, now what?</a></b></font></td></tr>
+</table>
+<ul>
+If you are the owner of a channel, it is your responsibility to promote
+channel growth, configure your channel for operation and to add users to your
+channel access database.  You may wish to review the "<a href="/support/services/chanop/managers/">Channel Managers FAQ</a>".
+</ul>
+<br>
+<b>Service Commands</b><hr>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.1"><B>2.1 What is ChanOP access?</a></b></font></td></tr>
+</table>
+<ul>
+Each registered channel has a userlist.  This list contains nicknames of
+people who have been given certain privilidges on the channel.  An access
+level is indicative of what privilidges each user has.  Access levels
+range from 0 to 200, where 0 is no access, and 200 is the Channel Manager
+access.  In order to execute certain commands through ChanOP, you must have
+the required access level.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.2"><B>2.2 How do I receive access to a channel?</a></b></font></td></tr>
+</table>
+<ul>
+Access to a certain channel is issued by the Channel Manager and his or her
+delegated trusted channel operators (that is, anyone above 150 access). If
+you wish to receive access to a channel, you should speak with the channel
+manager directly, or with an existing channel operator.
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.3"><B>2.3 How do I know if I have access?</a></b></font></td></tr>
+</table>
+<ul>
+Generally speaking, if you have access, you should know.  However, to confirm
+your access level to a specific channel, simply use the following command:
+<br><br>
+<ul><li>
+<tt>/msg ChanOP access #[channel]</tt><br>
+<i>This command will return your access level on the specified channel</i><br>
+</ul></li>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.4"><B>2.4 I have access, what can I do with it?</a></b></font></td></tr>
+</table>
+<ul>
+You can execute commands through ChanOP based on what access level you
+have.  While you are online, simply type the following command to
+view your available commands on a specific channel:<br><br>
+<ul><li>
+<tt>/msg ChanOP commands #[channel]</tt><br>
+<i>This will return your available commands</i><br>
+</ul></li>
+<ul><li>
+<tt>/msg ChanOP help [command]</tt><br>
+<i>Will show you online help for a specific command</i><br>
+</ul></li>
+</ul>
+
+<P>
+<font size=2>
+<table width="100%" cellpadding=4>
+<tr><td width="100%" colspan=1 valign=top bgcolor="#deeeee">
+<font size=2><A NAME="2.5"><B>2.5 How do I use basic commands through ChanOP?</a></b></font></td></tr>
+</table>
+<ul>
+The following basic commands allow you to execute very simple tasks within
+a channel, including kicking, banning, issuing and removing operator status
+and changing the topic.<br><br>
+<ul><li>
+<b>Kick a user from a channel:</b><br>
+<tt>/msg ChanOP kick #[channel] [nickname] [reason]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Ban a user from a channel:</b><br>
+<tt>/msg ChanOP ban #[channel] [nickname]|[userhost] [reason]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Removing a ban on user from a channel:</b><br>
+<tt>/msg ChanOP unban #[channel] [nickname]|[userhost]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Listing active bans on a user:</b><br>
+<tt>/msg ChanOP listban #[channel] [nickname]|[userhost]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Issuing operator status to a user on a channel:</b><br>
+<tt>/msg ChanOP op #[channel] [nickname]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Removing operator status from a user on a channel:</b><br>
+<tt>/msg ChanOP deop #[channel] [nickname]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Removing everyone's operator status from channel:</b><br>
+<tt>/msg ChanOP mdeop #[channel]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Inviting a user to a channel:</b><br>
+<tt>/msg ChanOP invite #[channel] [nickname]</tt><br><br>
+</ul></li>
+<ul><li>
+<b>Changing the current channel topic:</b><br>
+<tt>/msg ChanOP topic #[channel] [topic]</tt><br><br>
+</ul></li>
+</ul>
+
+<P><BR><BR><FONT FACE="Verdana, Arial, Helvetica" SIZE=1 STYLE="font-family: Verdana, Arial, Helvetica">back to <A HREF="/support/services/index.html">FAQ Catalogue</A> | <A HREF="/support.html">AustNet Support</A><BR>back to the <A HREF="http://www.austnet.org">AustNet Home Page</A>
+<P>
+<P>this page last updated 7 June 1997<BR>&copy; 1997 AustNet IRC Network. All rights reserved. <br>comments to the austnet services department: <A HREF="mailto:services@austnet.org">services@austnet.org</A><br>FAQ written by <a href="mailto:redtrio@austnet.org">redtrio@austnet.org</a><BR>&nbsp;</FONT>
+	
+</TABLE>
+</CENTER>
+<P><BR>&nbsp;
+</BODY>
+</HTML>

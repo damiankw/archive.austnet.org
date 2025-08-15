@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+		<rss version="2.0">
+<channel>
+<title>AustNet.org news</title>
+<link>http://www.austnet.org</link>
+<description>News Feed from austnet.org website</description>
+<language>en-us</language>
+<webMaster>karl@austnet.org</webMaster>
+<docs>http://backend.userland.com/rss</docs>
+<lastBuildDate>Sun, 10 Aug 2003 05:50:27 -0700</lastBuildDate><item>
+<title>Beastclub Australia Car Cruise #3</title>
+<author>beastclub@beastclub.com.au (DJ_Axi)</author>
+<category>Channel News</category>
+<pubDate>Sun, 10 Aug 2003 22:49:17 -0700</pubDate>
+<link>http://community.austnet.org/news-channel.php#101</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#101</guid>
+</item>
+<item>
+<title>ASD additions/raises</title>
+<author>mikey@austnet.org (Mikey)</author>
+<category>Administration</category>
+<pubDate>Sun, 10 Aug 2003 22:45:00 -0700</pubDate>
+<link>http://community.austnet.org/news-admin.php#100</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#100</guid>
+</item>
+<item>
+<title>Microsoft DCOM RPC vulnerability</title>
+<author>blase@austnet.org (Blase)</author>
+<category>Alerts</category>
+<pubDate>Mon,  4 Aug 2003 23:19:09 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#99</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#99</guid>
+</item>
+<item>
+<title>New testlinked server - swiftdsl</title>
+<author>stevie@kas.net.au (Stevie)</author>
+<category>Administration</category>
+<pubDate>Fri,  1 Aug 2003 09:46:19 -0700</pubDate>
+<link>http://community.austnet.org/news-admin.php#97</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#97</guid>
+</item>
+<item>
+<title>xchat 2.0.4</title>
+<author>karl@austnet.org (Karl)</author>
+<category>General Interest</category>
+<pubDate>Thu, 31 Jul 2003 19:17:27 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#96</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#96</guid>
+</item>
+<item>
+<title>Project-Dolphin.nl team passes 30million</title>
+<author>karl@austnet.org (Karl)</author>
+<category>General Interest</category>
+<pubDate>Fri,  4 Jul 2003 17:33:54 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#95</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#95</guid>
+</item>
+<item>
+<title>XChat 2.0.3 is out!</title>
+<author>blase@austnet.org (Blase)</author>
+<category>General Interest</category>
+<pubDate>Thu,  3 Jul 2003 10:01:03 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#94</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#94</guid>
+</item>
+<item>
+<title>Updated servers.ini for mIRC</title>
+<author>Blase@austnet.org (Blasé)</author>
+<category>General Interest</category>
+<pubDate>Fri, 27 Jun 2003 20:27:26 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#93</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#93</guid>
+</item>
+<item>
+<title>Spin.* adds new staff member</title>
+<author>cam@austnet.org (cam)</author>
+<category>Network</category>
+<pubDate>Fri, 27 Jun 2003 15:20:45 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#92</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#92</guid>
+</item>
+<item>
+<title>New ASD helpers</title>
+<author>ed@austnet.org (ed)</author>
+<category>Administration</category>
+<pubDate>Sat, 21 Jun 2003 10:39:52 -0700</pubDate>
+<link>http://community.austnet.org/news-admin.php#91</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#91</guid>
+</item>
+</channel></rss>

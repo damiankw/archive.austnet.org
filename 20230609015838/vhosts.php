@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143742086-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143742086-1');
+    </script>
+    
+    <title>AustNet Chat Network, Internet Chat Room Melbourne, Sydney, Perth, Brisbane, Adelaide</title>
+    <meta name="description" content="Free Online Chat Rooms Australia, No Registration Or Signup Free Chat Now - AustNet Chat Network, Internet Chat Room Melbourne, Sydney, Perth, Brisbane, Adelaide">
+    <meta name="author" content="htmlcoder.me">
+    <meta name="version" content="v1.0.">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <!-- No longer required? <link rel="shortcut icon" type="image/x-icon" href="images/myfavicon.ico"> -->
+
+    <!-- Web Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="css/animations.css" rel="stylesheet">
+
+    <!-- Worthy core CSS file -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom css --> 
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="no-trans">
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+    <!-- header start -->
+    <!-- ================ --> 
+    <header class="header fixed clearfix navbar navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+
+            <!-- header-left start -->
+            <!-- ================ -->
+            <div class="header-left clearfix">
+
+              <!-- logo  -->
+              <div class="logo smooth-scroll">
+                <a href="https://webchat.austnet.org/chat.php" target="_blank" class="scroll" style="text-decoration:none"><img id="logo" src="https://res.cloudinary.com/austnet/image/upload/v1565302792/www.austnet.org-images/logo_omblpy.png" alt="Free Online Chat Rooms Australia, No Registration Or Signup Free Chat Now - AustNet Chat Network, Internet Chat Room Melbourne, Sydney, Perth, Brisbane, Adelaide"></a>
+              </div> 
+
+              <!-- name-and-slogan -->
+              <!--
+              <div class="site-name-and-slogan smooth-scroll">
+                <div class="site-name"><a href="https://www.austnet.org/index.php" style="text-decoration:none"><img src="images/logo.png"></a></div>
+              </div>
+-->
+            </div>
+            <!-- header-left end -->
+
+          </div>
+          <div class="col-md-8">
+
+            <!-- header-right start -->
+            <!-- ================ -->
+            <div class="header-right clearfix">
+
+              <!-- main-navigation start -->
+              <!-- ================ -->
+              <div class="main-navigation animated">
+
+                <!-- navbar start -->
+                <!-- ================ -->
+                <nav class="navbar navbar-default" role="navigation">
+                  <div class="container-fluid">
+
+                    <!-- Toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.austnet.org/index.php#about">About</a></li>
+                        <li><a href="https://www.austnet.org/index.php#services">Services</a></li>
+                        <li><a href="https://www.austnet.org/index.php#portfolio">Servers</a></li>
+                                                <li class="dropdown">
+                                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client</a>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="https://www.austnet.org/index.php#clients">Software</a></li>
+                                                    <li><a href="https://webchat.austnet.org/chat.php">Web Chat</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="https://www.austnet.org/vhosts.php">Free vHosts</a></li>
+                                                    <li><a href="https://www.austnet.org/openport.php">Open Port Exemption</a></li>
+                                                    <li><a href="https://www.austnet.org/modes.php">Modes and Commands</a></li>
+                                                  </ul>
+                                                </li>                        
+                        <li><a href="https://www.austnet.org/index.php#contact">Contact</a></li>
+                                                <li class="dropdown">
+                                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                                  <ul class="dropdown-menu">
+                                                    <!-- <li><a href="https://www.austnet.org/irc_stats.php">IRC Statistics</a></li> -->
+                                                    <!-- <li role="separator" class="divider"></li> -->
+                                                    <li><a href="https://www.austnet.org/staff.php">Staff</a></li>
+                                                    <li><a href="https://www.austnet.org/aup.php">Acceptable Use Policy</a></li>
+                                                    <li><a href="https://www.austnet.org/asd.php">ASD Application</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="https://support.austnet.org/" target="_blank">Support</a></li>
+                                                    <li><a href="https://www.austnet.org/donate.php">Donate</a></li>
+                                                  </ul>
+                                                </li>                        
+                      </ul>
+                    </div>
+
+                  </div>
+                </nav>
+                <!-- navbar end -->
+
+              </div>
+              <!-- main-navigation end -->
+
+            </div>
+            <!-- header-right end -->
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+        <!-- section start -->
+        <!-- ================ -->
+        <div class="page-section">
+            <div class="container">
+                <h1 class="title text-center" id="vhosts">vHosts</h1>
+                <p class="lead text-center">"Please read over the following guidelines and join us in #ASD to apply."</p>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul style="list-style-type:square">
+                          <li>An example of a potential vHost may look like @i.heart.austnet</li>
+                          <li>
+                            The nickname must be registered a minimum of <strong>7 days</strong>.
+                            <ol type="a">
+                              <li>The only exception to the above rule is if you own another registered nickname older than 7 days,</li>
+                              <li>The other nickname(s) can be identified as the same user,</li>
+                              <li>The registered email address must match for all nicknames,</li>
+                              <li>ASD may wish to perform other checks at their discretion.</li>
+                            </ol>
+                          </li>
+                          <li>
+                            No TLD's i.e austnet.org, google.com, etc.
+                            <ol type="a">
+                          <li>The only exception to the above rule is if you own a fully qualified domain,</li>
+                          <li>The domain will be checked by ASD to ensure validity of ownership,</li>
+                          <li>ASD may wish to perform other checks at their discretion i.e domain email reply verification.</li>
+                            </ol>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul style="list-style-type:square">
+                          <li>Must contain at least one dot (.) character.</li>
+                          <li>Must be all in lower-case.</li>
+                          <li>No colour/bold/underline, etc</li>
+                          <li>No special symbols i.e % & $ #, etc</li>
+                          <li>No crude, foul or offensive language allowed.</li>
+                          <li>Limited to a maximum of 64 characters.</li>
+                          <li>Must not be in use/already assigned to another user.</li>
+                          <li>
+                            An identical vHost may be issued to other registered nickname(s) providing;
+                            <ol type="a">
+                              <li>The other nickname(s) can be identified as the same user,</li>
+                              <li>The registered email address must match for all nicknames,</li>
+                              <li>ASD may wish to perform other checks at their discretion.</li>
+                            </ol>
+                          </li>
+                          <li>May be changed once every 30 days.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .footer end -->
+    <!-- footer start -->
+    <!-- ================ -->
+    <footer id="footer" class="footer">
+
+
+      <!-- .subfooter start -->
+      <!-- ================ -->
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">
+                Copyright © 1996-2023 <a href="https://www.austnet.org">AustNet Chat Network</a>.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .subfooter end -->
+          <a href="javascript:" class="to-top" id="to-top"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i></a>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JavaScript files placed at the end of the document so the pages load faster
+    ================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script type="text/javascript" src="plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Modernizr javascript -->
+    <script type="text/javascript" src="plugins/modernizr.js"></script>
+
+    <!-- Isotope javascript -->
+    <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+    
+    <!-- Backstretch javascript -->
+    <script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+    <!-- Appear javascript -->
+    <script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+    <!-- Initialization of Plugins -->
+    <script type="text/javascript" src="js/template.js"></script>
+
+    <!-- ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+    <script src="js/validator.js"></script>
+    
+  <script>(function(){var js = "window['__CF$cv$params']={r:'7d45c5438ada39ac',m:'huoyR9BM2gkzu7YODb4Z3SUpQmZYA_6xRKC3oeHzKqg-1686275918-0-ATEWMh8MXGQVpPW8wOl9LTun44Qf5WgueGznY+S/eGrU'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

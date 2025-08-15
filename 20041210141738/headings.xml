@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+		<rss version="2.0">
+<channel>
+<title>AustNet.org news</title>
+<link>http://www.austnet.org</link>
+<description>News Feed from austnet.org website</description>
+<language>en-us</language>
+<webMaster>karl@austnet.org</webMaster>
+<docs>http://backend.userland.com/rss</docs>
+<lastBuildDate>Tue, 30 Nov 2004 21:59:27 -0800</lastBuildDate><item>
+<title>Freeze on Server Applications</title>
+<author>kieran@austnet.org (Kieran)</author>
+<category>Network</category>
+<pubDate>Wed,  1 Dec 2004 14:32:22 -0800</pubDate>
+<link>http://community.austnet.org/news-network.php#141</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#141</guid>
+</item>
+<item>
+<title>New Poll</title>
+<author>hippychick@austnet.org (Hippychick)</author>
+<category>Website</category>
+<pubDate>Wed, 17 Nov 2004 12:28:28 -0800</pubDate>
+<link>http://community.austnet.org/news-website.php#140</link>
+<guid isPermaLink="true">http://community.austnet.org/news-website.php#140</guid>
+</item>
+<item>
+<title>Project Dolphin Update</title>
+<author>phoenix@austnet.org (Karl)</author>
+<category>General Interest</category>
+<pubDate>Wed, 17 Nov 2004 12:26:46 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#139</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#139</guid>
+</item>
+<item>
+<title>New Jersey Institute of Technology Permlinked</title>
+<author>kieran@austnet.org (Kieran)</author>
+<category>Network</category>
+<pubDate>Tue, 26 Oct 2004 16:06:22 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#138</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#138</guid>
+</item>
+<item>
+<title>New European Client Server</title>
+<author>kieran@austnet.org (Kieran)</author>
+<category>Network</category>
+<pubDate>Wed, 20 Oct 2004 10:10:43 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#137</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#137</guid>
+</item>
+<item>
+<title>Winamp users be wary</title>
+<author>blase@austnet.org (Blase)</author>
+<category>Alerts</category>
+<pubDate>Tue,  7 Sep 2004 00:02:08 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#136</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#136</guid>
+</item>
+<item>
+<title>X-Chat for Windows now shareware</title>
+<author>blase@austnet.org (Blase)</author>
+<category>General Interest</category>
+<pubDate>Mon,  6 Sep 2004 23:44:46 -0700</pubDate>
+<link>http://community.austnet.org/news-general.php#134</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#134</guid>
+</item>
+<item>
+<title>AustNet improves global connectivity</title>
+<author>cam@austnet.org (cam)</author>
+<category>Network</category>
+<pubDate>Mon, 19 Jul 2004 21:51:47 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#133</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#133</guid>
+</item>
+<item>
+<title>IRC Horse Racing - Addictive, fast paced and extremely competitive</title>
+<author>eivetS2@hotmail.com (Stevie)</author>
+<category>Channel News</category>
+<pubDate>Mon, 28 Jun 2004 02:11:16 -0700</pubDate>
+<link>http://community.austnet.org/news-channel.php#132</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#132</guid>
+</item>
+<item>
+<title>New testlinked server and return of bohica.*</title>
+<author>Kwahraw@austnet.org (Kwahraw)</author>
+<category>Network</category>
+<pubDate>Wed, 23 Jun 2004 13:54:42 -0700</pubDate>
+<link>http://community.austnet.org/news-network.php#131</link>
+<guid isPermaLink="true">http://community.austnet.org/news-network.php#131</guid>
+</item>
+</channel></rss>

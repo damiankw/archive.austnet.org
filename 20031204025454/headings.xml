@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+		<rss version="2.0">
+<channel>
+<title>AustNet.org news</title>
+<link>http://www.austnet.org</link>
+<description>News Feed from austnet.org website</description>
+<language>en-us</language>
+<webMaster>karl@austnet.org</webMaster>
+<docs>http://backend.userland.com/rss</docs>
+<lastBuildDate>Wed,  3 Dec 2003 15:40:40 -0800</lastBuildDate><item>
+<title>Beastclub Australia Cruise #5</title>
+<author>beastclub@beastclub.com.au (DJ_Axi)</author>
+<category>Channel News</category>
+<pubDate>Thu,  4 Dec 2003 08:40:24 -0800</pubDate>
+<link>http://community.austnet.org/news-channel.php#114</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#114</guid>
+</item>
+<item>
+<title>New IRSII Release</title>
+<author>blase@austnet.org (Blase)</author>
+<category>General Interest</category>
+<pubDate>Wed,  3 Dec 2003 14:44:59 -0800</pubDate>
+<link>http://community.austnet.org/news-general.php#113</link>
+<guid isPermaLink="true">http://community.austnet.org/news-general.php#113</guid>
+</item>
+<item>
+<title>#Perth Annual BBQ</title>
+<author>evensong@email.com (Red)</author>
+<category>Channel News</category>
+<pubDate>Wed, 12 Nov 2003 12:17:12 -0800</pubDate>
+<link>http://community.austnet.org/news-channel.php#112</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#112</guid>
+</item>
+<item>
+<title>Boo Yaa Tribe!</title>
+<author>hippychick@austnet.org (Hippychick)</author>
+<category>Events</category>
+<pubDate>Mon,  3 Nov 2003 09:50:13 -0800</pubDate>
+<link>http://community.austnet.org/news-events.php#111</link>
+<guid isPermaLink="true">http://community.austnet.org/news-events.php#111</guid>
+</item>
+<item>
+<title>ASD raises and additions to #asd</title>
+<author>hippychick@austnet.org (Hippychick)</author>
+<category>Administration</category>
+<pubDate>Tue, 28 Oct 2003 16:52:50 -0800</pubDate>
+<link>http://community.austnet.org/news-admin.php#110</link>
+<guid isPermaLink="true">http://community.austnet.org/news-admin.php#110</guid>
+</item>
+<item>
+<title>mIRC crash bug</title>
+<author>djay@8th-wonder.net (DJay)</author>
+<category>Alerts</category>
+<pubDate>Mon, 27 Oct 2003 11:22:59 -0800</pubDate>
+<link>http://community.austnet.org/news-alerts.php#109</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#109</guid>
+</item>
+<item>
+<title>New mIRC 6.12 Released</title>
+<author>rusty@avassist.org (Rusty^Blade)</author>
+<category>Alerts</category>
+<pubDate>Tue, 14 Oct 2003 11:24:13 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#108</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#108</guid>
+</item>
+<item>
+<title>mIRC 6.* exploit found</title>
+<author>Blase@austnet.org (Blase)</author>
+<category>Alerts</category>
+<pubDate>Tue, 14 Oct 2003 06:40:57 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#107</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#107</guid>
+</item>
+<item>
+<title>Stay safe! Keep alert!</title>
+<author>Blase@austnet.org (Blase)</author>
+<category>Alerts</category>
+<pubDate>Sat, 11 Oct 2003 00:02:50 -0700</pubDate>
+<link>http://community.austnet.org/news-alerts.php#106</link>
+<guid isPermaLink="true">http://community.austnet.org/news-alerts.php#106</guid>
+</item>
+<item>
+<title>#sydney supermeet!</title>
+<author>lolly@austnet.org (Lolly)</author>
+<category>Channel News</category>
+<pubDate>Wed, 24 Sep 2003 15:41:15 -0700</pubDate>
+<link>http://community.austnet.org/news-channel.php#105</link>
+<guid isPermaLink="true">http://community.austnet.org/news-channel.php#105</guid>
+</item>
+</channel></rss>

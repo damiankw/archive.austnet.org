@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IdleRPG - AustNet Chat Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="include/idlerpg.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="include/idlerpg.js"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quest Info</a>
+    <a href="https://www.austnet.org/" class="w3-hide-small" target="_new"><img src="images/idlerpg.png" align="right" style="padding-right:10px;"></a>
+    <a href="https://www.austnet.org/" class="w3-hide-large" target="_new"><img src="images/idlerpg.png" style="padding-left: 10px;"></a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-blue-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">Game Info</a>
+    <a href="admincmd.php" class="w3-bar-item w3-button w3-padding-large">Admin Commands</a>
+    <a href="players.php" class="w3-bar-item w3-button w3-padding-large">Player Info</a>
+    <a href="worldmap.php" class="w3-bar-item w3-button w3-padding-large">World Map</a>
+    <a href="quest.php" class="w3-bar-item w3-button w3-padding-large">Quest Info</a>
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Player Information</h1>
+        <div class="w3-container">
+                        <table class="irpg-table" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 50px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>User:</strong></td>
+                        <td style="width: ;">rastajedi</td>
+                        <td style="width: 150px; font-weight: bold; text-align: right; padding-right: 10px;"><strong>Admin:</strong></td>
+                        <td style="width: ;">No</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Level:</strong></td>
+                        <td>61</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Next Level:</strong></td>
+                        <td>9 days, 15:43:32</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Status:</strong></td>
+                        <td>Offline</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Alignment:</strong></td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Created:</strong></td>
+                        <td>Sun Mar 14 15:09:18 2021</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Last Login:</strong></td>
+                        <td>Wed Jul 28 06:59:55 2021</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Idled:</strong></td>
+                        <td>137 days, 20:51:16</td>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>Position:</strong></td>
+                        <td>21 x 302</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; text-align: right; padding-right: 10px;"><strong>XML:</strong></td>
+                        <td><a href="xml.php?player=rastajedi">rastajedi</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>Items</h1>
+        <div class="w3-container">
+            <div class="w3-round-large irpg-item irpg-amulet">119</div>
+            <div class="w3-round-large irpg-item irpg-boots">283</div>
+            <div class="w3-round-large irpg-item irpg-charm">41</div>
+            <div class="w3-round-large irpg-item irpg-gloves">45</div>
+            <div class="w3-round-large irpg-item irpg-helmet">60</div>
+            <div class="w3-round-large irpg-item irpg-leggings">49</div>
+            <div class="w3-round-large irpg-item irpg-ring">74</div>
+            <div class="w3-round-large irpg-item irpg-shield">39</div>
+            <div class="w3-round-large irpg-item irpg-tunic">67</div>
+            <div class="w3-round-large irpg-item irpg-weapon">204</div>
+
+            <h3>Special Items</h3>
+            <ul>
+            <li>Dwyn's Storm Magic Amulet</li><li>Mrquick's Magical Boots of Swiftness</li><li>Mattt's Omniscience Grand Crown</li><li>Juliet's Glorious Ring of Sparkliness</li><li>Drdink's Cane of Blind Rage</li>            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>Penalties</h2>
+        <ul class="w3-ul w3-white">
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quest" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quest</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 100%"></div>
+                    </div>
+                    <span>2 days, 16:51:49</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-quit" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Quit</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 48.007143193624%"></div>
+                    </div>
+                    <span>1 day, 07:08:21</span>
+                </div>
+            </li>
+                    <li class="w3-bar">
+                <span class="w3-bar-item irpg-penalty irpg-logout" style="width: 90px; float: left;"></span>
+                <div class="w3-bar-item--" style="margin-left: 100px">
+                    <span>Logout</span>
+                    <div class="w3-border">
+                        <div class="w3-teal" style="height: 50px; width: 0.0085649803647825%"></div>
+                    </div>
+                    <span>0 days, 00:00:20</span>
+                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1>World Map</h1>
+        <div id="map">
+            <img class="w3-image" src="makeplayermap.php?2d4d59257ecac5ad7d01ec9b17e3aae0&player=rastajedi">
+        </div>
+    </div>
+</div>
+
+<h2></h2>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Character Modifiers</h1>
+      [03/14/21 04:54:54] rastajedi [5/11] has challenged damian [537/677] in combat and lost! 0 days, 00:01:14 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 06:22:50] JedStar [155/244] has challenged rastajedi [32/47] in combat and won! 0 days, 00:44:39 is removed from JedStar&#039;s clock.<br />
+      [03/14/21 08:38:21] rastajedi [39/138] has challenged tozza [591/696] in combat and lost! 0 days, 00:04:05 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 13:01:41] rastajedi [161/174] has challenged Octane [324/547] in combat and lost! 0 days, 00:07:24 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 14:41:42] rastajedi [172/180] has challenged electrohead [211/797] in combat and lost! 0 days, 00:08:35 is added to rastajedi&#039;s clock.<br />
+      [03/14/21 16:59:52] JedStar [231/244] has challenged rastajedi [15/184] in combat and won! 0 days, 00:51:48 is removed from JedStar&#039;s clock.<br />
+      [03/14/21 22:50:49] lx [502/741] has challenged rastajedi [75/211] in combat and won! 1 day, 13:37:34 is removed from lx&#039;s clock.<br />
+      [03/15/21 01:50:49] Lin [634/743] has challenged rastajedi [113/211] in combat and won! 1 day, 01:21:59 is removed from Lin&#039;s clock.<br />
+      [03/15/21 15:48:08] rastajedi [88/211] has challenged ibiza [81/633] in combat and won! 0 days, 00:49:19 is removed from rastajedi&#039;s clock.<br />
+      [03/15/21 17:15:43] brayden [656/896] has challenged rastajedi [48/211] in combat and won! 3 days, 02:07:32 is removed from brayden&#039;s clock.<br />
+      [03/15/21 20:51:08] rastajedi [138/211] has challenged damian [488/677] in combat and lost! 0 days, 00:32:41 is added to rastajedi&#039;s clock.<br />
+      [03/16/21 04:12:33] rastajedi [113/211] has challenged lx [430/741] in combat and lost! 0 days, 00:33:11 is added to rastajedi&#039;s clock.<br />
+      [03/16/21 12:39:53] rastajedi [108/235] has challenged ibiza [409/633] in combat and lost! 0 days, 00:43:59 is added to rastajedi&#039;s clock.<br />
+      [03/16/21 23:06:49] rastajedi [13/250] has challenged IRCStats [163/727] in combat and lost! 0 days, 00:51:02 is added to rastajedi&#039;s clock.<br />
+      [03/17/21 03:50:48] tozza [300/696] has challenged rastajedi [186/250] in combat and won! 0 days, 17:49:42 is removed from tozza&#039;s clock.<br />
+      [03/17/21 10:35:52] rastajedi [43/263] has challenged Octane [390/547] in combat and lost! 0 days, 00:59:12 is added to rastajedi&#039;s clock.<br />
+      [03/17/21 11:16:29] damian [593/677] has come upon rastajedi [71/263] and taken them in combat! 0 days, 15:33:29 is removed from damian&#039;s clock.<br />
+      [03/17/21 14:42:08] Octane [100/547] has come upon rastajedi [84/263] and taken them in combat! 2 days, 10:17:16 is removed from Octane&#039;s clock.<br />
+      [03/17/21 22:26:23] rastajedi [39/263] has come upon tozza [140/696] and been defeated in combat! 0 days, 00:07:06 is added to rastajedi&#039;s clock.<br />
+      [03/18/21 00:02:15] rastajedi [243/263] has challenged lx [122/741] in combat and won! 0 days, 01:51:35 is removed from rastajedi&#039;s clock.<br />
+      [03/18/21 08:47:22] rastajedi [126/263] has come upon Lin [199/743] and been defeated in combat! 0 days, 00:17:44 is added to rastajedi&#039;s clock.<br />
+      [03/18/21 12:46:52] rastajedi [247/263] has challenged clarkos [345/390] in combat and lost! 0 days, 01:09:42 is added to rastajedi&#039;s clock.<br />
+      [03/19/21 05:23:27] Octane [106/547] has come upon rastajedi [75/263] and taken them in combat! 2 days, 10:51:23 is removed from Octane&#039;s clock.<br />
+      [03/19/21 06:32:24] rastajedi [85/276] has challenged JedStar [239/358] in combat and lost! 0 days, 01:20:51 is added to rastajedi&#039;s clock.<br />
+      [03/19/21 10:43:12] ibiza [459/633] has challenged rastajedi [201/276] in combat and won! 3 days, 12:42:53 is removed from ibiza&#039;s clock.<br />
+      [03/19/21 13:50:47] brayden [40/907] has challenged rastajedi [238/276] in combat and lost! 0 days, 16:33:36 is added to brayden&#039;s clock.<br />
+      [03/19/21 17:28:40] rastajedi stopped using dial-up! This wondrous godsend has accelerated them 0 days, 00:40:35 towards level 34.<br />
+      [03/19/21 19:50:48] ^matty^ [383/554] has challenged rastajedi [33/276] in combat and won! 0 days, 03:03:10 is removed from ^matty^&#039;s clock.<br />
+      [03/20/21 02:27:52] rastajedi [192/276] has challenged IRCStats [372/743] in combat and lost! 0 days, 01:47:12 is added to rastajedi&#039;s clock.<br />
+      [03/20/21 16:51:54] JedStar [272/358] has challenged rastajedi [100/276] in combat and won! 0 days, 02:47:19 is removed from JedStar&#039;s clock.<br />
+      [03/20/21 17:50:48] IRCStats [182/743] has challenged rastajedi [132/276] in combat and won! 1 day, 12:45:04 is removed from IRCStats&#039;s clock.<br />
+      [03/21/21 03:03:49] rastajedi [276/299] has challenged Octane [180/547] in combat and won! 0 days, 03:37:36 is removed from rastajedi&#039;s clock.<br />
+      [03/21/21 12:50:46] lx [229/741] has challenged rastajedi [237/299] in combat and lost! 0 days, 04:49:33 is added to lx&#039;s clock.<br />
+      [03/22/21 01:20:38] rastajedi [249/341] has challenged Lin [245/762] in combat and won! 0 days, 04:30:28 is removed from rastajedi&#039;s clock.<br />
+      [03/22/21 01:22:35] Octane [260/547] has come upon rastajedi [27/341] and taken them in combat! 0 days, 14:11:18 is removed from Octane&#039;s clock.<br />
+      [03/22/21 01:23:52] Octane [325/547] has come upon rastajedi [83/341] and taken them in combat! 0 days, 12:54:34 is removed from Octane&#039;s clock.<br />
+      [03/22/21 07:31:19] clarkos [101/391] has challenged rastajedi [74/341] in combat and won! 0 days, 07:38:38 is removed from clarkos&#039;s clock.<br />
+      [03/22/21 07:50:49] grem [597/659] has challenged rastajedi [6/341] in combat and won! 0 days, 01:24:17 is removed from grem&#039;s clock.<br />
+      [03/22/21 10:31:43] lx, tozza and MarkBrandon [1585/1752] have team battled ibiza, rastajedi and IRCStats [668/1717] at [399,464] and won! 0 days, 05:18:26 is removed from their clocks.<br />
+      [03/23/21 02:53:17] rastajedi [63/341] has challenged IRCStats [592/743] in combat and lost! 0 days, 02:47:19 is added to rastajedi&#039;s clock.<br />
+      [03/23/21 04:24:50] MarkBrandon [43/315] has come upon rastajedi [106/341] and been defeated in combat! 0 days, 00:14:02 is added to MarkBrandon&#039;s clock.<br />
+      [03/23/21 21:50:46] IRCStats [497/743] has challenged rastajedi [243/341] in combat and won! 0 days, 10:28:31 is removed from IRCStats&#039;s clock.<br />
+      [03/24/21 08:50:49] tozza [589/696] has challenged rastajedi [27/341] in combat and won! 0 days, 00:04:56 is removed from tozza&#039;s clock.<br />
+      [03/24/21 09:50:46] lx [495/741] has challenged rastajedi [193/341] in combat and won! 2 days, 07:35:59 is removed from lx&#039;s clock.<br />
+      [03/24/21 10:50:46] lx [34/741] has challenged rastajedi [290/341] in combat and lost! 1 day, 15:16:56 is added to lx&#039;s clock.<br />
+      [03/24/21 12:50:48] ^matty^ [367/563] has challenged rastajedi [269/341] in combat and won! 0 days, 12:30:47 is removed from ^matty^&#039;s clock.<br />
+      [03/24/21 16:32:15] rastajedi [264/352] has challenged MarkBrandon [19/315] in combat and won! 0 days, 04:02:37 is removed from rastajedi&#039;s clock.<br />
+      [03/24/21 19:50:46] lx [554/741] has challenged rastajedi [86/352] in combat and won! 1 day, 18:31:51 is removed from lx&#039;s clock.<br />
+      [03/25/21 08:50:48] IRCStats [671/743] has challenged rastajedi [171/352] in combat and won! 0 days, 04:37:09 is removed from IRCStats&#039;s clock.<br />
+      [03/25/21 09:50:46] IRCStats [232/743] has challenged rastajedi [156/352] in combat and won! 0 days, 04:06:49 is removed from IRCStats&#039;s clock.<br />
+      [03/25/21 09:54:36] rastajedi [272/352] has come upon ^matty^ [113/563] and taken them in combat! 0 days, 02:28:22 is removed from rastajedi&#039;s clock.<br />
+      [03/25/21 09:54:36] rastajedi has dealt ^matty^ a Critical Strike! 0 days, 15:25:27 is added to ^matty^&#039;s clock.<br />
+      [03/25/21 18:50:46] damian [513/933] has challenged rastajedi [75/352] in combat and won! 1 day, 00:07:36 is removed from damian&#039;s clock.<br />
+      [03/25/21 21:29:19] rastajedi [233/352] has come upon IRCStats [15/743] and taken them in combat! 0 days, 00:44:44 is removed from rastajedi&#039;s clock.<br />
+      [03/26/21 00:49:21] damian, IRCStats and tozza [1808/2372] have team battled brayden, JedStar and rastajedi [1512/1644] at [25,69] and won! 0 days, 03:27:21 is removed from their clocks.<br />
+      [03/26/21 01:42:51] rastajedi [103/352] has challenged electrohead [470/787] in combat and lost! 0 days, 04:13:18 is added to rastajedi&#039;s clock.<br />
+      [03/26/21 10:58:04] rastajedi [197/352] has come upon tozza [657/696] and been defeated in combat! 0 days, 03:21:00 is added to rastajedi&#039;s clock.<br />
+      [03/26/21 16:50:47] IRCStats [260/743] has challenged rastajedi [79/352] in combat and won! 2 days, 22:15:46 is removed from IRCStats&#039;s clock.<br />
+      [03/26/21 19:50:48] brayden [363/907] has challenged rastajedi [255/352] in combat and won! 0 days, 07:29:49 is removed from brayden&#039;s clock.<br />
+      [03/26/21 19:50:48] brayden has dealt rastajedi a Critical Strike! 0 days, 03:16:16 is added to rastajedi&#039;s clock.<br />
+      [03/26/21 23:44:24] IRCStats, damian and rastajedi [1134/2028] have team battled lx, Lin and ibiza [2033/2136] at [443,429] and lost! 0 days, 07:08:42 is added to their clocks.<br />
+      [03/27/21 10:50:47] electrohead [251/787] has challenged rastajedi [44/352] in combat and won! 1 day, 03:46:29 is removed from electrohead&#039;s clock.<br />
+      [03/27/21 13:50:48] brayden [752/911] has challenged rastajedi [223/352] in combat and won! 0 days, 05:12:08 is removed from brayden&#039;s clock.<br />
+      [03/27/21 17:50:48] Lin [31/762] has challenged rastajedi [46/352] in combat and lost! 0 days, 07:57:27 is added to Lin&#039;s clock.<br />
+      [03/27/21 19:30:45] rastajedi ate a plate of discounted, day-old sushi. This terrible calamity has slowed them 0 days, 02:32:26 from level 40.<br />
+      [03/27/21 23:50:46] Lin [218/762] has challenged rastajedi [97/352] in combat and won! 0 days, 10:24:26 is removed from Lin&#039;s clock.<br />
+      [03/28/21 01:54:28] rastajedi burned a hole through his leggings while ironing them! rastajedi&#039;s set of leggings loses 10% of its effectiveness.<br />
+      [03/28/21 03:57:13] rastajedi bought a faster computer! This wondrous godsend has accelerated them 0 days, 01:53:30 towards level 40.<br />
+      [03/28/21 05:50:48] electrohead [96/787] has challenged rastajedi [52/347] in combat and won! 0 days, 20:12:10 is removed from electrohead&#039;s clock.<br />
+      [03/28/21 05:50:48] In the fierce battle, rastajedi dropped his level 49 pair of gloves! electrohead picks it up, tossing his old level 43 pair of gloves to rastajedi.<br />
+      [03/28/21 19:15:32] rastajedi [228/392] has challenged JedStar [18/389] in combat and won! 0 days, 05:26:28 is removed from rastajedi&#039;s clock.<br />
+      [03/29/21 00:54:12] rastajedi, Lin and ibiza [1428/1787] have team battled IRCStats, brayden and tozza [19/2326] at [441,78] and won! 0 days, 08:49:23 is removed from their clocks.<br />
+      [03/29/21 06:15:10] JedStar [252/389] has come upon rastajedi [18/392] and taken them in combat! 0 days, 01:45:02 is removed from JedStar&#039;s clock.<br />
+      [03/29/21 10:30:59] MarkBrandon [123/386] has challenged rastajedi [237/392] in combat and lost! 0 days, 05:07:31 is added to MarkBrandon&#039;s clock.<br />
+      [03/29/21 20:50:49] IRCStats [288/743] has challenged rastajedi [316/392] in combat and lost! 1 day, 05:14:17 is added to IRCStats&#039;s clock.<br />
+      [03/30/21 01:42:54] rastajedi found a pair of Nikes! This wondrous godsend has accelerated them 0 days, 00:31:26 towards level 41.<br />
+      [03/30/21 02:42:33] grem, rastajedi, ^matty^, and brayden have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [03/30/21 09:25:50] rastajedi [147/437] has challenged damian [548/933] in combat and lost! 0 days, 05:02:58 is added to rastajedi&#039;s clock.<br />
+      [03/30/21 18:50:46] tozza [660/696] has challenged rastajedi [212/437] in combat and won! 0 days, 23:31:17 is removed from tozza&#039;s clock.<br />
+      [03/30/21 22:18:47] rastajedi was set on fire. This terrible calamity has slowed them 0 days, 06:04:53 from level 42.<br />
+      [03/31/21 08:50:48] IRCStats [512/743] has challenged rastajedi [219/437] in combat and won! 1 day, 04:32:56 is removed from IRCStats&#039;s clock.<br />
+      [03/31/21 20:50:46] grem [169/683] has challenged rastajedi [4/437] in combat and won! 0 days, 02:55:34 is removed from grem&#039;s clock.<br />
+      [04/01/21 00:20:47] rastajedi was caught masturbating. This terrible calamity has slowed them 0 days, 02:07:12 from level 42.<br />
+      [04/01/21 00:50:22] rastajedi, Octane, electrohead, and Bob have completed their journey! 25% of their burden is eliminated.<br />
+      [04/01/21 06:23:42] brayden, Lin and damian [146/2583] have team battled Octane, tozza and rastajedi [760/1680] at [348,312] and lost! 0 days, 00:32:37 is added to their clocks.<br />
+      [04/01/21 10:50:49] Lin [457/763] has challenged rastajedi [88/437] in combat and won! 4 days, 10:19:56 is removed from Lin&#039;s clock.<br />
+      [04/01/21 17:50:46] damian [750/933] has challenged rastajedi [394/437] in combat and won! 2 days, 13:46:08 is removed from damian&#039;s clock.<br />
+      [04/02/21 04:33:40] rastajedi [211/437] has challenged damian [774/933] in combat and lost! 0 days, 05:51:26 is added to rastajedi&#039;s clock.<br />
+      [04/02/21 17:27:19] grem, Lin, IRCStats, and rastajedi have completed their journey! 25% of their burden is eliminated.<br />
+      [04/02/21 20:39:05] Octane [535/547] has come upon rastajedi [53/437] and taken them in combat! 3 days, 22:36:22 is removed from Octane&#039;s clock.<br />
+      [04/02/21 23:43:50] rastajedi got lost in the woods. This terrible calamity has slowed them 0 days, 02:36:06 from level 43.<br />
+      [04/03/21 00:50:48] electrohead [498/803] has challenged rastajedi [318/437] in combat and won! 4 days, 12:17:19 is removed from electrohead&#039;s clock.<br />
+      [04/03/21 09:50:47] lx [690/741] has challenged rastajedi [370/437] in combat and won! 3 days, 13:33:09 is removed from lx&#039;s clock.<br />
+      [04/03/21 14:21:22] rastajedi fell into a hole. This terrible calamity has slowed them 0 days, 00:28:41 from level 43.<br />
+      [04/03/21 17:32:40] IRCStats, rastajedi, Octane, and damian have completed their journey! 25% of their burden is eliminated.<br />
+      [04/03/21 22:40:55] rastajedi [423/465] has challenged MarkBrandon [327/450] in combat and won! 0 days, 08:29:36 is removed from rastajedi&#039;s clock.<br />
+      [04/04/21 10:50:46] Lin [496/763] has challenged rastajedi [266/465] in combat and won! 0 days, 16:56:00 is removed from Lin&#039;s clock.<br />
+      [04/05/21 00:50:48] ibiza [196/633] has challenged rastajedi [103/465] in combat and won! 0 days, 03:16:07 is removed from ibiza&#039;s clock.<br />
+      [04/05/21 01:50:48] brayden [455/887] has challenged rastajedi [317/465] in combat and won! 2 days, 23:44:32 is removed from brayden&#039;s clock.<br />
+      [04/05/21 05:50:46] lx [193/741] has challenged rastajedi [125/465] in combat and won! 3 days, 14:41:46 is removed from lx&#039;s clock.<br />
+      [04/05/21 13:50:47] Octane [31/547] has challenged rastajedi [57/465] in combat and lost! 1 day, 14:26:46 is added to Octane&#039;s clock.<br />
+      [04/05/21 16:50:48] brayden [561/887] has challenged rastajedi [111/465] in combat and won! 2 days, 16:16:10 is removed from brayden&#039;s clock.<br />
+      [04/06/21 08:21:00] lx, Octane and SkyFire [1332/1602] have team battled MarkBrandon, ibiza and rastajedi [345/1548] at [182,207] and won! 0 days, 03:21:41 is removed from their clocks.<br />
+      [04/06/21 17:50:47] Octane [347/547] has challenged rastajedi [133/465] in combat and won! 1 day, 01:32:55 is removed from Octane&#039;s clock.<br />
+      [04/07/21 14:21:42] tozza, grem, rastajedi, and damian have completed their journey! 25% of their burden is eliminated.<br />
+      [04/07/21 14:50:49] Lin [397/763] has challenged rastajedi [26/465] in combat and won! 0 days, 22:08:51 is removed from Lin&#039;s clock.<br />
+      [04/07/21 17:50:48] grem [110/690] has challenged rastajedi [385/465] in combat and lost! 0 days, 05:20:32 is added to grem&#039;s clock.<br />
+      [04/07/21 18:50:48] ibiza [265/633] has challenged rastajedi [73/465] in combat and won! 4 days, 13:48:27 is removed from ibiza&#039;s clock.<br />
+      [04/07/21 23:57:36] rastajedi [358/468] has challenged Lin [143/763] in combat and won! 0 days, 14:46:42 is removed from rastajedi&#039;s clock.<br />
+      [04/08/21 17:50:46] lx [676/741] has challenged rastajedi [162/468] in combat and won! 2 days, 23:14:55 is removed from lx&#039;s clock.<br />
+      [04/08/21 20:50:49] lx [319/741] has challenged rastajedi [113/468] in combat and won! 2 days, 05:36:09 is removed from lx&#039;s clock.<br />
+      [04/09/21 08:49:38] Lin, rastajedi, brayden, and JedStar have completed their journey! 25% of their burden is eliminated.<br />
+      [04/09/21 12:51:19] rastajedi [329/468] has come upon grem [132/690] and taken them in combat! 0 days, 05:07:10 is removed from rastajedi&#039;s clock.<br />
+      [04/10/21 02:50:47] JedStar [161/414] has challenged rastajedi [363/468] in combat and lost! 0 days, 00:58:58 is added to JedStar&#039;s clock.<br />
+      [04/10/21 08:48:54] rastajedi, Octane, ^matty^, and lx have completed their journey! 25% of their burden is eliminated.<br />
+      [04/10/21 15:36:11] rastajedi [243/468] has challenged electrohead [330/808] in combat and lost! 0 days, 10:17:09 is added to rastajedi&#039;s clock.<br />
+      [04/10/21 15:50:48] grem [21/690] has challenged rastajedi [8/468] in combat and won! 4 days, 22:23:58 is removed from grem&#039;s clock.<br />
+      [04/11/21 00:05:43] rastajedi [453/468] has come upon IRCStats [143/739] and taken them in combat! 0 days, 17:24:44 is removed from rastajedi&#039;s clock.<br />
+      [04/11/21 10:39:20] grem, rastajedi, Octane, and MarkBrandon have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [04/11/21 13:50:46] rastajedi [68/468] has challenged brayden [712/887] in combat and lost! 0 days, 05:01:52 is added to rastajedi&#039;s clock.<br />
+      [04/11/21 14:50:48] brayden [466/887] has challenged rastajedi [213/468] in combat and won! 0 days, 02:53:47 is removed from brayden&#039;s clock.<br />
+      [04/11/21 15:50:48] electrohead [346/904] has challenged rastajedi [152/468] in combat and won! 5 days, 03:32:50 is removed from electrohead&#039;s clock.<br />
+      [04/12/21 00:50:47] damian [673/940] has challenged rastajedi [64/468] in combat and won! 13 days, 21:56:14 is removed from damian&#039;s clock.<br />
+      [04/12/21 03:50:49] rastajedi [419/468] has challenged tozza [604/696] in combat and lost! 0 days, 09:33:47 is added to rastajedi&#039;s clock.<br />
+      [04/12/21 08:50:47] Octane [238/559] has challenged rastajedi [171/468] in combat and won! 0 days, 01:13:49 is removed from Octane&#039;s clock.<br />
+      [04/12/21 11:50:46] rastajedi [166/468] has challenged ^matty^ [381/576] in combat and lost! 0 days, 08:28:37 is added to rastajedi&#039;s clock.<br />
+      [04/12/21 15:50:47] rastajedi [190/468] has challenged damian [545/940] in combat and lost! 0 days, 11:18:07 is added to rastajedi&#039;s clock.<br />
+      [04/12/21 16:50:48] rastajedi [284/468] has challenged JedStar [258/414] in combat and won! 0 days, 14:56:48 is removed from rastajedi&#039;s clock.<br />
+      [04/12/21 17:50:46] tozza [507/696] has challenged rastajedi [256/468] in combat and won! 0 days, 04:18:54 is removed from tozza&#039;s clock.<br />
+      [04/12/21 23:50:47] rastajedi [119/468] has challenged ^matty^ [123/576] in combat and lost! 0 days, 07:58:31 is added to rastajedi&#039;s clock.<br />
+      [04/13/21 01:50:47] rastajedi [235/468] has challenged Lin [312/784] in combat and lost! 0 days, 10:47:30 is added to rastajedi&#039;s clock.<br />
+      [04/13/21 11:50:46] rastajedi [1/468] has challenged electrohead [708/904] in combat and lost! 0 days, 10:51:47 is added to rastajedi&#039;s clock.<br />
+      [04/13/21 14:50:46] rastajedi [220/468] has challenged ^matty^ [512/576] in combat and lost! 0 days, 08:59:58 is added to rastajedi&#039;s clock.<br />
+      [04/13/21 19:50:46] damian [854/950] has challenged rastajedi [324/468] in combat and won! 15 days, 04:33:52 is removed from damian&#039;s clock.<br />
+      [04/13/21 22:58:47] rastajedi [438/468] has come upon IRCStats [41/739] and taken them in combat! 0 days, 19:24:52 is removed from rastajedi&#039;s clock.<br />
+      [04/13/21 23:50:47] IRCStats [428/739] has challenged rastajedi [264/468] in combat and won! 0 days, 21:38:56 is removed from IRCStats&#039;s clock.<br />
+      [04/14/21 01:23:07] lx, rastajedi and IRCStats [269/1948] have team battled Lin, JedStar and electrohead [122/2129] at [464,78] and won! 0 days, 03:35:15 is removed from their clocks.<br />
+      [04/14/21 07:50:47] ibiza [341/633] has challenged rastajedi [386/468] in combat and lost! 2 days, 12:01:20 is added to ibiza&#039;s clock.<br />
+      [04/14/21 13:50:47] IRCStats [428/739] has challenged rastajedi [205/468] in combat and won! 0 days, 12:48:48 is removed from IRCStats&#039;s clock.<br />
+      [04/14/21 18:50:48] rastajedi [5/468] has challenged Octane [138/580] in combat and lost! 0 days, 06:55:29 is added to rastajedi&#039;s clock.<br />
+      [04/14/21 21:50:47] ^matty^ [218/576] has challenged rastajedi [43/468] in combat and won! 0 days, 01:51:04 is removed from ^matty^&#039;s clock.<br />
+      [04/14/21 22:50:48] rastajedi [388/468] has challenged Octane [158/580] in combat and won! 0 days, 12:31:41 is removed from rastajedi&#039;s clock.<br />
+      [04/15/21 04:50:47] grem [4/920] has challenged rastajedi [299/468] in combat and lost! 4 days, 02:20:55 is added to grem&#039;s clock.<br />
+      [04/15/21 06:54:56] rastajedi, brayden, MarkBrandon, and electrohead have completed their journey! 25% of their burden is eliminated.<br />
+      [04/15/21 08:50:48] rastajedi [337/468] has challenged ibiza [631/633] in combat and lost! 0 days, 03:58:44 is added to rastajedi&#039;s clock.<br />
+      [04/15/21 13:50:48] JedStar [165/441] has challenged rastajedi [572/614] in combat and lost! 0 days, 07:31:29 is added to JedStar&#039;s clock.<br />
+      [04/16/21 01:50:49] rastajedi [439/614] has challenged JedStar [428/441] in combat and won! 0 days, 04:02:19 is removed from rastajedi&#039;s clock.<br />
+      [04/16/21 07:22:21] rastajedi fell, chipping the stone in his amulet! rastajedi&#039;s amulet loses 10% of its effectiveness.<br />
+      [04/16/21 16:50:47] Octane [91/580] has challenged rastajedi [569/603] in combat and lost! 0 days, 13:50:21 is added to Octane&#039;s clock.<br />
+      [04/16/21 20:50:47] MarkBrandon [386/628] has challenged rastajedi [523/603] in combat and lost! 0 days, 07:38:46 is added to MarkBrandon&#039;s clock.<br />
+      [04/17/21 01:39:51] rastajedi, Octane, MarkBrandon, and JedStar have completed their journey! 25% of their burden is eliminated.<br />
+      [04/17/21 01:42:55] MarkBrandon [316/628] has come upon rastajedi [368/603] and been defeated in combat! 0 days, 05:34:59 is added to MarkBrandon&#039;s clock.<br />
+      [04/17/21 01:50:48] rastajedi [542/603] has challenged lx [99/860] in combat and won! 0 days, 00:54:16 is removed from rastajedi&#039;s clock.<br />
+      [04/17/21 02:35:05] Octane [458/580] has come upon rastajedi [115/603] and taken them in combat! 0 days, 16:37:25 is removed from Octane&#039;s clock.<br />
+      [04/17/21 03:50:47] rastajedi [559/603] has challenged brayden [153/887] in combat and won! 0 days, 00:32:00 is removed from rastajedi&#039;s clock.<br />
+      [04/17/21 06:50:46] Lin [144/784] has challenged rastajedi [499/603] in combat and lost! 0 days, 11:38:52 is added to Lin&#039;s clock.<br />
+      [04/17/21 06:52:10] rastajedi [361/603] has challenged MarkBrandon [573/628] in combat and lost! 0 days, 09:16:48 is added to rastajedi&#039;s clock.<br />
+      [04/17/21 11:50:49] lx [625/860] has challenged rastajedi [429/603] in combat and won! 8 days, 23:37:17 is removed from lx&#039;s clock.<br />
+      [04/17/21 15:50:48] rastajedi [350/603] has challenged electrohead [308/904] in combat and won! 0 days, 21:15:37 is removed from rastajedi&#039;s clock.<br />
+      [04/17/21 20:50:47] rastajedi [263/603] has challenged IRCStats [74/739] in combat and won! 0 days, 15:59:33 is removed from rastajedi&#039;s clock.<br />
+      [04/18/21 01:50:52] tozza, Lin, IRCStats, and rastajedi have completed their journey! 25% of their burden is eliminated.<br />
+      [04/18/21 01:50:52] rastajedi [236/603] has come upon tozza [424/696] and been defeated in combat! 0 days, 05:08:14 is added to rastajedi&#039;s clock.<br />
+      [04/18/21 04:47:20] rastajedi lost his glasses. This terrible calamity has slowed them 0 days, 07:18:19 from level 47.<br />
+      [04/18/21 05:43:40] IRCStats [36/765] has challenged rastajedi [26/603] in combat and won! 5 days, 20:24:01 is removed from IRCStats&#039;s clock.<br />
+      [04/18/21 11:50:47] rastajedi [594/603] has challenged brayden [331/887] in combat and won! 0 days, 09:59:57 is removed from rastajedi&#039;s clock.<br />
+      [04/18/21 12:45:21] rastajedi caught a unicorn! This wondrous godsend has accelerated them 0 days, 04:27:36 towards level 47.<br />
+      [04/18/21 17:50:48] rastajedi [346/603] has challenged tozza [363/696] in combat and lost! 0 days, 03:41:46 is added to rastajedi&#039;s clock.<br />
+      [04/18/21 18:50:48] rastajedi [261/603] has challenged damian [89/950] in combat and won! 0 days, 07:20:04 is removed from rastajedi&#039;s clock.<br />
+      [04/18/21 20:04:34] rastajedi got lost in the woods. This terrible calamity has slowed them 0 days, 03:13:36 from level 47.<br />
+      [04/18/21 22:50:48] rastajedi [533/603] has challenged tozza [545/696] in combat and lost! 0 days, 03:15:47 is added to rastajedi&#039;s clock.<br />
+      [04/18/21 23:50:47] electrohead [866/904] has challenged rastajedi [566/603] in combat and won! 2 days, 11:41:22 is removed from electrohead&#039;s clock.<br />
+      [04/19/21 02:50:49] lx [321/860] has challenged rastajedi [128/603] in combat and won! 6 days, 15:55:28 is removed from lx&#039;s clock.<br />
+      [04/19/21 07:44:08] brayden, rastajedi and JedStar [1774/1940] have team battled grem, tozza and lx [836/2476] at [221,403] and won! 0 days, 00:28:37 is removed from their clocks.<br />
+      [04/19/21 09:38:36] JedStar [411/465] has challenged rastajedi [356/612] in combat and won! 0 days, 16:54:59 is removed from JedStar&#039;s clock.<br />
+      [04/19/21 10:50:48] rastajedi [611/612] has challenged grem [759/920] in combat and lost! 0 days, 02:50:30 is added to rastajedi&#039;s clock.<br />
+      [04/19/21 12:39:24] rastajedi found an exploit in the IRPG code! This wondrous godsend has accelerated them 0 days, 02:36:31 towards level 47.<br />
+      [04/19/21 19:50:46] IRCStats [698/765] has challenged rastajedi [64/612] in combat and won! 2 days, 19:15:56 is removed from IRCStats&#039;s clock.<br />
+      [04/19/21 20:50:48] ^matty^ [378/576] has challenged rastajedi [65/612] in combat and won! 1 day, 11:43:53 is removed from ^matty^&#039;s clock.<br />
+      [04/20/21 02:04:07] Verily I say unto thee, the Heavens have burst forth, and the blessed hand of God carried rastajedi 0 days, 02:29:17 toward level 47.<br />
+      [04/20/21 02:50:49] grem [244/920] has challenged rastajedi [302/612] in combat and lost! 0 days, 12:43:15 is added to grem&#039;s clock.<br />
+      [04/20/21 05:50:47] tozza [461/696] has challenged rastajedi [174/612] in combat and won! 1 day, 18:08:16 is removed from tozza&#039;s clock.<br />
+      [04/20/21 07:50:46] Lin [530/789] has challenged rastajedi [202/612] in combat and won! 0 days, 00:43:54 is removed from Lin&#039;s clock.<br />
+      [04/20/21 12:50:48] ibiza [344/652] has challenged rastajedi [509/612] in combat and lost! 1 day, 14:14:29 is added to ibiza&#039;s clock.<br />
+      [04/20/21 13:50:48] lx [239/860] has challenged rastajedi [358/612] in combat and lost! 2 days, 12:38:51 is added to lx&#039;s clock.<br />
+      [04/20/21 16:10:04] rastajedi [299/664] has challenged JedStar [172/465] in combat and won! 0 days, 16:54:58 is removed from rastajedi&#039;s clock.<br />
+      [04/20/21 17:00:59] ibiza, IRCStats, rastajedi, and MarkBrandon have completed their journey! 25% of their burden is eliminated.<br />
+      [04/20/21 18:50:47] Octane [260/581] has challenged rastajedi [20/664] in combat and won! 0 days, 02:40:00 is removed from Octane&#039;s clock.<br />
+      [04/20/21 19:50:47] rastajedi [147/664] has challenged grem [459/920] in combat and lost! 0 days, 08:55:36 is added to rastajedi&#039;s clock.<br />
+      [04/21/21 08:50:49] brayden [530/888] has challenged rastajedi [513/664] in combat and won! 2 days, 17:34:27 is removed from brayden&#039;s clock.<br />
+      [04/21/21 12:50:48] rastajedi [354/664] has challenged grem [421/920] in combat and lost! 0 days, 08:12:00 is added to rastajedi&#039;s clock.<br />
+      [04/21/21 14:50:48] rastajedi [277/664] has challenged Octane [309/581] in combat and lost! 0 days, 07:47:05 is added to rastajedi&#039;s clock.<br />
+      [04/21/21 17:58:25] rastajedi bought a faster computer! This wondrous godsend has accelerated them 0 days, 09:10:38 towards level 48.<br />
+      [04/22/21 15:44:42] rastajedi lost his glasses. This terrible calamity has slowed them 0 days, 03:33:03 from level 48.<br />
+      [04/22/21 15:50:49] lx [526/860] has challenged rastajedi [143/664] in combat and won! 2 days, 23:51:18 is removed from lx&#039;s clock.<br />
+      [04/22/21 17:50:47] rastajedi [450/664] has challenged brayden [296/888] in combat and won! 0 days, 11:35:43 is removed from rastajedi&#039;s clock.<br />
+      [04/23/21 00:50:48] tozza [236/696] has challenged rastajedi [644/664] in combat and lost! 0 days, 09:48:42 is added to tozza&#039;s clock.<br />
+      [04/23/21 02:24:39] Verily I say unto thee, the Heavens have burst forth, and the blessed hand of God carried rastajedi 0 days, 15:41:36 toward level 48.<br />
+      [04/23/21 05:50:49] rastajedi [382/664] has challenged Snoopys_Gunship [169/440] in combat and won! 0 days, 03:19:05 is removed from rastajedi&#039;s clock.<br />
+      [04/23/21 15:50:48] ^matty^ [541/576] has challenged rastajedi [434/664] in combat and won! 0 days, 02:10:13 is removed from ^matty^&#039;s clock.<br />
+      [04/23/21 18:50:49] rastajedi [146/664] has challenged damian [396/949] in combat and lost! 0 days, 01:31:03 is added to rastajedi&#039;s clock.<br />
+      [04/24/21 07:50:49] rastajedi [423/664] has challenged idle [115/921] in combat and won! 0 days, 01:04:34 is removed from rastajedi&#039;s clock.<br />
+      [04/24/21 10:50:48] lx [704/860] has challenged rastajedi [346/664] in combat and won! 2 days, 01:12:27 is removed from lx&#039;s clock.<br />
+      [04/24/21 12:09:06] rastajedi [260/664] has challenged electrohead [115/896] in combat and won! 1 day, 04:32:33 is removed from rastajedi&#039;s clock.<br />
+      [04/24/21 12:09:06] In the fierce battle, electrohead dropped his level 283 pair of boots! rastajedi picks it up, tossing his old level 40 pair of boots to electrohead.<br />
+      [04/24/21 14:50:47] damian [564/973] has challenged rastajedi [266/907] in combat and won! 3 days, 15:43:18 is removed from damian&#039;s clock.<br />
+      [04/24/21 15:50:46] Octane [519/589] has challenged rastajedi [863/907] in combat and lost! 2 days, 22:20:59 is added to Octane&#039;s clock.<br />
+      [04/25/21 07:41:51] ibiza, JedStar and electrohead [1116/1770] have team battled lx, Octane and rastajedi [1628/2356] at [316,466] and lost! 0 days, 02:15:20 is added to their clocks.<br />
+      [04/25/21 22:27:20] ibiza, rastajedi, brayden, and electrohead have completed their journey! 25% of their burden is eliminated.<br />
+      [04/26/21 08:50:48] lx [512/860] has challenged rastajedi [536/907] in combat and lost! 0 days, 18:16:05 is added to lx&#039;s clock.<br />
+      [04/26/21 12:38:07] Lin [41/767] has come upon rastajedi [532/907] and been defeated in combat! 0 days, 16:54:13 is added to Lin&#039;s clock.<br />
+      [04/26/21 15:00:52] rastajedi misplaced his map. This terrible calamity has slowed them 0 days, 06:18:32 from level 49.<br />
+      [04/26/21 16:43:20] rastajedi was visited by a very pretty nymph! This wondrous godsend has accelerated them 0 days, 04:28:55 towards level 49.<br />
+      [04/26/21 16:50:48] grem [650/920] has challenged rastajedi [630/907] in combat and won! 2 days, 04:08:55 is removed from grem&#039;s clock.<br />
+      [04/26/21 21:50:49] damian [818/973] has challenged rastajedi [220/907] in combat and won! 1 day, 11:18:59 is removed from damian&#039;s clock.<br />
+      [04/27/21 06:50:47] lx [752/860] has challenged rastajedi [133/907] in combat and won! 1 day, 08:06:52 is removed from lx&#039;s clock.<br />
+      [04/27/21 08:50:47] rastajedi [507/907] has challenged Octane [310/589] in combat and won! 0 days, 08:06:51 is removed from rastajedi&#039;s clock.<br />
+      [04/27/21 11:41:04] rastajedi, ^matty^, lx, and electrohead have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [04/27/21 13:50:47] rastajedi [235/907] has challenged Lin [267/767] in combat and lost! 0 days, 02:43:03 is added to rastajedi&#039;s clock.<br />
+      [04/27/21 16:45:11] tozza [40/696] has challenged rastajedi [359/907] in combat and lost! 3 days, 17:20:44 is added to tozza&#039;s clock.<br />
+      [04/27/21 17:50:47] rastajedi [141/907] has challenged electrohead [142/653] in combat and lost! 0 days, 02:36:07 is added to rastajedi&#039;s clock.<br />
+      [04/28/21 02:51:01] JedStar [146/502] has challenged rastajedi [172/907] in combat and lost! 0 days, 14:29:07 is added to JedStar&#039;s clock.<br />
+      [04/28/21 03:50:47] rastajedi [710/907] has challenged lx [379/860] in combat and won! 0 days, 03:00:43 is removed from rastajedi&#039;s clock.<br />
+      [04/28/21 05:39:37] Octane [98/589] has come upon rastajedi [902/907] and been defeated in combat! 1 day, 01:12:21 is added to Octane&#039;s clock.<br />
+      [04/28/21 05:50:47] rastajedi [902/907] has challenged ^matty^ [31/576] in combat and won! 0 days, 02:18:37 is removed from rastajedi&#039;s clock.<br />
+      [04/28/21 08:50:47] Octane [458/589] has challenged rastajedi [157/907] in combat and won! 1 day, 21:51:09 is removed from Octane&#039;s clock.<br />
+      [04/28/21 09:50:48] rastajedi [81/907] has challenged tozza [617/696] in combat and lost! 0 days, 00:55:02 is added to rastajedi&#039;s clock.<br />
+      [04/28/21 11:50:46] rastajedi [183/907] has challenged damian [118/973] in combat and won! 0 days, 01:21:59 is removed from rastajedi&#039;s clock.<br />
+      [04/28/21 15:50:48] rastajedi [260/907] has challenged JedStar [190/502] in combat and won! 0 days, 00:26:57 is removed from rastajedi&#039;s clock.<br />
+      [04/28/21 19:08:24] rastajedi [426/917] has challenged electrohead [250/657] in combat and won! 1 day, 09:06:33 is removed from rastajedi&#039;s clock.<br />
+      [04/28/21 21:50:46] damian [515/973] has challenged rastajedi [636/917] in combat and lost! 0 days, 09:01:06 is added to damian&#039;s clock.<br />
+      [04/29/21 08:50:49] Lin [674/767] has challenged rastajedi [657/917] in combat and won! 0 days, 16:35:49 is removed from Lin&#039;s clock.<br />
+      [04/29/21 14:50:48] rastajedi [605/917] has challenged JedStar [438/502] in combat and won! 0 days, 18:29:39 is removed from rastajedi&#039;s clock.<br />
+      [04/29/21 15:50:47] rastajedi [29/917] has challenged damian [937/973] in combat and lost! 0 days, 12:06:58 is added to rastajedi&#039;s clock.<br />
+      [04/29/21 16:50:48] JedStar [147/502] has challenged rastajedi [299/917] in combat and lost! 0 days, 08:48:03 is added to JedStar&#039;s clock.<br />
+      [04/29/21 19:50:48] rastajedi [588/917] has challenged electrohead [243/685] in combat and won! 0 days, 22:50:18 is removed from rastajedi&#039;s clock.<br />
+      [04/30/21 03:50:47] grem [595/920] has challenged rastajedi [171/917] in combat and won! 0 days, 18:42:35 is removed from grem&#039;s clock.<br />
+      [04/30/21 21:50:47] rastajedi [635/917] has challenged tozza [646/696] in combat and lost! 0 days, 08:27:04 is added to rastajedi&#039;s clock.<br />
+      [04/30/21 23:07:50] rastajedi, damian, brayden, and JedStar have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [05/01/21 05:50:47] damian [413/973] has challenged rastajedi [769/917] in combat and lost! 0 days, 04:03:35 is added to damian&#039;s clock.<br />
+      [05/01/21 07:50:49] rastajedi [875/917] has challenged Octane [152/639] in combat and won! 0 days, 10:03:46 is removed from rastajedi&#039;s clock.<br />
+      [05/01/21 09:50:46] rastajedi [584/917] has challenged tozza [317/696] in combat and won! 0 days, 08:15:12 is removed from rastajedi&#039;s clock.<br />
+      [05/01/21 14:50:46] rastajedi [198/917] has challenged Octane [592/639] in combat and lost! 0 days, 03:20:29 is added to rastajedi&#039;s clock.<br />
+      [05/01/21 18:50:47] rastajedi [141/917] has challenged ^matty^ [469/576] in combat and lost! 0 days, 03:17:20 is added to rastajedi&#039;s clock.<br />
+      [05/01/21 19:50:49] ibiza [79/652] has challenged rastajedi [202/917] in combat and lost! 0 days, 13:49:48 is added to ibiza&#039;s clock.<br />
+      [05/02/21 07:50:46] brayden [395/899] has challenged rastajedi [818/917] in combat and lost! 0 days, 01:46:41 is added to brayden&#039;s clock.<br />
+      [05/02/21 13:50:48] rastajedi [742/917] has challenged Lin [716/767] in combat and won! 0 days, 04:03:50 is removed from rastajedi&#039;s clock.<br />
+      [05/03/21 00:50:49] rastajedi [744/917] has challenged IRCStats [329/765] in combat and won! 0 days, 01:39:13 is removed from rastajedi&#039;s clock.<br />
+      [05/03/21 05:50:46] rastajedi [660/917] has challenged Octane [437/639] in combat and won! 0 days, 00:33:08 is removed from rastajedi&#039;s clock.<br />
+      [05/03/21 06:50:46] brayden [697/899] has challenged rastajedi [360/917] in combat and won! 0 days, 00:37:21 is removed from brayden&#039;s clock.<br />
+      [05/03/21 10:50:48] IRCStats [60/765] has challenged rastajedi [820/917] in combat and lost! 0 days, 09:04:16 is added to IRCStats&#039;s clock.<br />
+      [05/03/21 11:32:09] rastajedi [578/917] has challenged IRCStats [712/765] in combat and lost! 0 days, 21:36:13 is added to rastajedi&#039;s clock.<br />
+      [05/03/21 16:15:18] electrohead [602/692] has come upon rastajedi [909/917] and been defeated in combat! 2 days, 05:04:00 is added to electrohead&#039;s clock.<br />
+      [05/03/21 19:50:48] Lin [27/767] has challenged rastajedi [318/917] in combat and lost! 4 days, 21:40:09 is added to Lin&#039;s clock.<br />
+      [05/03/21 23:50:47] IRCStats [241/765] has challenged rastajedi [450/917] in combat and lost! 0 days, 06:13:31 is added to IRCStats&#039;s clock.<br />
+      [05/04/21 01:50:47] IRCStats [665/765] has challenged rastajedi [367/917] in combat and won! 0 days, 11:10:44 is removed from IRCStats&#039;s clock.<br />
+      [05/04/21 04:11:30] damian, grem and rastajedi [2316/2817] have team battled JedStar, brayden and ^matty^ [947/2120] at [464,159] and won! 0 days, 07:53:17 is removed from their clocks.<br />
+      [05/04/21 17:50:49] rastajedi [189/917] has challenged ibiza [492/652] in combat and lost! 0 days, 17:52:33 is added to rastajedi&#039;s clock.<br />
+      [05/05/21 02:50:49] rastajedi [696/917] has challenged Octane [23/639] in combat and won! 1 day, 10:50:55 is removed from rastajedi&#039;s clock.<br />
+      [05/05/21 08:50:48] rastajedi [899/917] has challenged damian [964/980] in combat and lost! 0 days, 17:13:58 is added to rastajedi&#039;s clock.<br />
+      [05/05/21 12:50:47] rastajedi [452/917] has challenged ibiza [487/652] in combat and lost! 0 days, 16:22:36 is added to rastajedi&#039;s clock.<br />
+      [05/05/21 13:50:46] rastajedi [620/917] has challenged lx [389/860] in combat and won! 1 day, 06:48:43 is removed from rastajedi&#039;s clock.<br />
+      [05/05/21 20:50:48] rastajedi [387/917] has challenged ibiza [368/652] in combat and won! 1 day, 03:20:27 is removed from rastajedi&#039;s clock.<br />
+      [05/05/21 21:07:48] rastajedi was rejuvenated by drinking from a magic stream! This wondrous godsend has accelerated them 0 days, 18:33:28 towards level 51.<br />
+      [05/05/21 22:50:49] damian [932/980] has challenged rastajedi [145/917] in combat and won! 1 day, 23:51:10 is removed from damian&#039;s clock.<br />
+      [05/06/21 04:50:49] ibiza [605/652] has challenged rastajedi [654/917] in combat and lost! 0 days, 04:49:34 is added to ibiza&#039;s clock.<br />
+      [05/06/21 20:13:50] damian, tozza and JedStar [178/2262] have team battled Lin, ^matty^ and rastajedi [1842/2375] at [310,87] and lost! 0 days, 23:58:59 is added to their clocks.<br />
+      [05/07/21 04:02:31] ^matty^ [44/691] has come upon rastajedi [66/917] and been defeated in combat! 0 days, 07:21:50 is added to ^matty^&#039;s clock.<br />
+      [05/07/21 06:50:49] ^matty^ [496/691] has challenged rastajedi [538/917] in combat and lost! 0 days, 07:40:59 is added to ^matty^&#039;s clock.<br />
+      [05/07/21 14:50:49] rastajedi [899/917] has challenged electrohead [584/692] in combat and won! 0 days, 15:05:59 is removed from rastajedi&#039;s clock.<br />
+      [05/07/21 22:50:48] rastajedi [33/917] has challenged ibiza [427/652] in combat and lost! 0 days, 05:42:07 is added to rastajedi&#039;s clock.<br />
+      [05/07/21 23:50:49] rastajedi [783/917] has challenged ^matty^ [44/691] in combat and won! 0 days, 10:38:12 is removed from rastajedi&#039;s clock.<br />
+      [05/08/21 09:16:26] rastajedi bit their tongue. This terrible calamity has slowed them 0 days, 03:54:50 from level 51.<br />
+      [05/08/21 14:50:49] rastajedi [810/917] has challenged damian [404/980] in combat and won! 0 days, 08:40:50 is removed from rastajedi&#039;s clock.<br />
+      [05/09/21 00:06:31] ibiza, rastajedi, ^matty^, and brayden have completed their journey! 25% of their burden is eliminated.<br />
+      [05/09/21 04:02:10] brayden, rastajedi and JedStar [458/2405] have team battled ^matty^, grem and electrohead [2316/2324] at [32,386] and lost! 0 days, 04:39:40 is added to their clocks.<br />
+      [05/09/21 04:50:48] rastajedi [914/917] has challenged IRCStats [642/724] in combat and won! 0 days, 04:20:42 is removed from rastajedi&#039;s clock.<br />
+      [05/09/21 04:59:10] ibiza, brayden and damian [668/2451] have team battled Lin, rastajedi and JedStar [654/2501] at [384,236] and won! 1 day, 14:47:59 is removed from their clocks.<br />
+      [05/09/21 05:59:09] JedStar [798/817] has come upon rastajedi [893/917] and been defeated in combat! 0 days, 14:48:25 is added to JedStar&#039;s clock.<br />
+      [05/09/21 05:59:15] JedStar [552/817] has come upon rastajedi [215/917] and taken them in combat! 1 day, 03:09:37 is removed from JedStar&#039;s clock.<br />
+      [05/09/21 09:50:46] rastajedi [847/917] has challenged damian [538/980] in combat and won! 0 days, 02:50:59 is removed from rastajedi&#039;s clock.<br />
+      [05/09/21 21:50:48] grem [837/920] has challenged rastajedi [409/917] in combat and won! 0 days, 09:28:42 is removed from grem&#039;s clock.<br />
+      [05/10/21 00:48:29] rastajedi [409/917] has challenged idle [127/1107] in combat and won! 2 days, 07:41:24 is removed from rastajedi&#039;s clock.<br />
+      [05/10/21 02:50:49] rastajedi [155/917] has challenged damian [867/980] in combat and lost! 0 days, 19:51:54 is added to rastajedi&#039;s clock.<br />
+      [05/10/21 08:50:47] brayden [388/671] has challenged rastajedi [138/917] in combat and won! 0 days, 22:27:48 is removed from brayden&#039;s clock.<br />
+      [05/10/21 10:50:46] rastajedi [331/917] has challenged clarkos [355/391] in combat and lost! 0 days, 16:16:52 is added to rastajedi&#039;s clock.<br />
+      [05/10/21 18:50:49] clarkos [213/391] has challenged rastajedi [64/917] in combat and won! 0 days, 15:47:22 is removed from clarkos&#039;s clock.<br />
+      [05/11/21 02:50:46] rastajedi [377/917] has challenged brayden [617/671] in combat and lost! 0 days, 20:57:29 is added to rastajedi&#039;s clock.<br />
+      [05/11/21 05:50:48] ^matty^ [413/712] has challenged rastajedi [410/917] in combat and won! 5 days, 19:10:24 is removed from ^matty^&#039;s clock.<br />
+      [05/11/21 08:50:48] ^matty^ [651/712] has challenged rastajedi [779/917] in combat and lost! 2 days, 23:13:56 is added to ^matty^&#039;s clock.<br />
+      [05/11/21 11:50:47] Lin [407/767] has challenged rastajedi [859/917] in combat and lost! 2 days, 09:34:33 is added to Lin&#039;s clock.<br />
+      [05/11/21 13:50:46] rastajedi [210/917] has challenged tozza [602/723] in combat and lost! 0 days, 21:51:16 is added to rastajedi&#039;s clock.<br />
+      [05/11/21 14:50:48] rastajedi [123/917] has challenged ibiza [532/801] in combat and lost! 0 days, 21:05:40 is added to rastajedi&#039;s clock.<br />
+      [05/11/21 20:50:47] rastajedi [815/917] has challenged brayden [13/673] in combat and won! 1 day, 20:36:14 is removed from rastajedi&#039;s clock.<br />
+      [05/12/21 00:50:47] damian [880/980] has challenged rastajedi [783/917] in combat and won! 0 days, 14:02:17 is removed from damian&#039;s clock.<br />
+      [05/12/21 04:50:47] electrohead [321/692] has challenged rastajedi [852/917] in combat and lost! 0 days, 01:23:14 is added to electrohead&#039;s clock.<br />
+      [05/12/21 10:50:47] damian [476/980] has challenged rastajedi [556/917] in combat and lost! 0 days, 05:32:47 is added to damian&#039;s clock.<br />
+      [05/12/21 11:50:49] IRCStats [455/724] has challenged rastajedi [672/917] in combat and lost! 3 days, 10:34:20 is added to IRCStats&#039;s clock.<br />
+      [05/12/21 17:50:48] rastajedi [452/917] has challenged grem [540/920] in combat and lost! 0 days, 19:11:07 is added to rastajedi&#039;s clock.<br />
+      [05/12/21 20:30:08] rastajedi fell into a hole. This terrible calamity has slowed them 0 days, 18:22:34 from level 52.<br />
+      [05/12/21 22:53:25] rastajedi got G-Lined by gremlinz. This terrible calamity has slowed them 0 days, 22:06:43 from level 52.<br />
+      [05/13/21 09:50:46] damian [107/980] has challenged rastajedi [309/917] in combat and lost! 0 days, 01:07:28 is added to damian&#039;s clock.<br />
+      [05/13/21 11:50:47] rastajedi [808/917] has challenged tozza [615/723] in combat and won! 1 day, 16:46:30 is removed from rastajedi&#039;s clock.<br />
+      [05/13/21 12:50:49] rastajedi [654/917] has challenged damian [1/980] in combat and won! 1 day, 10:05:28 is removed from rastajedi&#039;s clock.<br />
+      [05/13/21 14:25:23] JedStar, electrohead and rastajedi [1796/2431] have team battled tozza, brayden and ibiza [1149/2197] at [221,352] and won! 0 days, 03:21:23 is removed from their clocks.<br />
+      [05/13/21 16:50:48] Lin [4/762] has challenged rastajedi [242/917] in combat and lost! 1 day, 07:33:57 is added to Lin&#039;s clock.<br />
+      [05/13/21 18:50:46] brayden [310/673] has challenged rastajedi [186/917] in combat and won! 4 days, 10:29:03 is removed from brayden&#039;s clock.<br />
+      [05/14/21 00:43:52] rastajedi [702/917] has come upon tozza [354/723] and taken them in combat! 1 day, 02:11:53 is removed from rastajedi&#039;s clock.<br />
+      [05/14/21 07:50:46] rastajedi [749/917] has challenged Octane [563/639] in combat and won! 0 days, 19:33:49 is removed from rastajedi&#039;s clock.<br />
+      [05/14/21 10:50:49] rastajedi [319/917] has challenged brayden [337/673] in combat and lost! 0 days, 09:42:26 is added to rastajedi&#039;s clock.<br />
+      [05/14/21 15:50:48] rastajedi [298/917] has challenged damian [874/980] in combat and lost! 0 days, 10:07:52 is added to rastajedi&#039;s clock.<br />
+      [05/14/21 18:50:48] grem [213/920] has challenged rastajedi [397/917] in combat and lost! 0 days, 20:56:50 is added to grem&#039;s clock.<br />
+      [05/14/21 20:36:38] ibiza, grem, rastajedi, and damian have completed their journey! 25% of their burden is eliminated.<br />
+      [05/14/21 20:50:47] rastajedi [632/917] has challenged lx [1066/1137] in combat and lost! 0 days, 07:03:26 is added to rastajedi&#039;s clock.<br />
+      [05/14/21 23:50:48] ibiza [429/801] has challenged rastajedi [132/917] in combat and won! 1 day, 01:53:43 is removed from ibiza&#039;s clock.<br />
+      [05/15/21 02:50:48] electrohead [633/692] has challenged rastajedi [38/917] in combat and won! 6 days, 02:20:07 is removed from electrohead&#039;s clock.<br />
+      [05/15/21 13:50:48] JedStar [418/822] has challenged rastajedi [59/917] in combat and won! 1 day, 04:48:27 is removed from JedStar&#039;s clock.<br />
+      [05/15/21 13:54:38] rastajedi gained a sixth sense! This wondrous godsend has accelerated them 0 days, 04:04:36 towards level 52.<br />
+      [05/15/21 15:50:49] rastajedi [826/917] has challenged Octane [545/639] in combat and won! 0 days, 11:19:41 is removed from rastajedi&#039;s clock.<br />
+      [05/15/21 19:50:47] rastajedi [889/917] has challenged Lin [624/762] in combat and won! 0 days, 09:37:51 is removed from rastajedi&#039;s clock.<br />
+      [05/15/21 23:50:49] Octane [35/729] has challenged rastajedi [503/917] in combat and lost! 0 days, 00:04:58 is added to Octane&#039;s clock.<br />
+      [05/16/21 03:50:47] ^matty^ [688/712] has challenged rastajedi [186/917] in combat and won! 2 days, 17:17:48 is removed from ^matty^&#039;s clock.<br />
+      [05/16/21 06:34:34] rastajedi, Octane, electrohead, and JedStar have completed their journey! 25% of their burden is eliminated.<br />
+      [05/16/21 07:50:47] rastajedi [868/917] has challenged Octane [544/737] in combat and won! 0 days, 04:17:26 is removed from rastajedi&#039;s clock.<br />
+      [05/16/21 17:50:47] rastajedi [171/917] has challenged lx [836/1137] in combat and lost! 0 days, 01:08:42 is added to rastajedi&#039;s clock.<br />
+      [05/17/21 04:25:32] tozza, rastajedi, damian, and electrohead have completed their journey! 25% of their burden is eliminated.<br />
+      [05/17/21 05:50:49] damian [429/980] has challenged rastajedi [467/917] in combat and lost! 1 day, 07:43:17 is added to damian&#039;s clock.<br />
+      [05/17/21 06:50:49] rastajedi [626/917] has challenged lx [505/1139] in combat and won! 0 days, 00:11:08 is removed from rastajedi&#039;s clock.<br />
+      [05/17/21 07:53:57] rastajedi [210/919] has challenged tozza [70/718] in combat and won! 2 days, 03:40:49 is removed from rastajedi&#039;s clock.<br />
+      [05/17/21 18:50:49] rastajedi [510/919] has challenged IRCStats [300/691] in combat and won! 1 day, 17:39:36 is removed from rastajedi&#039;s clock.<br />
+      [05/17/21 22:50:49] Lin [545/762] has challenged rastajedi [381/919] in combat and won! 0 days, 06:27:07 is removed from Lin&#039;s clock.<br />
+      [05/17/21 23:50:47] rastajedi [791/919] has challenged grem [399/920] in combat and won! 1 day, 10:11:40 is removed from rastajedi&#039;s clock.<br />
+      [05/18/21 10:50:47] rastajedi [752/919] has challenged Lin [225/762] in combat and won! 1 day, 02:57:48 is removed from rastajedi&#039;s clock.<br />
+      [05/18/21 13:50:48] rastajedi [577/919] has challenged Lin [691/762] in combat and lost! 0 days, 12:28:12 is added to rastajedi&#039;s clock.<br />
+      [05/18/21 15:50:48] IRCStats [35/691] has challenged rastajedi [452/919] in combat and lost! 1 day, 07:18:17 is added to IRCStats&#039;s clock.<br />
+      [05/18/21 17:50:48] electrohead [407/675] has challenged rastajedi [198/919] in combat and won! 1 day, 04:07:00 is removed from electrohead&#039;s clock.<br />
+      [05/18/21 21:50:48] lx [409/1139] has challenged rastajedi [822/919] in combat and lost! 2 days, 23:08:48 is added to lx&#039;s clock.<br />
+      [05/19/21 01:50:47] rastajedi [64/919] has challenged IRCStats [321/691] in combat and lost! 0 days, 12:30:45 is added to rastajedi&#039;s clock.<br />
+      [05/19/21 03:17:59] tozza, ibiza, IRCStats, and rastajedi have completed their journey! 25% of their burden is eliminated.<br />
+      [05/19/21 03:18:02] rastajedi [560/919] has come upon tozza [131/718] and taken them in combat! 0 days, 18:00:37 is removed from rastajedi&#039;s clock.<br />
+      [05/19/21 03:18:59] rastajedi [537/919] has come upon tozza [186/718] and taken them in combat! 0 days, 15:07:34 is removed from rastajedi&#039;s clock.<br />
+      [05/19/21 08:40:58] rastajedi reinforced his shield with a dragon&#039;s scales! rastajedi&#039;s shield gains 10% effectiveness.<br />
+      [05/19/21 08:50:49] electrohead [568/675] has challenged rastajedi [633/921] in combat and lost! 0 days, 11:32:00 is added to electrohead&#039;s clock.<br />
+      [05/19/21 19:50:48] rastajedi [337/921] has challenged JedStar [139/924] in combat and won! 0 days, 08:10:28 is removed from rastajedi&#039;s clock.<br />
+      [05/20/21 03:50:46] rastajedi [522/921] has challenged damian [656/980] in combat and lost! 0 days, 04:12:13 is added to rastajedi&#039;s clock.<br />
+      [05/20/21 07:44:40] tozza, rastajedi, Octane, and brayden have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [05/20/21 12:50:47] rastajedi [583/921] has challenged tozza [571/718] in combat and won! 0 days, 04:49:31 is removed from rastajedi&#039;s clock.<br />
+      [05/20/21 12:50:47] In the fierce battle, tozza dropped his level 109 amulet! rastajedi picks it up, tossing his old level 101 amulet to tozza.<br />
+      [05/20/21 23:50:49] rastajedi [757/929] has challenged JedStar [149/924] in combat and won! 0 days, 01:51:47 is removed from rastajedi&#039;s clock.<br />
+      [05/21/21 01:50:47] rastajedi [467/929] has challenged JedStar [313/924] in combat and won! 0 days, 01:21:39 is removed from rastajedi&#039;s clock.<br />
+      [05/21/21 04:50:48] Lin [473/765] has challenged rastajedi [317/929] in combat and won! 6 days, 11:32:08 is removed from Lin&#039;s clock.<br />
+      [05/21/21 08:50:48] rastajedi [61/929] has challenged ibiza [490/801] in combat and lost! 0 days, 00:11:23 is added to rastajedi&#039;s clock.<br />
+      [05/21/21 11:08:39] rastajedi [220/929] has challenged JedStar [814/924] in combat and lost! 1 day, 02:13:40 is added to rastajedi&#039;s clock.<br />
+      [05/21/21 11:50:48] rastajedi [643/929] has challenged IRCStats [316/691] in combat and won! 2 days, 16:02:00 is removed from rastajedi&#039;s clock.<br />
+      [05/21/21 13:50:46] IRCStats [281/691] has challenged rastajedi [61/929] in combat and won! 1 day, 11:10:31 is removed from IRCStats&#039;s clock.<br />
+      [05/21/21 15:50:47] rastajedi [287/929] has challenged JedStar [367/924] in combat and lost! 0 days, 23:15:08 is added to rastajedi&#039;s clock.<br />
+      [05/21/21 17:06:54] electrohead [193/675] has come upon rastajedi [681/929] and been defeated in combat! 0 days, 01:57:58 is added to electrohead&#039;s clock.<br />
+      [05/21/21 21:50:47] tozza [188/710] has challenged rastajedi [306/929] in combat and lost! 0 days, 04:38:04 is added to tozza&#039;s clock.<br />
+      [05/21/21 22:50:48] lx [1069/1139] has challenged rastajedi [672/929] in combat and won! 5 days, 16:21:51 is removed from lx&#039;s clock.<br />
+      [05/21/21 23:50:46] electrohead [78/675] has challenged rastajedi [530/929] in combat and lost! 0 days, 00:23:57 is added to electrohead&#039;s clock.<br />
+      [05/22/21 00:50:47] rastajedi [422/929] has challenged ibiza [494/801] in combat and lost! 2 days, 14:46:06 is added to rastajedi&#039;s clock.<br />
+      [05/22/21 04:10:06] rastajedi was taught to run quickly by a secret tribe of pygmies that know how to, among other things, run quickly! This wondrous godsend has accelerated them 3 days, 11:15:21 towards level 54.<br />
+      [05/22/21 08:21:32] JedStar, brayden and rastajedi [47/2529] have team battled IRCStats, Octane and ^matty^ [55/2148] at [402,214] and lost! 0 days, 22:41:55 is added to their clocks.<br />
+      [05/22/21 08:50:49] electrohead [618/675] has challenged rastajedi [175/929] in combat and won! 6 days, 10:45:34 is removed from electrohead&#039;s clock.<br />
+      [05/22/21 14:50:47] tozza [337/710] has challenged rastajedi [460/929] in combat and lost! 0 days, 05:18:10 is added to tozza&#039;s clock.<br />
+      [05/22/21 19:50:48] IRCStats [305/691] has challenged rastajedi [590/929] in combat and lost! 0 days, 03:43:16 is added to IRCStats&#039;s clock.<br />
+      [05/22/21 22:55:05] tozza, IRCStats, rastajedi, and electrohead have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [05/23/21 04:03:29] JedStar [657/924] has come upon rastajedi [518/929] and taken them in combat! 0 days, 12:38:03 is removed from JedStar&#039;s clock.<br />
+      [05/23/21 04:50:48] tozza [93/710] has challenged rastajedi [577/929] in combat and lost! 0 days, 04:31:27 is added to tozza&#039;s clock.<br />
+      [05/23/21 06:50:48] rastajedi [775/929] has challenged ^matty^ [706/712] in combat and won! 2 days, 22:02:04 is removed from rastajedi&#039;s clock.<br />
+      [05/23/21 13:50:48] rastajedi [583/929] has challenged damian [639/980] in combat and lost! 1 day, 14:05:20 is added to rastajedi&#039;s clock.<br />
+      [05/23/21 19:16:27] damian [88/980] has challenged rastajedi [343/929] in combat and lost! 3 days, 22:23:08 is added to damian&#039;s clock.<br />
+      [05/24/21 00:40:07] ^matty^ [136/712] has come upon rastajedi [702/929] and been defeated in combat! 0 days, 20:11:42 is added to ^matty^&#039;s clock.<br />
+      [05/24/21 02:50:49] rastajedi [705/929] has challenged brayden [276/676] in combat and won! 2 days, 23:43:41 is removed from rastajedi&#039;s clock.<br />
+      [05/24/21 04:50:49] rastajedi [330/929] has challenged lx [626/1139] in combat and lost! 1 day, 05:57:56 is added to rastajedi&#039;s clock.<br />
+      [05/24/21 06:50:48] IRCStats [364/691] has challenged rastajedi [762/929] in combat and lost! 0 days, 00:00:49 is added to IRCStats&#039;s clock.<br />
+      [05/24/21 10:50:49] tozza [444/710] has challenged rastajedi [61/929] in combat and won! 0 days, 05:39:12 is removed from tozza&#039;s clock.<br />
+      [05/24/21 22:38:06] rastajedi caught a unicorn! This wondrous godsend has accelerated them 1 day, 10:48:26 towards level 54.<br />
+      [05/24/21 22:50:48] rastajedi [632/929] has challenged ibiza [94/801] in combat and won! 2 days, 04:45:34 is removed from rastajedi&#039;s clock.<br />
+      [05/24/21 23:13:09] tozza, ibiza, rastajedi, and JedStar have completed their journey! 25% of their burden is eliminated.<br />
+      [05/25/21 13:50:47] electrohead [631/675] has challenged rastajedi [443/929] in combat and won! 2 days, 02:30:08 is removed from electrohead&#039;s clock.<br />
+      [05/25/21 22:50:47] rastajedi [65/933] has challenged damian [815/980] in combat and lost! 0 days, 18:25:04 is added to rastajedi&#039;s clock.<br />
+      [05/26/21 01:50:47] tozza [577/710] has challenged rastajedi [376/933] in combat and won! 0 days, 00:49:35 is removed from tozza&#039;s clock.<br />
+      [05/26/21 04:50:47] rastajedi [922/933] has challenged Octane [391/723] in combat and won! 1 day, 08:33:33 is removed from rastajedi&#039;s clock.<br />
+      [05/26/21 04:50:47] rastajedi has dealt Octane a Critical Strike! 0 days, 01:02:08 is added to Octane&#039;s clock.<br />
+      [05/26/21 05:50:47] electrohead [644/675] has challenged rastajedi [150/933] in combat and won! 2 days, 03:17:16 is removed from electrohead&#039;s clock.<br />
+      [05/26/21 12:50:48] rastajedi [875/933] has challenged tozza [66/710] in combat and won! 1 day, 04:14:38 is removed from rastajedi&#039;s clock.<br />
+      [05/26/21 16:50:47] rastajedi [658/933] has challenged brayden [396/676] in combat and won! 0 days, 23:05:06 is removed from rastajedi&#039;s clock.<br />
+      [05/26/21 19:50:47] grem [837/922] has challenged rastajedi [278/933] in combat and won! 11 days, 04:45:17 is removed from grem&#039;s clock.<br />
+      [05/26/21 23:50:48] rastajedi [4/933] has challenged brayden [663/676] in combat and lost! 0 days, 10:16:39 is added to rastajedi&#039;s clock.<br />
+      [05/27/21 01:42:25] grem, rastajedi, electrohead, and JedStar have completed their journey! 25% of their burden is eliminated.<br />
+      [05/27/21 01:50:48] rastajedi [333/933] has challenged idle [550/1162] in combat and lost! 0 days, 09:10:55 is added to rastajedi&#039;s clock.<br />
+      [05/27/21 02:50:49] rastajedi [7/933] has challenged JedStar [488/924] in combat and lost! 0 days, 07:00:00 is added to rastajedi&#039;s clock.<br />
+      [05/27/21 07:42:10] rastajedi was bitten by a radioactive spider! This wondrous godsend has accelerated them 0 days, 09:11:35 towards level 54.<br />
+      [05/27/21 08:50:46] JedStar [500/924] has challenged rastajedi [843/933] in combat and lost! 0 days, 08:50:22 is added to JedStar&#039;s clock.<br />
+      [05/27/21 14:50:46] damian [296/980] has challenged rastajedi [688/933] in combat and lost! 0 days, 21:39:34 is added to damian&#039;s clock.<br />
+      [05/28/21 08:50:47] Lin [75/766] has challenged rastajedi [273/933] in combat and lost! 4 days, 06:58:15 is added to Lin&#039;s clock.<br />
+      [05/28/21 09:50:47] Octane [423/723] has challenged rastajedi [461/933] in combat and lost! 3 days, 11:41:54 is added to Octane&#039;s clock.<br />
+      [05/28/21 20:50:48] rastajedi [773/933] has challenged damian [979/980] in combat and lost! 0 days, 05:01:22 is added to rastajedi&#039;s clock.<br />
+      [05/28/21 21:06:17] electrohead, Octane and tozza [1551/2114] have team battled IRCStats, rastajedi and damian [1/2603] at [294,18] and won! 2 days, 02:28:41 is removed from their clocks.<br />
+      [05/28/21 21:50:47] rastajedi [278/933] has challenged lx [569/1161] in combat and lost! 0 days, 04:47:11 is added to rastajedi&#039;s clock.<br />
+      [05/29/21 03:50:46] rastajedi [415/933] has challenged Octane [294/723] in combat and won! 0 days, 08:47:34 is removed from rastajedi&#039;s clock.<br />
+      [05/29/21 04:50:48] brayden [611/692] has challenged rastajedi [484/933] in combat and won! 5 days, 02:53:52 is removed from brayden&#039;s clock.<br />
+      [05/29/21 07:07:36] rastajedi was bitten by drdink. This terrible calamity has slowed them 0 days, 05:07:12 from level 54.<br />
+      [05/29/21 07:21:23] rastajedi was attacked by a rabid cow. This terrible calamity has slowed them 0 days, 04:37:45 from level 54.<br />
+      [05/29/21 11:18:56] damian [236/980] has come upon rastajedi [33/933] and taken them in combat! 0 days, 20:39:32 is removed from damian&#039;s clock.<br />
+      [05/29/21 19:50:48] Lin [357/766] has challenged rastajedi [714/933] in combat and lost! 4 days, 08:28:12 is added to Lin&#039;s clock.<br />
+      [05/30/21 03:50:49] IRCStats [87/690] has challenged rastajedi [252/933] in combat and lost! 1 day, 08:46:24 is added to IRCStats&#039;s clock.<br />
+      [05/30/21 09:50:47] rastajedi [46/933] has challenged IRCStats [403/690] in combat and lost! 0 days, 02:39:42 is added to rastajedi&#039;s clock.<br />
+      [05/30/21 11:50:49] tozza [368/711] has challenged rastajedi [4/933] in combat and won! 3 days, 12:11:33 is removed from tozza&#039;s clock.<br />
+      [05/30/21 14:50:46] IRCStats [177/690] has challenged rastajedi [532/933] in combat and lost! 1 day, 10:17:51 is added to IRCStats&#039;s clock.<br />
+      [05/31/21 01:50:48] IRCStats [525/690] has challenged rastajedi [105/933] in combat and won! 3 days, 00:45:51 is removed from IRCStats&#039;s clock.<br />
+      [05/31/21 08:50:48] brayden [477/692] has challenged rastajedi [748/933] in combat and lost! 1 day, 19:22:38 is added to brayden&#039;s clock.<br />
+      [05/31/21 18:05:00] rastajedi [338/933] has challenged IRCStats [22/690] in combat and won! 2 days, 21:32:27 is removed from rastajedi&#039;s clock.<br />
+      [06/01/21 00:50:49] rastajedi [549/933] has challenged grem [516/922] in combat and won! 2 days, 12:54:56 is removed from rastajedi&#039;s clock.<br />
+      [06/01/21 02:50:47] JedStar [331/924] has challenged rastajedi [151/933] in combat and won! 0 days, 08:49:28 is removed from JedStar&#039;s clock.<br />
+      [06/01/21 11:50:46] Octane [610/723] has challenged rastajedi [45/933] in combat and won! 5 days, 05:45:48 is removed from Octane&#039;s clock.<br />
+      [06/01/21 17:51:25] damian [647/982] has challenged rastajedi [463/933] in combat and won! 7 days, 10:24:27 is removed from damian&#039;s clock.<br />
+      [06/01/21 18:50:48] rastajedi [368/933] has challenged brayden [662/692] in combat and lost! 1 day, 01:08:49 is added to rastajedi&#039;s clock.<br />
+      [06/02/21 06:50:49] rastajedi [697/934] has challenged clarkos [315/391] in combat and won! 1 day, 08:10:53 is removed from rastajedi&#039;s clock.<br />
+      [06/02/21 23:36:23] Verily I say unto thee, the Heavens have burst forth, and the blessed hand of God carried rastajedi 2 days, 04:11:40 toward level 55.<br />
+      [06/03/21 03:50:46] ^matty^ [57/712] has challenged rastajedi [538/934] in combat and lost! 0 days, 15:11:29 is added to ^matty^&#039;s clock.<br />
+      [06/03/21 05:50:47] JedStar [744/924] has challenged rastajedi [781/934] in combat and lost! 1 day, 19:24:31 is added to JedStar&#039;s clock.<br />
+      [06/03/21 07:50:48] damian [528/982] has challenged rastajedi [764/934] in combat and lost! 2 days, 11:14:05 is added to damian&#039;s clock.<br />
+      [06/03/21 08:19:50] Verily I say unto thee, the Heavens have burst forth, and the blessed hand of God carried rastajedi 2 days, 17:40:10 toward level 55.<br />
+      [06/03/21 09:50:49] ^matty^ [637/712] has challenged rastajedi [135/934] in combat and won! 1 day, 05:24:27 is removed from ^matty^&#039;s clock.<br />
+      [06/03/21 10:50:48] tozza [690/707] has challenged rastajedi [560/934] in combat and won! 0 days, 18:49:57 is removed from tozza&#039;s clock.<br />
+      [06/03/21 13:50:46] rastajedi [627/934] has challenged Octane [444/723] in combat and won! 0 days, 17:27:58 is removed from rastajedi&#039;s clock.<br />
+      [06/03/21 14:50:46] grem [144/928] has challenged rastajedi [823/934] in combat and lost! 0 days, 00:46:09 is added to grem&#039;s clock.<br />
+      [06/03/21 15:50:48] Lin [407/766] has challenged rastajedi [631/934] in combat and lost! 0 days, 05:23:33 is added to Lin&#039;s clock.<br />
+      [06/04/21 04:50:46] tozza [414/707] has challenged rastajedi [199/934] in combat and won! 0 days, 13:33:24 is removed from tozza&#039;s clock.<br />
+      [06/04/21 13:25:55] Lin, rastajedi, lx, and electrohead have completed their journey! 25% of their burden is eliminated.<br />
+      [06/04/21 13:25:58] lx [166/1161] has come upon rastajedi [39/934] and taken them in combat! 1 day, 17:09:16 is removed from lx&#039;s clock.<br />
+      [06/05/21 02:50:48] rastajedi [25/936] has challenged damian [760/982] in combat and lost! 0 days, 03:52:53 is added to rastajedi&#039;s clock.<br />
+      [06/05/21 03:50:46] rastajedi [27/936] has challenged lx [34/1161] in combat and lost! 0 days, 03:40:50 is added to rastajedi&#039;s clock.<br />
+      [06/05/21 07:50:47] grem [504/928] has challenged rastajedi [724/936] in combat and lost! 3 days, 10:27:53 is added to grem&#039;s clock.<br />
+      [06/05/21 10:51:23] tozza, rastajedi, Octane, and damian have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [06/06/21 03:50:48] grem [321/928] has challenged rastajedi [390/936] in combat and lost! 4 days, 14:18:42 is added to grem&#039;s clock.<br />
+      [06/06/21 05:50:46] grem [694/928] has challenged rastajedi [564/936] in combat and won! 9 days, 02:56:43 is removed from grem&#039;s clock.<br />
+      [06/06/21 06:27:38] rastajedi was caught in a terrible snowstorm. This terrible calamity has slowed them 0 days, 01:21:52 from level 55.<br />
+      [06/06/21 08:50:49] rastajedi [159/936] has challenged Lin [652/766] in combat and lost! 0 days, 01:01:28 is added to rastajedi&#039;s clock.<br />
+      [06/06/21 10:50:48] rastajedi [396/936] has challenged Octane [576/723] in combat and lost! 0 days, 00:49:57 is added to rastajedi&#039;s clock.<br />
+      [06/06/21 15:50:49] rastajedi [724/936] has challenged Lin [381/766] in combat and won! 0 days, 01:03:39 is removed from rastajedi&#039;s clock.<br />
+      [06/06/21 21:01:36] rastajedi [203/936] has challenged Octane [17/723] in combat and won! 3 days, 03:37:33 is removed from rastajedi&#039;s clock.<br />
+      [06/06/21 22:50:49] damian [612/982] has challenged rastajedi [59/936] in combat and won! 1 day, 00:32:43 is removed from damian&#039;s clock.<br />
+      [06/07/21 00:50:49] brayden [526/694] has challenged rastajedi [88/936] in combat and won! 3 days, 03:19:39 is removed from brayden&#039;s clock.<br />
+      [06/07/21 02:50:48] rastajedi [248/936] has challenged tozza [116/707] in combat and won! 2 days, 19:38:11 is removed from rastajedi&#039;s clock.<br />
+      [06/07/21 13:50:48] clarkos [361/466] has challenged rastajedi [128/936] in combat and won! 0 days, 06:29:20 is removed from clarkos&#039;s clock.<br />
+      [06/07/21 14:00:01] Lin, rastajedi, lx, and electrohead have completed their journey! 25% of their burden is eliminated.<br />
+      [06/07/21 14:50:46] rastajedi [524/936] has challenged idle [2/1162] in combat and won! 2 days, 03:25:17 is removed from rastajedi&#039;s clock.<br />
+      [06/07/21 22:50:49] rastajedi [772/936] has challenged damian [975/982] in combat and lost! 0 days, 17:47:30 is added to rastajedi&#039;s clock.<br />
+      [06/08/21 02:50:46] rastajedi [332/936] has challenged tozza [540/707] in combat and lost! 0 days, 19:01:58 is added to rastajedi&#039;s clock.<br />
+      [06/08/21 03:50:47] lx [466/1161] has challenged rastajedi [502/936] in combat and lost! 0 days, 02:20:52 is added to lx&#039;s clock.<br />
+      [06/08/21 05:50:47] rastajedi [20/936] has challenged ibiza [561/801] in combat and lost! 0 days, 10:11:33 is added to rastajedi&#039;s clock.<br />
+      [06/08/21 14:35:57] grem, Lin, rastajedi, and damian have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [06/08/21 17:50:48] JedStar [305/924] has challenged rastajedi [435/936] in combat and lost! 0 days, 01:02:44 is added to JedStar&#039;s clock.<br />
+      [06/08/21 21:50:48] IRCStats [377/701] has challenged rastajedi [163/936] in combat and won! 2 days, 12:35:50 is removed from IRCStats&#039;s clock.<br />
+      [06/08/21 23:50:48] lx [43/1161] has challenged rastajedi [452/936] in combat and lost! 0 days, 02:34:14 is added to lx&#039;s clock.<br />
+      [06/09/21 04:50:46] Lin [709/778] has challenged rastajedi [23/936] in combat and won! 0 days, 19:31:49 is removed from Lin&#039;s clock.<br />
+      [06/09/21 17:50:46] rastajedi [842/936] has challenged grem [304/928] in combat and won! 0 days, 09:59:28 is removed from rastajedi&#039;s clock.<br />
+      [06/09/21 20:50:49] rastajedi [311/936] has challenged Octane [519/723] in combat and lost! 0 days, 03:39:44 is added to rastajedi&#039;s clock.<br />
+      [06/10/21 06:15:36] rastajedi was caught in a terrible snowstorm. This terrible calamity has slowed them 0 days, 04:24:11 from level 56.<br />
+      [06/10/21 06:21:10] lx, damian and tozza [2006/2850] have team battled IRCStats, grem and rastajedi [208/2565] at [271,347] and won! 2 days, 20:54:16 is removed from their clocks.<br />
+      [06/10/21 10:50:49] damian [613/982] has challenged rastajedi [389/936] in combat and won! 6 days, 03:51:22 is removed from damian&#039;s clock.<br />
+      [06/10/21 17:50:46] rastajedi [376/936] has challenged JedStar [718/925] in combat and lost! 0 days, 02:37:39 is added to rastajedi&#039;s clock.<br />
+      [06/10/21 18:50:47] rastajedi [107/936] has challenged lx [223/1161] in combat and lost! 0 days, 03:06:09 is added to rastajedi&#039;s clock.<br />
+      [06/10/21 19:50:47] brayden [301/694] has challenged rastajedi [861/936] in combat and lost! 0 days, 02:13:35 is added to brayden&#039;s clock.<br />
+      [06/10/21 21:50:47] rastajedi [798/936] has challenged JedStar [603/925] in combat and won! 0 days, 02:12:56 is removed from rastajedi&#039;s clock.<br />
+      [06/11/21 06:50:48] rastajedi [868/936] has challenged ibiza [311/801] in combat and won! 0 days, 00:41:29 is removed from rastajedi&#039;s clock.<br />
+      [06/11/21 10:45:52] rastajedi [155/936] has challenged JedStar [25/925] in combat and won! 3 days, 09:52:39 is removed from rastajedi&#039;s clock.<br />
+      [06/11/21 12:50:46] rastajedi [385/936] has challenged brayden [427/694] in combat and lost! 1 day, 21:04:46 is added to rastajedi&#039;s clock.<br />
+      [06/11/21 17:50:46] lx [60/1161] has challenged rastajedi [230/936] in combat and lost! 1 day, 06:41:20 is added to lx&#039;s clock.<br />
+      [06/11/21 18:02:16] Lin, rastajedi, lx, and electrohead have completed their journey! 25% of their burden is eliminated.<br />
+      [06/11/21 18:04:10] lx [988/1161] has come upon rastajedi [197/936] and taken them in combat! 1 day, 19:28:37 is removed from lx&#039;s clock.<br />
+      [06/11/21 19:50:47] lx [138/1161] has challenged rastajedi [61/936] in combat and won! 1 day, 13:08:29 is removed from lx&#039;s clock.<br />
+      [06/12/21 06:46:56] lx, ibiza and IRCStats [1074/2663] have team battled Lin, rastajedi and electrohead [370/2394] at [347,241] and won! 1 day, 06:08:51 is removed from their clocks.<br />
+      [06/12/21 06:50:49] damian [289/982] has challenged rastajedi [568/936] in combat and lost! 1 day, 11:29:58 is added to damian&#039;s clock.<br />
+      [06/13/21 05:50:47] rastajedi [633/936] has challenged lx [886/1161] in combat and lost! 1 day, 09:16:45 is added to rastajedi&#039;s clock.<br />
+      [06/13/21 07:50:47] rastajedi [94/936] has challenged idle [202/1162] in combat and lost! 1 day, 16:06:17 is added to rastajedi&#039;s clock.<br />
+      [06/13/21 12:50:46] lx [842/1161] has challenged rastajedi [869/936] in combat and lost! 0 days, 08:31:48 is added to lx&#039;s clock.<br />
+      [06/13/21 16:50:49] rastajedi [365/936] has challenged tozza [393/707] in combat and lost! 1 day, 14:53:37 is added to rastajedi&#039;s clock.<br />
+      [06/13/21 17:54:04] grem, IRCStats, rastajedi, and lx have completed their journey! 25% of their burden is eliminated.<br />
+      [06/13/21 18:37:03] lx [226/1161] has come upon rastajedi [474/936] and been defeated in combat! 0 days, 06:32:56 is added to lx&#039;s clock.<br />
+      [06/14/21 02:50:47] rastajedi [670/936] has challenged damian [17/982] in combat and won! 2 days, 10:24:11 is removed from rastajedi&#039;s clock.<br />
+      [06/14/21 08:50:48] rastajedi [331/936] has challenged SkyFire [281/351] in combat and won! 0 days, 22:19:53 is removed from rastajedi&#039;s clock.<br />
+      [06/14/21 16:17:43] grem, IRCStats, rastajedi, and JedStar have completed their journey! 25% of their burden is eliminated.<br />
+      [06/14/21 16:21:06] rastajedi [260/936] has come upon IRCStats [230/701] and taken them in combat! 1 day, 05:54:53 is removed from rastajedi&#039;s clock.<br />
+      [06/14/21 19:02:50] rastajedi [480/936] has come upon ibiza [588/801] and been defeated in combat! 0 days, 13:53:31 is added to rastajedi&#039;s clock.<br />
+      [06/14/21 21:50:47] rastajedi [638/936] has challenged Lin [455/778] in combat and won! 1 day, 04:07:35 is removed from rastajedi&#039;s clock.<br />
+      [06/14/21 22:50:46] rastajedi [667/936] has challenged idle [398/1162] in combat and won! 1 day, 03:15:53 is removed from rastajedi&#039;s clock.<br />
+      [06/15/21 05:41:16] ibiza, damian and electrohead [1422/2467] have team battled grem, brayden and rastajedi [1634/2349] at [176,200] and lost! 0 days, 05:44:18 is added to their clocks.<br />
+      [06/15/21 09:50:48] rastajedi [684/936] has challenged damian [38/982] in combat and won! 0 days, 16:40:11 is removed from rastajedi&#039;s clock.<br />
+      [06/15/21 11:50:47] electrohead [317/680] has challenged rastajedi [124/936] in combat and won! 0 days, 03:57:28 is removed from electrohead&#039;s clock.<br />
+      [06/15/21 15:50:48] Lin [298/758] has challenged rastajedi [27/936] in combat and won! 4 days, 22:32:24 is removed from Lin&#039;s clock.<br />
+      [06/15/21 22:12:04] lx [384/1161] has come upon rastajedi [99/936] and taken them in combat! 0 days, 02:19:55 is removed from lx&#039;s clock.<br />
+      [06/16/21 07:50:49] electrohead [608/680] has challenged rastajedi [315/936] in combat and won! 0 days, 00:36:13 is removed from electrohead&#039;s clock.<br />
+      [06/16/21 09:37:31] rastajedi [667/936] has come upon ibiza [396/794] and taken them in combat! 0 days, 08:38:29 is removed from rastajedi&#039;s clock.<br />
+      [06/16/21 20:50:46] Lin [136/758] has challenged rastajedi [469/936] in combat and lost! 2 days, 15:02:26 is added to Lin&#039;s clock.<br />
+      [06/16/21 20:58:15] lx [830/1161] has come upon rastajedi [603/936] and taken them in combat! 6 days, 11:21:16 is removed from lx&#039;s clock.<br />
+      [06/17/21 07:50:48] rastajedi [395/936] has challenged ibiza [698/794] in combat and lost! 0 days, 02:59:01 is added to rastajedi&#039;s clock.<br />
+      [06/17/21 16:50:48] rastajedi [851/936] has challenged JedStar [217/925] in combat and won! 0 days, 03:47:56 is removed from rastajedi&#039;s clock.<br />
+      [06/18/21 11:50:48] rastajedi [108/936] has challenged tozza [55/707] in combat and won! 0 days, 00:41:37 is removed from rastajedi&#039;s clock.<br />
+      [06/18/21 15:29:18] rastajedi [854/936] has challenged damian [885/982] in combat and lost! 2 days, 13:03:26 is added to rastajedi&#039;s clock.<br />
+      [06/18/21 17:50:49] rastajedi [830/936] has challenged JedStar [316/925] in combat and won! 4 days, 07:11:46 is removed from rastajedi&#039;s clock.<br />
+      [06/18/21 21:50:47] rastajedi [770/936] has challenged tozza [100/707] in combat and won! 4 days, 04:47:13 is removed from rastajedi&#039;s clock.<br />
+      [06/19/21 00:50:48] rastajedi [752/936] has challenged damian [178/982] in combat and won! 3 days, 17:26:33 is removed from rastajedi&#039;s clock.<br />
+      [06/19/21 10:50:48] damian [202/982] has challenged rastajedi [175/936] in combat and won! 0 days, 02:14:03 is removed from damian&#039;s clock.<br />
+      [06/19/21 12:50:48] damian [787/982] has challenged rastajedi [644/936] in combat and won! 0 days, 01:30:39 is removed from damian&#039;s clock.<br />
+      [06/19/21 15:50:48] rastajedi [845/936] has challenged lx [102/1172] in combat and won! 2 days, 19:28:13 is removed from rastajedi&#039;s clock.<br />
+      [06/19/21 21:50:48] rastajedi [175/936] has challenged brayden [138/694] in combat and won! 2 days, 11:12:56 is removed from rastajedi&#039;s clock.<br />
+      [06/20/21 01:50:48] tozza [507/707] has challenged rastajedi [656/936] in combat and lost! 1 day, 10:33:36 is added to tozza&#039;s clock.<br />
+      [06/20/21 10:50:47] lx [510/1172] has challenged rastajedi [187/936] in combat and won! 2 days, 03:53:05 is removed from lx&#039;s clock.<br />
+      [06/20/21 20:50:48] rastajedi [784/936] has challenged grem [516/714] in combat and won! 1 day, 21:14:21 is removed from rastajedi&#039;s clock.<br />
+      [06/20/21 20:50:48] In the fierce battle, grem dropped his level 204 weapon! rastajedi picks it up, tossing his old level 187 weapon to grem.<br />
+      [06/20/21 22:31:29] lx [1093/1172] has come upon rastajedi [314/953] and taken them in combat! 1 day, 18:59:09 is removed from lx&#039;s clock.<br />
+      [06/20/21 23:34:15] rastajedi [554/953] has come upon IRCStats [454/719] and taken them in combat! 1 day, 10:54:13 is removed from rastajedi&#039;s clock.<br />
+      [06/21/21 00:50:46] Lin [683/762] has challenged rastajedi [70/953] in combat and won! 1 day, 07:18:25 is removed from Lin&#039;s clock.<br />
+      [06/21/21 03:50:46] rastajedi [662/953] has challenged Lin [259/762] in combat and won! 1 day, 06:25:29 is removed from rastajedi&#039;s clock.<br />
+      [06/21/21 05:50:48] Lin [217/762] has challenged rastajedi [918/953] in combat and lost! 0 days, 14:59:06 is added to Lin&#039;s clock.<br />
+      [06/21/21 12:50:47] grem [609/697] has challenged rastajedi [918/953] in combat and lost! 0 days, 02:43:44 is added to grem&#039;s clock.<br />
+      [06/21/21 17:50:47] rastajedi [180/953] has challenged ibiza [502/813] in combat and lost! 0 days, 12:06:32 is added to rastajedi&#039;s clock.<br />
+      [06/21/21 21:50:49] IRCStats [515/719] has challenged rastajedi [638/953] in combat and lost! 1 day, 20:30:07 is added to IRCStats&#039;s clock.<br />
+      [06/22/21 01:50:49] IRCStats [104/719] has challenged rastajedi [668/953] in combat and lost! 1 day, 11:44:13 is added to IRCStats&#039;s clock.<br />
+      [06/22/21 09:50:49] IRCStats [381/719] has challenged rastajedi [62/953] in combat and won! 2 days, 23:48:10 is removed from IRCStats&#039;s clock.<br />
+      [06/22/21 10:09:56] rastajedi got a kiss from drwiii! This wondrous godsend has accelerated them 0 days, 10:25:36 towards level 58.<br />
+      [06/22/21 11:55:53] ^matty^ [632/926] has come upon rastajedi [513/953] and taken them in combat! 0 days, 05:16:52 is removed from ^matty^&#039;s clock.<br />
+      [06/22/21 12:38:24] ^matty^ [204/926] has come upon rastajedi [816/953] and been defeated in combat! 0 days, 02:32:19 is added to ^matty^&#039;s clock.<br />
+      [06/23/21 04:50:48] JedStar [364/931] has challenged rastajedi [610/953] in combat and lost! 1 day, 19:09:13 is added to JedStar&#039;s clock.<br />
+      [06/23/21 10:50:47] Lin [438/762] has challenged rastajedi [364/953] in combat and won! 0 days, 23:52:42 is removed from Lin&#039;s clock.<br />
+      [06/23/21 12:50:49] rastajedi [119/953] has challenged brayden [58/694] in combat and won! 0 days, 15:50:54 is removed from rastajedi&#039;s clock.<br />
+      [06/23/21 13:50:48] IRCStats [498/719] has challenged rastajedi [618/953] in combat and lost! 1 day, 07:52:50 is added to IRCStats&#039;s clock.<br />
+      [06/23/21 17:50:47] rastajedi [943/953] has challenged lx [6/1184] in combat and won! 0 days, 11:34:50 is removed from rastajedi&#039;s clock.<br />
+      [06/24/21 02:50:46] rastajedi [453/953] has challenged idle [603/1185] in combat and lost! 0 days, 05:10:47 is added to rastajedi&#039;s clock.<br />
+      [06/24/21 14:50:48] rastajedi [812/953] has challenged grem [1/697] in combat and won! 0 days, 07:38:46 is removed from rastajedi&#039;s clock.<br />
+      [06/24/21 19:50:46] ^matty^ [228/926] has challenged rastajedi [669/953] in combat and lost! 2 days, 16:03:22 is added to ^matty^&#039;s clock.<br />
+      [06/25/21 07:50:47] electrohead [182/671] has challenged rastajedi [853/953] in combat and lost! 7 days, 01:47:19 is added to electrohead&#039;s clock.<br />
+      [06/25/21 10:50:46] electrohead [421/671] has challenged rastajedi [665/953] in combat and lost! 3 days, 19:30:54 is added to electrohead&#039;s clock.<br />
+      [06/25/21 11:50:48] rastajedi [903/953] has challenged ibiza [220/813] in combat and won! 0 days, 02:36:47 is removed from rastajedi&#039;s clock.<br />
+      [06/25/21 11:50:48] rastajedi has dealt ibiza a Critical Strike! 0 days, 08:09:52 is added to ibiza&#039;s clock.<br />
+      [06/25/21 13:50:46] brayden [15/694] has challenged rastajedi [302/953] in combat and lost! 0 days, 08:27:52 is added to brayden&#039;s clock.<br />
+      [06/25/21 17:50:46] rastajedi [832/953] has challenged Lin [517/762] in combat and won! 0 days, 01:18:44 is removed from rastajedi&#039;s clock.<br />
+      [06/25/21 17:50:46] In the fierce battle, Lin dropped his level 41 charm! rastajedi picks it up, tossing his old level 34 charm to Lin.<br />
+      [06/25/21 19:50:48] tozza [693/707] has challenged rastajedi [275/960] in combat and won! 0 days, 06:42:24 is removed from tozza&#039;s clock.<br />
+      [06/25/21 22:50:46] rastajedi [521/960] has challenged lx [694/1184] in combat and lost! 0 days, 00:07:35 is added to rastajedi&#039;s clock.<br />
+      [06/26/21 00:22:46] rastajedi [650/960] has challenged electrohead [154/671] in combat and won! 5 days, 21:39:11 is removed from rastajedi&#039;s clock.<br />
+      [06/26/21 09:50:48] rastajedi [621/960] has challenged idle [646/1185] in combat and lost! 2 days, 15:35:03 is added to rastajedi&#039;s clock.<br />
+      [06/26/21 10:34:02] rastajedi found a pair of Nikes! This wondrous godsend has accelerated them 1 day, 17:55:20 towards level 59.<br />
+      [06/26/21 10:50:48] rastajedi [330/960] has challenged lx [289/1184] in combat and won! 4 days, 09:02:26 is removed from rastajedi&#039;s clock.<br />
+      [06/26/21 14:51:25] Lin, rastajedi, damian, and lx have completed their journey! 25% of their burden is eliminated.<br />
+      [06/26/21 15:50:47] rastajedi [342/960] has challenged JedStar [215/931] in combat and won! 2 days, 09:20:38 is removed from rastajedi&#039;s clock.<br />
+      [06/26/21 16:50:47] IRCStats [660/719] has challenged rastajedi [291/960] in combat and won! 2 days, 00:07:26 is removed from IRCStats&#039;s clock.<br />
+      [06/26/21 18:50:48] ibiza [337/829] has challenged rastajedi [446/960] in combat and lost! 0 days, 00:59:57 is added to ibiza&#039;s clock.<br />
+      [06/26/21 21:25:22] rastajedi stopped using dial-up! This wondrous godsend has accelerated them 1 day, 03:44:03 towards level 59.<br />
+      [06/26/21 22:50:46] rastajedi [893/960] has challenged ^matty^ [29/944] in combat and won! 1 day, 23:37:42 is removed from rastajedi&#039;s clock.<br />
+      [06/27/21 09:29:09] ibiza [65/829] has challenged rastajedi [506/960] in combat and lost! 4 days, 09:56:57 is added to ibiza&#039;s clock.<br />
+      [06/27/21 10:13:44] rastajedi got knifed in a dark alley. This terrible calamity has slowed them 0 days, 15:30:38 from level 59.<br />
+      [06/27/21 10:50:46] rastajedi [77/960] has challenged tozza [698/707] in combat and lost! 1 day, 00:36:23 is added to rastajedi&#039;s clock.<br />
+      [06/27/21 16:50:48] rastajedi [341/960] has challenged lx [450/1184] in combat and lost! 1 day, 02:16:51 is added to rastajedi&#039;s clock.<br />
+      [06/27/21 17:50:48] rastajedi [402/960] has challenged lx [783/1184] in combat and lost! 1 day, 04:33:22 is added to rastajedi&#039;s clock.<br />
+      [06/27/21 18:50:46] rastajedi [512/960] has challenged brayden [479/705] in combat and won! 2 days, 10:37:27 is removed from rastajedi&#039;s clock.<br />
+      [06/27/21 20:50:47] Lin [741/755] has challenged rastajedi [471/960] in combat and won! 0 days, 03:34:26 is removed from Lin&#039;s clock.<br />
+      [06/28/21 06:50:47] tozza [389/707] has challenged rastajedi [885/960] in combat and lost! 4 days, 10:53:26 is added to tozza&#039;s clock.<br />
+      [06/28/21 09:50:47] rastajedi [328/960] has challenged IRCStats [664/719] in combat and lost! 1 day, 00:24:36 is added to rastajedi&#039;s clock.<br />
+      [06/28/21 15:23:05] rastajedi, IRCStats and grem [1174/2369] have team battled JedStar, electrohead and brayden [643/2307] at [5,121] and won! 1 day, 00:08:32 is removed from their clocks.<br />
+      [06/28/21 21:17:36] grem, IRCStats, rastajedi, and brayden have completed their journey! 25% of their burden is eliminated.<br />
+      [06/28/21 23:50:49] rastajedi [617/964] has challenged JedStar [80/931] in combat and won! 1 day, 02:56:49 is removed from rastajedi&#039;s clock.<br />
+      [06/29/21 09:50:47] rastajedi [877/964] has challenged tozza [299/707] in combat and won! 1 day, 02:26:26 is removed from rastajedi&#039;s clock.<br />
+      [06/29/21 11:17:07] rastajedi was caught masturbating. This terrible calamity has slowed them 0 days, 12:45:55 from level 59.<br />
+      [06/29/21 12:50:48] ibiza [572/829] has challenged rastajedi [221/964] in combat and won! 9 days, 05:15:46 is removed from ibiza&#039;s clock.<br />
+      [06/29/21 16:50:46] rastajedi [707/964] has challenged ^matty^ [767/944] in combat and lost! 0 days, 10:47:19 is added to rastajedi&#039;s clock.<br />
+      [06/29/21 22:50:48] damian [638/1004] has challenged rastajedi [22/964] in combat and won! 0 days, 01:00:23 is removed from damian&#039;s clock.<br />
+      [06/30/21 07:50:48] Octane [115/713] has challenged rastajedi [457/964] in combat and lost! 1 day, 03:45:21 is added to Octane&#039;s clock.<br />
+      [06/30/21 09:50:48] rastajedi [50/964] has challenged electrohead [188/682] in combat and lost! 0 days, 12:51:52 is added to rastajedi&#039;s clock.<br />
+      [06/30/21 10:50:48] rastajedi [454/964] has challenged SkyFire [77/388] in combat and won! 0 days, 11:14:27 is removed from rastajedi&#039;s clock.<br />
+      [06/30/21 14:50:48] rastajedi [840/964] has challenged Octane [533/713] in combat and won! 0 days, 18:47:25 is removed from rastajedi&#039;s clock.<br />
+      [06/30/21 19:18:28] lx, electrohead, tozza, and rastajedi have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [07/01/21 10:50:47] grem [494/681] has challenged rastajedi [488/964] in combat and won! 3 days, 06:59:29 is removed from grem&#039;s clock.<br />
+      [07/02/21 01:50:48] rastajedi [121/964] has challenged clarkos [264/466] in combat and lost! 0 days, 03:48:03 is added to rastajedi&#039;s clock.<br />
+      [07/02/21 05:20:48] Octane, damian and lx [1639/2907] have team battled ^matty^, JedStar and rastajedi [1382/2839] at [454,287] and won! 1 day, 18:58:08 is removed from their clocks.<br />
+      [07/03/21 00:26:16] tozza, IRCStats, grem, and rastajedi have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [07/03/21 02:50:48] Octane [46/713] has challenged rastajedi [71/964] in combat and lost! 1 day, 08:10:07 is added to Octane&#039;s clock.<br />
+      [07/03/21 06:06:10] clarkos [411/491] has challenged rastajedi [812/964] in combat and lost! 0 days, 12:18:10 is added to clarkos&#039;s clock.<br />
+      [07/03/21 07:50:49] grem [18/681] has challenged rastajedi [331/964] in combat and lost! 0 days, 18:22:56 is added to grem&#039;s clock.<br />
+      [07/03/21 16:50:48] electrohead [595/682] has challenged rastajedi [345/964] in combat and won! 4 days, 13:14:50 is removed from electrohead&#039;s clock.<br />
+      [07/03/21 19:50:47] rastajedi [886/964] has challenged tozza [530/708] in combat and won! 0 days, 01:13:40 is removed from rastajedi&#039;s clock.<br />
+      [07/03/21 23:25:21] brayden, damian and rastajedi [265/2673] have team battled ibiza, Lin and electrohead [2048/2281] at [477,378] and lost! 0 days, 00:29:01 is added to their clocks.<br />
+      [07/03/21 23:45:54] rastajedi died, temporarily... This terrible calamity has slowed them 0 days, 00:07:40 from level 59.<br />
+      [07/04/21 02:09:28] brayden, ibiza, rastajedi, and damian have completed their journey! 25% of their burden is eliminated.<br />
+      [07/04/21 02:22:41] rastajedi [0/964] has challenged tozza [154/708] in combat and lost! 3 days, 10:09:31 is added to rastajedi&#039;s clock.<br />
+      [07/04/21 05:50:48] grem [368/681] has challenged rastajedi [121/964] in combat and won! 0 days, 15:53:19 is removed from grem&#039;s clock.<br />
+      [07/04/21 06:00:10] rastajedi [17/964] has come upon Lin [530/755] and been defeated in combat! 4 days, 03:08:27 is added to rastajedi&#039;s clock.<br />
+      [07/04/21 12:50:48] electrohead [56/682] has challenged rastajedi [548/964] in combat and lost! 2 days, 04:05:14 is added to electrohead&#039;s clock.<br />
+      [07/04/21 15:50:48] rastajedi [485/964] has challenged damian [347/1010] in combat and won! 7 days, 15:43:13 is removed from rastajedi&#039;s clock.<br />
+      [07/04/21 18:50:48] rastajedi [386/964] has challenged IRCStats [404/739] in combat and lost! 3 days, 08:27:31 is added to rastajedi&#039;s clock.<br />
+      [07/05/21 09:50:49] damian [684/1010] has challenged rastajedi [672/964] in combat and won! 0 days, 06:29:31 is removed from damian&#039;s clock.<br />
+      [07/05/21 10:50:48] rastajedi [856/964] has challenged ibiza [166/844] in combat and won! 6 days, 09:21:04 is removed from rastajedi&#039;s clock.<br />
+      [07/05/21 16:43:02] JedStar, ibiza, rastajedi, and Octane have completed their journey! 25% of their burden is eliminated.<br />
+      [07/05/21 21:50:47] rastajedi [192/964] has challenged grem [13/681] in combat and won! 4 days, 05:01:44 is removed from rastajedi&#039;s clock.<br />
+      [07/06/21 13:50:47] IRCStats [314/739] has challenged rastajedi [658/964] in combat and lost! 2 days, 09:18:11 is added to IRCStats&#039;s clock.<br />
+      [07/06/21 14:48:14] rastajedi was caught masturbating. This terrible calamity has slowed them 1 day, 04:34:41 from level 60.<br />
+      [07/06/21 14:50:47] rastajedi [263/964] has challenged lx [394/1184] in combat and lost! 1 day, 21:26:07 is added to rastajedi&#039;s clock.<br />
+      [07/06/21 19:50:47] rastajedi [599/964] has challenged idle [407/1185] in combat and won! 4 days, 13:03:17 is removed from rastajedi&#039;s clock.<br />
+      [07/06/21 23:50:48] Octane [25/704] has challenged rastajedi [526/964] in combat and lost! 0 days, 14:10:32 is added to Octane&#039;s clock.<br />
+      [07/07/21 00:50:47] Octane [315/704] has challenged rastajedi [223/964] in combat and won! 1 day, 01:19:06 is removed from Octane&#039;s clock.<br />
+      [07/07/21 01:50:48] ibiza [421/844] has challenged rastajedi [15/964] in combat and won! 0 days, 04:00:18 is removed from ibiza&#039;s clock.<br />
+      [07/07/21 16:50:47] rastajedi [389/964] has challenged Lin [560/755] in combat and lost! 1 day, 17:31:18 is added to rastajedi&#039;s clock.<br />
+      [07/07/21 22:50:48] rastajedi [951/964] has challenged tozza [402/947] in combat and won! 3 days, 04:37:33 is removed from rastajedi&#039;s clock.<br />
+      [07/08/21 02:50:46] rastajedi [706/964] has challenged grem [324/674] in combat and won! 2 days, 14:55:10 is removed from rastajedi&#039;s clock.<br />
+      [07/08/21 09:50:48] IRCStats [611/739] has challenged rastajedi [67/964] in combat and won! 3 days, 01:39:24 is removed from IRCStats&#039;s clock.<br />
+      [07/08/21 12:50:47] damian [999/1005] has challenged rastajedi [381/964] in combat and won! 4 days, 07:32:04 is removed from damian&#039;s clock.<br />
+      [07/08/21 14:50:37] electrohead, IRCStats and grem [961/2095] have team battled rastajedi, Octane and brayden [296/2359] at [179,182] and won! 3 days, 17:29:35 is removed from their clocks.<br />
+      [07/08/21 16:50:48] rastajedi [286/964] has challenged lx [787/1191] in combat and lost! 1 day, 02:23:15 is added to rastajedi&#039;s clock.<br />
+      [07/08/21 18:50:47] rastajedi [919/964] has challenged electrohead [225/682] in combat and won! 2 days, 09:09:53 is removed from rastajedi&#039;s clock.<br />
+      [07/08/21 20:50:47] Octane [455/696] has challenged rastajedi [445/964] in combat and won! 0 days, 04:59:39 is removed from Octane&#039;s clock.<br />
+      [07/08/21 21:00:21] Verily I say unto thee, the Heavens have burst forth, and the blessed hand of God carried rastajedi 6 days, 21:17:07 toward level 60.<br />
+      [07/08/21 22:46:47] rastajedi discovered caffeinated coffee! This wondrous godsend has accelerated them 0 days, 04:33:35 towards level 60.<br />
+      [07/09/21 06:50:49] rastajedi [761/964] has challenged tozza [150/933] in combat and won! 0 days, 13:21:26 is removed from rastajedi&#039;s clock.<br />
+      [07/09/21 12:10:43] rastajedi, ^matty^ and brayden [277/2607] have team battled damian, IRCStats and JedStar [1383/2675] at [419,207] and lost! 0 days, 11:58:36 is added to their clocks.<br />
+      [07/09/21 16:50:49] JedStar [671/931] has challenged rastajedi [677/964] in combat and lost! 0 days, 10:56:57 is added to JedStar&#039;s clock.<br />
+      [07/09/21 18:50:47] rastajedi [52/964] has challenged damian [179/1005] in combat and lost! 0 days, 06:31:09 is added to rastajedi&#039;s clock.<br />
+      [07/09/21 23:50:46] IRCStats [327/739] has challenged rastajedi [308/964] in combat and won! 1 day, 01:36:36 is removed from IRCStats&#039;s clock.<br />
+      [07/10/21 03:50:48] rastajedi [473/964] has challenged tozza [302/933] in combat and won! 0 days, 10:39:39 is removed from rastajedi&#039;s clock.<br />
+      [07/10/21 07:50:49] ^matty^ [931/944] has challenged rastajedi [156/964] in combat and won! 4 days, 14:07:47 is removed from ^matty^&#039;s clock.<br />
+      [07/10/21 08:50:46] tozza [52/933] has challenged rastajedi [463/964] in combat and lost! 1 day, 20:25:01 is added to tozza&#039;s clock.<br />
+      [07/10/21 13:50:47] rastajedi [133/964] has challenged brayden [320/699] in combat and lost! 0 days, 01:36:23 is added to rastajedi&#039;s clock.<br />
+      [07/10/21 14:55:51] JedStar, tozza, Lin, and rastajedi have completed their journey! 25% of their burden is eliminated.<br />
+      [07/10/21 18:08:25] rastajedi [784/964] has come upon electrohead [655/682] and taken them in combat! 0 days, 01:39:41 is removed from rastajedi&#039;s clock.<br />
+      [07/11/21 00:50:48] rastajedi [511/964] has challenged brayden [677/699] in combat and lost! 0 days, 01:02:06 is added to rastajedi&#039;s clock.<br />
+      [07/11/21 02:50:48] rastajedi [401/964] has challenged grem [585/688] in combat and lost! 0 days, 00:56:18 is added to rastajedi&#039;s clock.<br />
+      [07/11/21 05:50:47] rastajedi [74/964] has challenged electrohead [235/682] in combat and lost! 0 days, 00:43:56 is added to rastajedi&#039;s clock.<br />
+      [07/11/21 07:14:51] rastajedi [445/964] has come upon IRCStats [667/739] and been defeated in combat! 0 days, 00:35:56 is added to rastajedi&#039;s clock.<br />
+      [07/11/21 11:50:49] brayden [598/699] has challenged rastajedi [617/964] in combat and lost! 0 days, 08:55:57 is added to brayden&#039;s clock.<br />
+      [07/11/21 14:30:02] rastajedi [295/971] has challenged JedStar [848/931] in combat and lost! 3 days, 12:42:53 is added to rastajedi&#039;s clock.<br />
+      [07/11/21 18:50:48] rastajedi [635/971] has challenged IRCStats [711/739] in combat and lost! 4 days, 06:32:15 is added to rastajedi&#039;s clock.<br />
+      [07/11/21 20:43:09] rastajedi [758/971] has come upon ibiza [701/844] and taken them in combat! 8 days, 06:23:43 is removed from rastajedi&#039;s clock.<br />
+      [07/11/21 22:50:48] rastajedi [601/971] has challenged JedStar [556/931] in combat and won! 6 days, 01:31:21 is removed from rastajedi&#039;s clock.<br />
+      [07/12/21 08:13:59] electrohead, ibiza, grem, and rastajedi have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [07/12/21 12:13:23] ibiza [494/844] has challenged rastajedi [180/971] in combat and won! 8 days, 10:15:17 is removed from ibiza&#039;s clock.<br />
+      [07/12/21 12:49:10] electrohead, IRCStats and ibiza [238/2265] have team battled grem, Octane and rastajedi [1820/2355] at [433,240] and lost! 0 days, 02:01:49 is added to their clocks.<br />
+      [07/12/21 14:50:49] rastajedi [406/971] has challenged ibiza [516/844] in combat and lost! 2 days, 12:05:04 is added to rastajedi&#039;s clock.<br />
+      [07/12/21 18:50:46] damian [888/1005] has challenged rastajedi [32/971] in combat and won! 0 days, 18:18:33 is removed from damian&#039;s clock.<br />
+      [07/12/21 19:11:24] ^matty^, brayden and rastajedi [2233/2607] have team battled IRCStats, ibiza and grem [1755/2265] at [328,64] and won! 0 days, 15:39:49 is removed from their clocks.<br />
+      [07/12/21 19:43:22] electrohead, grem and Octane [1219/2072] have team battled JedStar, tozza and rastajedi [967/2835] at [168,390] and won! 0 days, 04:39:32 is removed from their clocks.<br />
+      [07/12/21 22:50:46] tozza [410/948] has challenged rastajedi [163/971] in combat and won! 1 day, 00:34:43 is removed from tozza&#039;s clock.<br />
+      [07/13/21 04:07:33] electrohead [510/829] has come upon rastajedi [517/971] and been defeated in combat! 0 days, 00:42:16 is added to electrohead&#039;s clock.<br />
+      [07/13/21 04:50:46] ^matty^ [443/944] has challenged rastajedi [422/971] in combat and won! 4 days, 05:26:16 is removed from ^matty^&#039;s clock.<br />
+      [07/13/21 06:50:47] lx [457/1050] has challenged rastajedi [799/971] in combat and lost! 0 days, 04:52:21 is added to lx&#039;s clock.<br />
+      [07/13/21 08:47:14] Lin, tozza and Octane [885/2403] have team battled brayden, rastajedi and ^matty^ [116/2607] at [29,263] and won! 0 days, 06:14:33 is removed from their clocks.<br />
+      [07/13/21 14:50:47] rastajedi [49/971] has challenged lx [1018/1057] in combat and lost! 2 days, 13:55:21 is added to rastajedi&#039;s clock.<br />
+      [07/13/21 19:50:46] rastajedi [98/971] has challenged ibiza [716/844] in combat and lost! 2 days, 19:02:44 is added to rastajedi&#039;s clock.<br />
+      [07/14/21 08:50:47] rastajedi [216/971] has challenged grem [309/688] in combat and lost! 3 days, 07:53:58 is added to rastajedi&#039;s clock.<br />
+      [07/14/21 17:22:53] brayden [651/692] has challenged rastajedi [348/971] in combat and won! 9 days, 04:15:18 is removed from brayden&#039;s clock.<br />
+      [07/15/21 01:50:48] lx [107/1057] has challenged rastajedi [296/971] in combat and lost! 0 days, 01:07:04 is added to lx&#039;s clock.<br />
+      [07/15/21 02:50:48] Lin [254/759] has challenged rastajedi [819/971] in combat and lost! 0 days, 00:29:23 is added to Lin&#039;s clock.<br />
+      [07/15/21 04:50:47] rastajedi [898/971] has challenged JedStar [333/916] in combat and won! 5 days, 00:14:43 is removed from rastajedi&#039;s clock.<br />
+      [07/15/21 16:50:47] rastajedi [969/971] has challenged tozza [906/920] in combat and won! 5 days, 03:31:49 is removed from rastajedi&#039;s clock.<br />
+      [07/15/21 20:15:55] electrohead, JedStar, brayden, and rastajedi have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [07/16/21 00:50:49] IRCStats [389/733] has challenged rastajedi [23/971] in combat and won! 7 days, 00:14:05 is removed from IRCStats&#039;s clock.<br />
+      [07/16/21 05:50:49] damian [553/1005] has challenged rastajedi [807/971] in combat and lost! 4 days, 02:41:42 is added to damian&#039;s clock.<br />
+      [07/16/21 10:50:49] rastajedi [306/971] has challenged idle [948/1058] in combat and lost! 1 day, 19:31:09 is added to rastajedi&#039;s clock.<br />
+      [07/16/21 22:09:55] clarkos, lx, rastajedi, and IRCStats have completed their journey! 25% of their burden is eliminated.<br />
+      [07/17/21 08:50:47] damian [891/1005] has challenged rastajedi [958/981] in combat and lost! 3 days, 12:39:56 is added to damian&#039;s clock.<br />
+      [07/17/21 09:50:48] Lin [747/768] has challenged rastajedi [601/981] in combat and won! 4 days, 05:38:47 is removed from Lin&#039;s clock.<br />
+      [07/17/21 15:50:47] tozza [656/920] has challenged rastajedi [873/981] in combat and lost! 4 days, 06:38:21 is added to tozza&#039;s clock.<br />
+      [07/18/21 03:10:59] damian, rastajedi, grem, and tozza have blessed the realm by completing their quest! 25% of their burden is eliminated.<br />
+      [07/18/21 06:50:49] rastajedi [303/981] has challenged Lin [614/768] in combat and lost! 0 days, 23:44:53 is added to rastajedi&#039;s clock.<br />
+      [07/18/21 07:50:48] rastajedi [220/981] has challenged electrohead [840/859] in combat and lost! 1 day, 02:01:23 is added to rastajedi&#039;s clock.<br />
+      [07/19/21 06:50:47] damian [592/1005] has challenged rastajedi [3/981] in combat and won! 1 day, 12:26:10 is removed from damian&#039;s clock.<br />
+      [07/19/21 07:50:47] rastajedi [590/981] has challenged electrohead [208/859] in combat and won! 1 day, 23:12:20 is removed from rastajedi&#039;s clock.<br />
+      [07/19/21 15:50:48] rastajedi [278/981] has challenged idle [527/1041] in combat and lost! 0 days, 20:42:17 is added to rastajedi&#039;s clock.<br />
+      [07/19/21 17:50:49] damian [33/1005] has challenged rastajedi [307/981] in combat and lost! 0 days, 17:16:24 is added to damian&#039;s clock.<br />
+      [07/20/21 03:20:28] electrohead, rastajedi, tozza, and ibiza have completed their journey! 25% of their burden is eliminated.<br />
+      [07/20/21 04:50:49] lx [739/1040] has challenged rastajedi [608/981] in combat and won! 3 days, 01:44:37 is removed from lx&#039;s clock.<br />
+      [07/20/21 13:50:48] rastajedi [741/981] has challenged tozza [721/920] in combat and won! 1 day, 01:47:13 is removed from rastajedi&#039;s clock.<br />
+      [07/20/21 14:00:50] electrohead, rastajedi and tozza [928/2766] have team battled ^matty^, damian and IRCStats [1446/2688] at [400,422] and lost! 1 day, 01:08:48 is added to their clocks.<br />
+      [07/20/21 17:50:49] Lin [124/768] has challenged rastajedi [551/981] in combat and lost! 1 day, 03:34:08 is added to Lin&#039;s clock.<br />
+      [07/20/21 19:50:46] ibiza [18/834] has challenged rastajedi [537/981] in combat and lost! 1 day, 04:13:57 is added to ibiza&#039;s clock.<br />
+      [07/20/21 23:50:48] IRCStats [340/739] has challenged rastajedi [772/981] in combat and lost! 1 day, 07:05:29 is added to IRCStats&#039;s clock.<br />
+      [07/21/21 00:13:32] ^matty^, damian, rastajedi, and Lin have completed their journey! 25% of their burden is eliminated.<br />
+      [07/21/21 02:40:46] rastajedi [353/981] has come upon brayden [441/692] and been defeated in combat! 0 days, 10:18:17 is added to rastajedi&#039;s clock.<br />
+      [07/21/21 03:19:01] rastajedi [962/981] has come upon ^matty^ [385/944] and taken them in combat! 0 days, 16:54:26 is removed from rastajedi&#039;s clock.<br />
+      [07/21/21 04:50:47] rastajedi [11/981] has challenged Lin [746/768] in combat and lost! 0 days, 09:25:40 is added to rastajedi&#039;s clock.<br />
+      [07/21/21 08:50:46] rastajedi [199/981] has challenged brayden [628/692] in combat and lost! 0 days, 09:58:14 is added to rastajedi&#039;s clock.<br />
+      [07/21/21 09:50:46] rastajedi [866/981] has challenged damian [900/1005] in combat and lost! 0 days, 10:52:03 is added to rastajedi&#039;s clock.<br />
+      [07/21/21 14:50:49] rastajedi [875/981] has challenged ^matty^ [492/944] in combat and won! 0 days, 17:10:53 is removed from rastajedi&#039;s clock.<br />
+      [07/21/21 17:50:49] grem [118/688] has challenged rastajedi [728/981] in combat and lost! 0 days, 00:53:31 is added to grem&#039;s clock.<br />
+      [07/21/21 19:50:47] rastajedi [759/981] has challenged ^matty^ [604/944] in combat and won! 0 days, 13:51:15 is removed from rastajedi&#039;s clock.<br />
+      [07/21/21 20:50:48] ^matty^ [859/944] has challenged rastajedi [535/981] in combat and won! 1 day, 05:49:44 is removed from ^matty^&#039;s clock.<br />
+      [07/22/21 19:50:46] rastajedi [950/981] has challenged tozza [976/1040] in combat and lost! 0 days, 05:27:03 is added to rastajedi&#039;s clock.<br />
+      [07/23/21 01:02:09] rastajedi [959/981] has come upon lx [205/1040] and taken them in combat! 0 days, 08:45:47 is removed from rastajedi&#039;s clock.<br />
+      [07/23/21 12:50:46] rastajedi [446/981] has challenged ibiza [150/834] in combat and won! 0 days, 05:28:17 is removed from rastajedi&#039;s clock.<br />
+      [07/23/21 13:50:48] brayden [191/692] has challenged rastajedi [948/981] in combat and lost! 1 day, 14:59:43 is added to brayden&#039;s clock.<br />
+      [07/23/21 16:50:49] rastajedi [717/981] has challenged Lin [541/768] in combat and won! 0 days, 04:12:11 is removed from rastajedi&#039;s clock.<br />
+      [07/23/21 18:56:01] JedStar, rastajedi, IRCStats, and tozza have completed their journey! 25% of their burden is eliminated.<br />
+      [07/23/21 20:50:46] rastajedi [651/981] has challenged lx [321/1040] in combat and won! 0 days, 01:54:22 is removed from rastajedi&#039;s clock.<br />
+      [07/23/21 22:40:49] grem [316/688] has come upon rastajedi [100/981] and taken them in combat! 7 days, 19:59:35 is removed from grem&#039;s clock.<br />
+      [07/24/21 03:50:47] damian [489/1005] has challenged rastajedi [949/981] in combat and lost! 0 days, 04:46:26 is added to damian&#039;s clock.<br />
+      [07/24/21 06:51:09] rastajedi [214/981] has challenged lx [357/1040] in combat and lost! 4 days, 14:33:10 is added to rastajedi&#039;s clock.<br />
+      [07/24/21 07:50:47] rastajedi [157/981] has challenged brayden [318/674] in combat and lost! 5 days, 13:47:33 is added to rastajedi&#039;s clock.<br />
+      [07/24/21 10:50:48] rastajedi [704/981] has challenged brayden [657/674] in combat and won! 10 days, 09:40:55 is removed from rastajedi&#039;s clock.<br />
+      [07/24/21 14:05:02] electrohead, lx, rastajedi, and Lin have completed their journey! 25% of their burden is eliminated.<br />
+      [07/24/21 15:50:49] grem [638/688] has challenged rastajedi [208/981] in combat and won! 5 days, 08:51:56 is removed from grem&#039;s clock.<br />
+      [07/25/21 10:50:46] ^matty^ [425/944] has challenged rastajedi [571/981] in combat and lost! 1 day, 00:38:07 is added to ^matty^&#039;s clock.<br />
+      [07/25/21 13:50:48] rastajedi [401/981] has challenged idle [588/1041] in combat and lost! 3 days, 17:57:01 is added to rastajedi&#039;s clock.<br />
+      [07/25/21 15:55:12] rastajedi became a mIRC Copper! This wondrous godsend has accelerated them 2 days, 01:22:08 towards level 62.<br />
+      [07/25/21 20:50:47] rastajedi [676/981] has challenged idle [181/1041] in combat and won! 7 days, 18:37:00 is removed from rastajedi&#039;s clock.<br />
+      [07/26/21 05:50:47] brayden [658/679] has challenged rastajedi [703/981] in combat and lost! 2 days, 05:09:23 is added to brayden&#039;s clock.<br />
+      [07/26/21 06:50:49] Octane [328/729] has challenged rastajedi [807/981] in combat and lost! 1 day, 09:34:53 is added to Octane&#039;s clock.<br />
+      [07/26/21 13:36:51] rastajedi [250/981] has come upon ^matty^ [172/940] and taken them in combat! 4 days, 13:27:18 is removed from rastajedi&#039;s clock.<br />
+      [07/26/21 14:36:34] ^matty^ [826/940] has come upon rastajedi [317/981] and taken them in combat! 2 days, 01:05:35 is removed from ^matty^&#039;s clock.<br />
+      [07/26/21 17:50:47] damian [219/1005] has challenged rastajedi [399/981] in combat and lost! 2 days, 16:59:27 is added to damian&#039;s clock.<br />
+      [07/27/21 00:50:48] Octane [707/729] has challenged rastajedi [865/981] in combat and lost! 1 day, 18:19:22 is added to Octane&#039;s clock.<br />
+      [07/27/21 01:50:48] rastajedi [816/981] has challenged ibiza [351/867] in combat and won! 4 days, 01:16:55 is removed from rastajedi&#039;s clock.<br />
+      [07/27/21 11:50:48] rastajedi [623/981] has challenged grem [180/692] in combat and won! 3 days, 18:07:53 is removed from rastajedi&#039;s clock.<br />
+      [07/27/21 18:53:45] electrohead [318/745] has challenged rastajedi [195/981] in combat and won! 9 days, 15:03:17 is removed from electrohead&#039;s clock.<br />
+      [07/28/21 06:12:16] lx [646/1050] has challenged rastajedi [595/981] in combat and won! 8 days, 17:27:17 is removed from lx&#039;s clock.<br />
+      [07/28/21 20:50:47] rastajedi [568/981] has challenged grem [439/692] in combat and won! 2 days, 22:42:29 is removed from rastajedi&#039;s clock.<br />
+      [07/28/21 22:50:48] Lin [199/768] has challenged rastajedi [185/981] in combat and won! 9 days, 18:57:35 is removed from Lin&#039;s clock.<br />
+      [07/29/21 03:02:54] Thereupon He stretched out His little finger among them and consumed rastajedi with fire, slowing the heathen 1 day, 13:54:34 from level 62.<br />
+      [07/29/21 06:50:48] rastajedi [50/981] has challenged tozza [824/891] in combat and lost! 1 day, 11:00:08 is added to rastajedi&#039;s clock.<br />
+      [07/29/21 08:04:49] electrohead, ibiza and JedStar [45/2550] have team battled lx, rastajedi and brayden [2084/2710] at [251,149] and lost! 0 days, 07:24:40 is added to their clocks.<br />
+      [07/29/21 13:50:48] rastajedi [133/981] has challenged idle [25/1051] in combat and won! 3 days, 03:36:19 is removed from rastajedi&#039;s clock.<br />
+      [07/29/21 15:38:53] rastajedi invented the wheel! This wondrous godsend has accelerated them 1 day, 03:03:20 towards level 62.<br />
+      [07/29/21 19:23:07] lx, brayden, rastajedi, and tozza have completed their journey! 25% of their burden is eliminated.<br />
+      [07/29/21 20:50:46] rastajedi [216/981] has challenged Lin [367/768] in combat and lost! 0 days, 20:05:27 is added to rastajedi&#039;s clock.<br />
+      [07/29/21 22:50:48] grem [326/692] has challenged rastajedi [507/981] in combat and lost! 0 days, 18:24:21 is added to grem&#039;s clock.<br />
+      <br />
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-20 w3-center w3-opacity">  
+  <p>Updated by <a href="/cdn-cgi/l/email-protection#f49095999d959ab4958187809a9180da9b8693">damian</a> for <a href="https://www.austnet.org/">AustNet</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+
