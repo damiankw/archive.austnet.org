@@ -1,4 +1,90 @@
 <?php
+$show_debug = true; // set to true for more debug info
+error_reporting(E_ALL); ini_set('display_errors', 1);
+$year = isset($_GET['year']) ? preg_replace('/[^0-9]/', '', $_GET['year']) : '';
+if (!$year || !is_dir(__DIR__ . "/$year")) {
+    die('<h2>Invalid or missing year. Usage: /check.php?year=1998</h2>');
+}
+set_time_limit(300); // Allow up to 5 minutes for large years
+// --- Fix Found backend logic ---
+$fix_summary = [];
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fixfound'])) {
+    $fix = [];
+    if (isset($_POST['fix'])) {
+        $flat = [];
+        foreach ((array)$_POST['fix'] as $v) {
+            if (is_array($v)) {
+                foreach ($v as $vv) {
+                    $flat[] = (string)$vv;
+                }
+            } else {
+                $flat[] = (string)$v;
+            }
+        }
+        $fix = array_flip($flat);
+    }
+    $to_fix = [];
+    // Re-scan to get all possible fixes
+    $all_results = scanYear($year);
+    foreach ($all_results as $r) {
+        $status = is_array($r['exists']) ? $r['exists']['status'] : $r['exists'];
+        if (in_array($status, ['Trim Found','Root Trim Found','Root Found','Found Anywhere'])) {
+            echo '<!-- Debug: Found possible fix: '.$r['file'].' line '.$r['line'].' URL '.$r['url'].' new '.$r['exists']['new'].' -->' . "\n";
+            // Only use scalar values for key
+            if (is_scalar($r['file']) && is_scalar($r['line']) && is_scalar($r['url'])) {
+                $key = $r['file'].'|'.$r['line'].'|'.$r['url'];
+                echo $key . '<br>';
+                if (isset($fix[$key])) {
+                    $to_fix[$r['file']][] = [
+                        'line' => $r['line'],
+                        'url' => $r['url'],
+                        'new' => $r['exists']['new'],
+                        'type' => $r['type'],
+                    ];
+                }
+            } else {
+                echo '<b>NOT SCALAR:</b> file=' . gettype($r['file']) . ' line=' . gettype($r['line']) . ' url=' . gettype($r['url']) . '<br>';
+                echo '<pre>';
+                var_dump($r['file'], $r['line'], $r['url']);
+                echo '</pre>';
+            }
+        }
+    }
+    if ($show_debug) {
+        echo '<pre>POST fix[]: ' . htmlspecialchars(print_r($_POST['fix'] ?? [], true)) . "\n";
+        echo 'FIX keys: ' . htmlspecialchars(print_r($fix, true)) . "\n";
+        echo 'TO_FIX: ' . htmlspecialchars(print_r($to_fix, true)) . "\n";
+        echo '</pre>';
+    }
+    foreach ($to_fix as $file => $fixes) {
+        $lines = file($file);
+        $changed = false;
+                            if (isset($fix[$key])) {
+            $idx = $fix['line'] - 1;
+            if (!isset($lines[$idx])) continue;
+            $old = $lines[$idx];
+            // Replace only the specific URL in the line
+            $pattern = '';
+            if ($fix['type'] === 'IMG SRC') $pattern = '/(<IMG[^>]*SRC=["\\\']?)'.preg_quote($fix['url'], '/').'/i';
+            elseif ($fix['type'] === 'A HREF') $pattern = '/(<A[^>]*HREF=["\\\']?)'.preg_quote($fix['url'], '/').'/i';
+            elseif ($fix['type'] === 'AREA HREF') $pattern = '/(<AREA[^>]*HREF=["\\\']?)'.preg_quote($fix['url'], '/').'/i';
+            elseif ($fix['type'] === 'BODY BACKGROUND') $pattern = '/(<BODY[^>]*BACKGROUND=["\\\']?)'.preg_quote($fix['url'], '/').'/i';
+            if ($pattern) {
+                $newline = preg_replace($pattern, '$1'.$fix['new'], $old, 1, $count);
+                if ($count > 0 && $newline !== $old) {
+                    $lines[$idx] = $newline;
+                    $changed = true;
+                    $fix_summary[] = "Fixed $file (line {$fix['line']}): {$fix['url']} → {$fix['new']}";
+                }
+            }
+        }
+        if ($changed) {
+            $bak = $file.'.bak';
+            if (!file_exists($bak)) copy($file, $bak);
+            file_put_contents($file, implode('', $lines));
+        }
+    }
+}
 // check.php?year=YYYY
 // Scans all *.html files in the given year folder, checks internal links, and outputs a report.
 // Usage: /check.php?year=1998
@@ -136,7 +222,7 @@ function scanYear($year) {
     $results = [];
     foreach ($files as $file) {
         if (preg_match('/\.html?$/i', $file)) {
-            getLinks($file, $results);
+            getLinks((string)$file, $results);
         }
     }
     return $results;
@@ -165,8 +251,20 @@ tr.trim td { background: #fffbe0 !important; }
 </style>
 </head><body>
 <div class="container my-4">
+<?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fixfound'])): ?>
+    <?php if (!empty($fix_summary)): ?>
+        <div class="alert alert-success"><b>Fixes applied:</b><br><?php echo implode('<br>', array_map('htmlspecialchars', $fix_summary)); ?></div>
+    <?php else: ?>
+        <div class="alert alert-warning"><b>No fixes were found or applied.</b></div>
+    <?php endif; ?>
+    <?php if ($show_debug): ?>
+        <pre><?php var_dump(['to_fix'=>$to_fix, 'skip'=>$skip, 'all_results'=>isset($all_results)?count($all_results):0]); ?></pre>
+    <?php endif; ?>
+<?php endif; ?>
 <h2 class="mb-3">Link Checker Results for <?php echo htmlspecialchars($year); ?></h2>
 <div class="mb-3">
+<form method="post" id="fixForm">
+    <button type="submit" class="btn btn-dark btn-sm me-3" name="fixfound" value="1">Fix Found</button>
 <?php
 $currentYear = intval($year);
 $prevYear = $currentYear > 0 ? $currentYear - 1 : '';
@@ -183,7 +281,7 @@ $nextYear = $currentYear > 0 ? $currentYear + 1 : '';
 </div>
 <table class="table table-bordered table-sm align-middle">
 <thead class="table-light">
-<tr><th>File</th><th>Line</th><th>Type</th><th>URL</th><th>Status</th><th>Found Path</th></tr>
+<tr><th></th><th>File</th><th>Line</th><th>Type</th><th>URL</th><th>Status</th><th>Found Path</th></tr>
 </thead><tbody>
 <?php foreach ($results as $r):
     $status = is_array($r['exists']) ? $r['exists']['status'] : $r['exists'];
@@ -198,6 +296,11 @@ $nextYear = $currentYear > 0 ? $currentYear + 1 : '';
     elseif ($status === 'Found Anywhere') $label = 'Found (SEARCH)';
 ?>
 <tr class="<?php echo $class; ?>">
+<?php if (in_array($status, ['Trim Found','Root Trim Found','Root Found','Found Anywhere'])): ?>
+<td><input type="checkbox" name="fix[]" value="<?php echo $r['file'].'|'.$r['line'].'|'.$r['url']; ?>" checked></td>
+<?php else: ?>
+<td></td>
+<?php endif; ?>
 <td><?php echo htmlspecialchars(str_replace(__DIR__ . '/', '', $r['file'])); ?></td>
 <td><?php echo $r['line']; ?></td>
 <td><?php echo $r['type']; ?></td>
@@ -207,6 +310,7 @@ $nextYear = $currentYear > 0 ? $currentYear + 1 : '';
 </tr>
 <?php endforeach; ?>
 </tbody></table>
+</form>
 </div>
 <script>
 function toggleRows(type, showAll) {
