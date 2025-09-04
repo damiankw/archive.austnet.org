@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+  <TITLE>AustNet AusBone IRC Servers</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="../bbkgd.gif">
+
+<TABLE WIDTH="530" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD ROWSPAN="3" VALIGN="TOP" WIDTH="100"><IMG SRC="../spacer.gif" WIDTH="100" HEIGHT="4" ALIGN="BOTTOM">
+
+<MAP NAME="Side">
+<AREA SHAPE=RECT COORDS="9,6,67,73" href="about/index.html">
+<AREA SHAPE=RECT COORDS="12,81,65,148" href="services/index.html">
+<AREA SHAPE=RECT COORDS="12,157,65,222" href="connect.html">
+<AREA SHAPE=RECT COORDS="12,234,62,295" href="support.html">
+<AREA SHAPE=RECT COORDS="12,309,63,372" href="users/index.html">
+<AREA SHAPE=RECT COORDS="5,375,63,429" href="sponsors/index.html">
+</MAP>
+
+<IMG SRC="../sidebar.gif" USEMAP="#Side" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ISMAP BORDER="0"></A>
+<br>
+<IMG SRC="../maila.gif" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" WIDTH="76" HEIGHT="23"><br>
+<IMG SRC="../stata.gif" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" WIDTH="76" HEIGHT="23">
+</TD>
+<TD COLSPAN="3" VALIGN="TOP" WIDTH="430">
+
+<center><img src="catalog.gif"><br><br>
+
+<tr>
+<td bgcolor="#FFFFCC" width=100%>
+<font face="arial, helvetica" color="red">
+<center>Last Updated Wed 24 Dec 97</b><br>
+<font face="arial, helvetica" color="black">
+If your ISP is listed here you should use the server listed next to it.
+</tr>
+
+<br><b>New South Wales</b> (ausbone.nsw.au.austnet.org)<hr>
+
+<ul><li><font size=2>Zip Internet Professionals (ausbone.nsw.au.austnet.org)</li></ul>
+<ul><li><font size=2>Connect Infobahn Australia (ausbone.nsw.au.austnet.org)</li></ul>
+<ul><li><font size=2>Terrigal Net (ausbone.nsw.au.austnet.org)</li></ul>
+<ul><li><font size=2>First Link Internet Services (firstlink.au.austnet.org or ausbone.nsw.au.austnet.org)</li></ul>
+
+<br><b>Queensland</b> (ausbone.qld.au.austnet.org)<hr>
+
+<ul><li><font size=2>TereDonn Computer Engineering (ausbone.qld.au.austnet.org)</li></ul>
+<ul><li><font size=2>Brisbane Internet Technology (ausbone.qld.au.austnet.org)</li></ul>
+<ul><li><font size=2>CairnsNet (ausbone.qld.au.austnet.org)</li></ul>
+
+<br><b>Victoria</b> (ausbone.vic.au.austnet.org)<hr>
+
+<ul><li><font size=2>Mira Networking (ausbone.vic.au.austnet.org)</li></ul>
+<ul><li><font size=2>Starnet I.S. (ausbone.vic.au.austnet.org)</li></ul>
+<ul><li><font size=2>World Wire (ausbone.vic.au.austnet.org)</li></ul>
+
+<p>
+
+<hr><center>
+<FONT SIZE=-1><A href="about/index.html">[About]</A> <A href="services/index.html">[Services]</A>
+<A href="connect.html">[Connect]</A> <A href="support.html">[Support]</A>
+<A href="users/index.html">[Users]</A> <A href="sponsors/index.html">[Sponsors]</A>
+<A href="contact.html">[Contact]</A> <A href="stats/index.html">[Statistics]</A><br>
+<FONT SIZE=-2>Copyright &copy;1997 austnet.org.  All rights reserved<br>
+For AustNet Support, mail <A HREF="mailto:help@austnet.org">help@austnet.org</A><br><br>
+administrative correspondence: <A HREF="mailto:admin@austnet.org">admin@austnet.org</A>
+www.austnet.org correspondence: <A HREF="mailto:website@austnet.org">website@austnet.org</A>.
+<BR></center>
+
+</FONT></TD></TR>
+</td>
+</table>
+
+</TABLE>
+</BODY>
+</HTML>

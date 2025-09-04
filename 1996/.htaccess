@@ -1,0 +1,8 @@
+# Enable mod_substitute for HTML and TXT files
+#AddOutputFilterByType SUBSTITUTE text/html text/plain
+#Substitute "s|<body>|<body><!--#include virtual=\"/header.html\" -->|i"
+
+# For PHP files, prepend header.html using include
+#<FilesMatch "\.php$">
+#    php_value auto_prepend_file /home/damian.id.au/public_html/austnet.org/header.html
+#</FilesMatch>

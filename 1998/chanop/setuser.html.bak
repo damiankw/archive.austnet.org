@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.0b4 [en] (Win95; I) [Netscape]">
+   <TITLE>AustNet IRC Network</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="gbkgd.gif">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="530" >
+<TR>
+<TD VALIGN=TOP ROWSPAN="3" WIDTH="100"><IMG SRC="spacer.gif" HEIGHT=4 WIDTH=100 ALIGN=BOTTOM>&nbsp;<MAP NAME="Side"><AREA SHAPE=RECT COORDS="9,6,67,73" HREF="./about/index.html"><AREA SHAPE=RECT COORDS="12,81,65,148" HREF="./services/index.html"><AREA SHAPE=RECT COORDS="12,157,65,222" HREF="./connect.html"><AREA SHAPE=RECT COORDS="12,234,62,295" HREF="./support.html"><AREA SHAPE=RECT COORDS="12,309,63,372" HREF="./users/index.html"><AREA SHAPE=RECT COORDS="5,375,63,429" HREF="./sponsors/index.html"></MAP><IMG ISMAP USEMAP="#Side" SRC="sidebar.gif" NATURALSIZEFLAG="3" HEIGHT=443 WIDTH=89>&nbsp;
+<BR><IMG SRC="maila.gif" NATURALSIZEFLAG="3" HEIGHT=23 WIDTH=76 ALIGN=BOTTOM>&nbsp;
+<BR><IMG SRC="stata.gif" NATURALSIZEFLAG="3" HEIGHT=23 WIDTH=76 ALIGN=BOTTOM>&nbsp;</TD>
+
+<TD VALIGN=TOP COLSPAN="3" WIDTH="430">
+<CENTER><B><FONT FACE="Arial,Helvetica"><FONT COLOR="#3366FF"><FONT SIZE=+2>AustNet's
+ChanOp Help Guide</FONT></FONT></FONT></B></CENTER>
+
+<CENTER><B><FONT SIZE=+1>/msg chanop help <I>SETUSER</I></FONT></B></CENTER>
+
+<HR WIDTH="100%"><FONT SIZE=-1>-ChanOP- [about] [help] [<B><FONT COLOR="#FF0000">commands</FONT></B>]
+[news] [<B><FONT COLOR="#FF0000">austnet online help</FONT></B>]</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <B>*** Command Help ***</B></FONT>
+<BR><FONT SIZE=-1>-ChanOP- Use setuser to modify access and flags of channel
+members.</FONT>
+<BR><FONT SIZE=-1>-ChanOP- These settings affect the status and operation
+of users</FONT>
+<BR><FONT SIZE=-1>-ChanOP- ability to use the service.&nbsp;</FONT>
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;</FONT>
+<BR><FONT SIZE=-1>-ChanOP- For more information on how to use the below
+settings, type</FONT>
+<BR><FONT SIZE=-1>-ChanOP- /msg ChanOP help setuser &lt;setting></FONT>
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <B>Setting</B>&nbsp;&nbsp;&nbsp; <B>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <I><A HREF="setlevel.html">level</A>&nbsp;</I>&nbsp;&nbsp;&nbsp;&nbsp;
+modify access level</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <I><A HREF="setaop.html">aop</A></I>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+auto-op setting on join</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <I><A HREF="setaov.html">aov</A></I>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+auto-voice setting on join. Only if you dont have ops.</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <I><A HREF="setprotect.html">protect</A>&nbsp;</I>&nbsp;&nbsp;
+protect the user from kick,deops</FONT>
+<BR><FONT SIZE=-1>-ChanOP- <I><A HREF="setsuspend.html">suspend&nbsp;</A></I>&nbsp;&nbsp;
+will suspend a users access for the specified time</FONT>
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;</FONT>
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; <B>See Also: <a href="./adduser.html">ADDUSER</a>, <a href="./deluser.html">DELUSER</a>, <a href="./access.html">ACCESS</a></B></FONT>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+
+<CENTER><FONT SIZE=-1><A href="about/index.html">[About]</A> <A href="services/index.html">[Services]</A>
+<A href="connect.html">[Connect]</A> <A href="support.html">[Support]</A>
+<A href="users/index.html">[Users]</A> <A href="sponsors/index.html">[Sponsors]</A>
+<A href="contact.html">[Contact]</A> <A HREF="http://www.fl.net.au/~ensign/austnet/stats/index.html">[Statistics]</A></FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>Copyright &copy;1997 austnet.org. All rights reserved</FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>For AustNet Support, mail <A HREF="mailto:help@austnet.org">help@austnet.org</A></FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>administrative correspondence: <A HREF="mailto:admin@austnet.org">admin@austnet.org</A>
+www.austnet.org correspondence: <A HREF="mailto:website@austnet.org">website@austnet.org</A>.&nbsp;</FONT></CENTER>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

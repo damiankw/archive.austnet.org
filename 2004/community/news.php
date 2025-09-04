@@ -105,7 +105,7 @@ function MM_swapImage() { //v3.0
       <td colspan="6" valign="top" bgcolor="#FFFFFF"><table width="100%%" height="100%" border="0" cellpadding="0" cellspacing="0">
           <tr>
             <td valign="top" background="images/main_left.gif"><img src="images/main_lefttop.gif" width="16" height="37"></td>
-            <td valign="top"><p><img src="images/t_news.gif" width="350" height="22"><br>
+            <td valign="top"><p><img src="../images/t_news.gif" width="350" height="22"><br>
                 Here you will find the latest news affecting the Austnet community
                 - separated into various categories for easier browsing. You can
                 also submit news, using our form below</p>

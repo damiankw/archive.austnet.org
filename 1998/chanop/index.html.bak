@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.0b4 [en] (Win95; I) [Netscape]">
+   <TITLE>AustNet Services - ChanOp</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="bbkgd.gif">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="530" >
+<TR>
+<TD VALIGN=TOP ROWSPAN="3" WIDTH="100"><IMG SRC="spacer.gif" HEIGHT=4 WIDTH=100 ALIGN=BOTTOM>&nbsp;<MAP NAME="Side"><AREA SHAPE=RECT COORDS="9,6,67,73" href="about/index.html"><AREA SHAPE=RECT COORDS="12,81,65,148" href="services/index.html"><AREA SHAPE=RECT COORDS="12,157,65,222" href="connect.html"><AREA SHAPE=RECT COORDS="12,234,62,295" href="support.html"><AREA SHAPE=RECT COORDS="12,309,63,372" href="users/index.html"><AREA SHAPE=RECT COORDS="5,375,63,429" href="sponsors/index.html"></MAP><IMG ISMAP USEMAP="#Side" SRC="sidebar.gif" NATURALSIZEFLAG="3" HEIGHT=443 WIDTH=89>&nbsp;
+<BR><IMG SRC="maila.gif" NATURALSIZEFLAG="3" HEIGHT=23 WIDTH=76 ALIGN=BOTTOM>
+<BR><IMG SRC="stata.gif" NATURALSIZEFLAG="3" HEIGHT=23 WIDTH=76 ALIGN=BOTTOM>&nbsp;</TD>
+
+<TD VALIGN=TOP COLSPAN="3" WIDTH="430">
+<CENTER><IMG SRC="chanop.jpg" HEIGHT=95 WIDTH=422></CENTER>
+
+<CENTER></CENTER>
+
+<CENTER>For further assistance with ChanOp, mail <A HREF="mailto:services@austnet.org">services@austnet.org</A>.</CENTER>
+ChanOp was one of AustNet's Original Services. Since it was first coded,
+it has been immensely devolped into a true 'Channel Operator'. With the
+ChanOp service, users have the ability to register and control a channel
+with their own channel ops, their own specific channel specifications,
+and their own idea of what their 'ideal' channel should be like. The following
+are commands available to users for ChanOp.&nbsp;
+<UL>
+<LI>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 0 Channel Commands</FONT></FONT></B></LI>
+
+<UL>
+<LI>
+<FONT COLOR="#000000"><B><FONT SIZE=-1><A HREF="about.html">ABOUT</A></FONT><FONT SIZE=+1>
+- </FONT></B><FONT SIZE=-1>displays information about ChanOp</FONT></FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="commands.html">COMMANDS</A></B> - allows a user
+to see the commands that he/she has access to in a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B>HELP</A></B> - displays all of chanop's
+commands.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="info.html">INFO</A></B> - displays information
+pertaining to a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="list.html">LIST</A></B> - lists all the channels
+registered to a user.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="listban.html">LISTBAN</A></B> - displays all
+the bans for a channel and information about each.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="register.html">REGISTER</A></B> - allows a user
+to register a channel as his/her 'own'.&nbsp;</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 25 Channel Commands</FONT></FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=-1><B><A HREF="access.html">ACCESS</A></B> - tells you your
+access level in a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="invite.html">INVITE</A></B> - allows you to invite
+people to a channel.&nbsp;</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 50 Channel Commands</FONT></FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=-1><B><A HREF="kick.html">KICK</A></B> - allows a user to kick
+another user from a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="topic.html">TOPIC</A></B> - allows a user to
+set the topic for a channel.&nbsp;</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 75 Channel Commands</FONT></FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=-1><B><A HREF="ban.html">BAN</A></B> - bans a user from a channel
+for a 'set' amount of time.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="unban.html">UNBAN</A></B> - unbans a banned user
+from achannel.&nbsp;</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 100 Channel Commands</FONT></FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=-1><B><A HREF="clean.html">CLEAN</A></B> - removes all the modes
+in a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="deop.html">DEOP</A></B> - deops an op in a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="op.html">OP</A></B> - ops a user in a channel.&nbsp;</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 150 Channel Commands</FONT></FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=-1><B><A HREF="adduser.html">ADDUSER</A></B> - adds an access
+level to a user in a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="deluser.html">DELUSER</A></B> - removes a user's
+access to a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="setuser.html">SETUER</A></B> - modifies a user's
+level in a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="join.html">JOIN</A></B> - tells chanop to join
+a specified channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="part.html">PART</A></B> - tells chanop to part
+a channel. (<B>NOTE</B> all commands will still function with chanop not
+in the channel)&nbsp;</FONT></LI>
+</UL>
+<B><FONT COLOR="#000000"><FONT SIZE=+1>ChanOP Level 200 Channel Commands</FONT></FONT></B>
+<UL>
+<LI>
+<FONT SIZE=-1><B><A HREF="drop.html">DROP</A></B> - drops or deregisters
+a channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="mdeop.html">MDEOP</A></B> - takes away ops from
+everyone with a lower access level in the channel.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1><B><A HREF="set.html">SET</A></B> - sets a restrict, keeptopic,
+url, mode, and op restrect in a channel.&nbsp;</FONT></LI>
+</UL>
+</UL>
+<FONT SIZE=-1><B>NOTE</B>&nbsp;</FONT>
+<LI>
+<FONT SIZE=-1>Each increasing level has access to all commands below that
+level.&nbsp;</FONT></LI>
+
+<LI>
+<FONT SIZE=-1>There can be more then 1 level 200 for a channel, come to
+#help for more assistance.&nbsp;</FONT></LI>
+
+<CENTER></CENTER>
+
+<CENTER><FONT SIZE=-1>[chanop] [<A HREF="../nickop/index.html">nickop</A>]
+[<A HREF="../noteop/index.html">noteop</A>] [<A HREF="operop/index.html">operop</A>]&nbsp;</FONT></CENTER>
+
+<HR>
+<CENTER><FONT SIZE=-1><A href="about/index.html">[About]</A> <A href="services/index.html">[Services]</A>
+<A href="connect.html">[Connect]</A> <A href="support.html">[Support]</A>
+<A href="users/index.html">[Users]</A> <A href="sponsors/index.html">[Sponsors]</A>
+<A href="contact.html">[Contact]</A> <A href="stats/index.html">[Statistics]</A></FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>Copyright &copy;1997 austnet.org. All rights reserved</FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>For AustNet Support, mail <A HREF="mailto:help@austnet.org">help@austnet.org</A></FONT></CENTER>
+
+<CENTER></CENTER>
+
+<CENTER><FONT SIZE=-2>administrative correspondence: <A HREF="mailto:admin@austnet.org">admin@austnet.org</A>
+www.austnet.org correspondence: <A HREF="mailto:website@austnet.org">website@austnet.org</A>.&nbsp;</FONT></CENTER>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

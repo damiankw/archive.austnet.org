@@ -101,7 +101,7 @@ function MM_swapImage() { //v3.0
       <td colspan="6" valign="top" bgcolor="#FFFFFF"><table width="100%%" height="100%" border="0" cellpadding="0" cellspacing="0">
           <tr>
             <td valign="top" background="../images/main_left.gif"><img src="../images/main_lefttop.gif" width="16" height="37"></td>
-            <td valign="top"><p><img src="images/t_channelguide.gif" width="350" height="22">
+            <td valign="top"><p><img src="../images/t_channelguide.gif" width="350" height="22">
                 &nbsp;<br>
                 On a network of 6000+ channels, ever wondered how to find a good
                 channel for you? But there's so MANY!! How do you choose? We have

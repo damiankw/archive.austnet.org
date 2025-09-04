@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+  <TITLE>AustNet Services</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="../bbkgd.gif">
+
+<TABLE WIDTH="530" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD ROWSPAN="3" VALIGN="TOP" WIDTH="100"><IMG SRC="../spacer.gif" WIDTH="100" HEIGHT="4" ALIGN="BOTTOM">
+
+<MAP NAME="Side">
+<AREA SHAPE=RECT COORDS="9,6,67,73" href="about/index.html">
+<AREA SHAPE=RECT COORDS="12,81,65,148" href="services/index.html">
+<AREA SHAPE=RECT COORDS="12,157,65,222" href="connect.html">
+<AREA SHAPE=RECT COORDS="12,234,62,295" href="support.html">
+<AREA SHAPE=RECT COORDS="12,309,63,372" href="users/index.html">
+<AREA SHAPE=RECT COORDS="5,375,63,429" href="sponsors/index.html">
+</MAP>
+
+<IMG SRC="../sidebar.gif" USEMAP="#Side" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ISMAP BORDER="0"></A>
+<br>
+<IMG SRC="../maila.gif" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" WIDTH="76" HEIGHT="23"><br>
+<IMG SRC="../stata.gif" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" WIDTH="76" HEIGHT="23">
+</TD>
+<TD COLSPAN="3" VALIGN="TOP" WIDTH="430">
+
+<center><img src="services.gif"><br><br>
+For further assistance with services, mail <a href="mailto:services@austnet.org">services@austnet.org</a>.<br><br>
+</center>
+
+AustNet provides several technical services designed to enhance the
+user experience and provide features to ensure network security. The operator
+services automate and manage channel and nickname registrations. For futher
+information on any of the services listed below, simply click on the service
+nickname:
+
+<ul><li><font size=2>
+<!-- Broken link: chanop/index.html does not exist, should be ../chanop/index.html -->
+<a href="../chanop/index.html"><font color=black>ChanOP</a> (Channel Registration)<BR>
+The channel operator server allows users to register
+their channels and maintain a secure method of issuing operator status.
+More than a mere "bot", ChanOP is a server, effectively allowing it to
+maintain every aspect of your channel according to your wishes.<br><br>Registered
+channels are listed in the <a href="chans/index.html">Channel Registra</a> web page.
+</font></li></ul>
+
+<ul><li><font size=2>
+<!-- Broken link: nickop/index.html does not exist, should be ../nickop/index.html -->
+<a href="../nickop/index.html"><font color=black>NickOP</a> (Nickname Registration)<BR>
+The nickname operator server controls who has authorisation to use certain
+nicknames.  Upon connecting to <b>any</b> AustNet server, your nickname
+is validified with NickOP and if it is not yours, you are given the
+option to authenticate yourself or be disconnected.  NickOP has speedy
+registration facilities and secure ownership enforcement. <br><br>Registered
+nicknames are listed in the <a href="users/index.html">Nickname Registra</a>
+web page.
+</font></li></ul>
+
+<ul><li><font size=2>
+<!-- Broken link: noteop/index.html does not exist, should be ../noteop/index.html -->
+<a href="../noteop/index.html"><font color=black>NoteOP</a> (Message Bank)<BR>
+The message bank server allows you to leave notes to registered users
+(with NickOP) even when they are offline.  Your notes are kept under
+the strict confidentiality and require your password to be viewed.
+</font></li></ul>
+
+<ul><li><font size=2>
+<a href="operop/index.html"><font color=black>OperOP</a> (Operator Service)<BR>
+The operator service allows administration and authorised IRC Operators to
+maintain the network, using functions that are defined by their access.
+It has relatively few commands, since it offers only services that do not
+fit into the public genre of ChanOP and NickOP. <br><br>Authorised administrative
+patrons are listed in the <a href="operlist.html">Administration Registra</a></font>
+</li></ul>
+
+<hr><center>
+<FONT SIZE=-1><A href="about/index.html">[About]</A> <A href="services/index.html">[Services]</A>
+<A href="connect.html">[Connect]</A> <A href="support.html">[Support]</A>
+<A href="users/index.html">[Users]</A> <A href="sponsors/index.html">[Sponsors]</A>
+<A href="contact.html">[Contact]</A> <A href="stats/index.html">[Statistics]</A><br>
+<FONT SIZE=-2>Copyright &copy;1997 austnet.org.  All rights reserved<br>
+For AustNet Support, mail <A HREF="mailto:help@austnet.org">help@austnet.org</A><br><br>
+administrative correspondence: <A HREF="mailto:admin@austnet.org">admin@austnet.org</A>
+www.austnet.org correspondence: <A HREF="mailto:website@austnet.org">website@austnet.org</A>.
+<BR></center>
+
+</FONT></TD></TR>
+</td>
+</table>
+
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+  <TITLE>AustNet Services - NoteOP</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" BACKGROUND="bback.gif">
+
+<TABLE WIDTH="530" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD ROWSPAN="3" VALIGN="TOP" WIDTH="100"><IMG SRC="spacer.gif" WIDTH="100" HEIGHT="4" ALIGN="BOTTOM">
+
+<MAP NAME="Side">
+<AREA SHAPE=RECT COORDS="9,6,67,73" href="about/index.html">
+<AREA SHAPE=RECT COORDS="12,81,65,148" href="services/index.html">
+<AREA SHAPE=RECT COORDS="12,157,65,222" href="connect.html">
+<AREA SHAPE=RECT COORDS="12,234,62,295" href="support.html">
+<AREA SHAPE=RECT COORDS="12,309,63,372" href="users/index.html">
+<AREA SHAPE=RECT COORDS="5,375,63,429" href="sponsors/index.html">
+</MAP>
+
+<IMG SRC="sidebar.gif" USEMAP="#Side" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ISMAP BORDER="0"></A>
+<br>
+<IMG SRC="maila.gif" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" WIDTH="76" HEIGHT="23"><br>
+<IMG SRC="stata.gif" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" WIDTH="76" HEIGHT="23">
+</TD>
+<TD COLSPAN="3" VALIGN="TOP" WIDTH="430">
+
+<center><img src="noteop.gif"><br><br><font face=arial>
+For further assistance with NoteOP, mail <a href="mailto:services@austnet.org">services@austnet.org</a>.<br><br>
+</center>
+
+AustNet's notebook service allows you to block a user from sending you a note.
+This is a useful command if someone is abusing you on AustNet.
+
+<ul><li><font size=4><b>
+<font color=black>Block Commands<BR></font></b>
+<font size=2>
+<ul><li>This command will let you block out a user from sending you a note, 
+<li><B>SYNTAX:</B> /msg NoteOP block [list|add|del] [block mask]
+<li><B>EXAMPLE:</B> /msg NoteOP block list
+<li><B>EXAMPLE:</B> /msg NoteOP block add *!*@aussie.net
+<li><B>EXAMPLE:</B> /msg NoteOP block add webmaster
+<li><B>EXAMPLE:</B> /msg NoteOP block del Rogery
+<li><B>EXAMPLE:</B> /msg NoteOP block add *@*wantree.com.au
+<li><B>EXAMPLE:</B> /msg NoteOP block add #beginner*
+</ul>
+<p>
+
+<center>
+[<a href="../chanop/index.html">ChanOP</a>] [<a href="../nickop/index.html">NickOP</a>] [NoteOP] [<a href="./operop/index.html">OperOP</a>]
+</center>
+
+<hr><center>
+<FONT SIZE=-1><A href="about/index.html">[About]</A> <A href="services/index.html">[Services]</A>
+<A href="connect.html">[Connect]</A> <A href="support.html">[Support]</A>
+<A href="users/index.html">[Users]</A> <A href="sponsors/index.html">[Sponsors]</A>
+<A href="contact.html">[Contact]</A> <A href="stats/index.html">[Statistics]</A><br>
+<FONT SIZE=-2>Copyright &copy;1997 austnet.org.  All rights reserved<br>
+For AustNet Support, mail <A HREF="mailto:help@austnet.org">help@austnet.org</A><br><br>
+administrative correspondence: <A HREF="mailto:admin@austnet.org">admin@austnet.org</A>
+www.austnet.org correspondence: <A HREF="mailto:website@austnet.org">website@austnet.org</A>.
+<BR></center>
+
+</FONT></TD></TR>
+</td>
+</table>
+
+</TABLE>
+</BODY>
+</HTML>

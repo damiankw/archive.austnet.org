@@ -57,7 +57,7 @@ function MM_swapImage() { //v3.0
       <td bgcolor="#0099CC"><img src="../images/comm_blueheader.gif" width="120" height="19"></td>   
       <td bgcolor="#0099CC"><a href="../../privacy.html" onMouseOver="MM_swapImage('privacy','','../../images/b_privacyRO.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/privacy.gif" alt="Privacy statement" name="privacy" width="124" height="19" border="0" id="privacy"></a></td>   
       <td bgcolor="#0099CC"><a href="../../sitemap.html" onMouseOver="MM_swapImage('sitemap','','../../images/b_sitemapRO.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/sitemap.gif" alt="Sitemap" name="sitemap" width="63" height="19" border="0" id="sitemap"></a></td>   
-      <td bgcolor="#0099CC"><a href="../../search.html" onMouseOver="MM_swapImage('search','','../../images/b_searchRO.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/search.gif" alt="Search" name="search" width="51" height="19" border="0" id="search"></a></td>   
+      <td bgcolor="#0099CC"><a href="../../search.html" onMouseOver="MM_swapImage('search','','../../images/b_searchRO.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/search.gif" alt="Search" name="search" width="51" height="19" border="0" id="search"></a></td>   
     </tr>   
     <tr>    
       <td rowspan="2" valign="top" bgcolor="#0099CC"><table width="100%%" height="100%" border="0" cellpadding="0" cellspacing="0">   

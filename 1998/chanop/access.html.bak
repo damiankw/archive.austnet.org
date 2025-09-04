@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.0b4 [en] (Win95; I) [Netscape]">
+   <TITLE>AustNet IRC Network</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="gbkgd.gif">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="530" >
+<TR>
+<TD VALIGN=TOP ROWSPAN="3" WIDTH="100"><IMG SRC="spacer.gif" HEIGHT=4 WIDTH=100 ALIGN=BOTTOM>&nbsp;<MAP NAME="Side"><AREA SHAPE=RECT COORDS="9,6,67,73" HREF="./about/index.html"><AREA SHAPE=RECT COORDS="12,81,65,148" HREF="./services/index.html"><AREA SHAPE=RECT COORDS="12,157,65,222" HREF="./connect.html"><AREA SHAPE=RECT COORDS="12,234,62,295" HREF="./support.html"><AREA SHAPE=RECT COORDS="12,309,63,372" HREF="./users/index.html"><AREA SHAPE=RECT COORDS="5,375,63,429" HREF="./sponsors/index.html"></MAP><IMG ISMAP USEMAP="#Side" SRC="sidebar.gif" NATURALSIZEFLAG="3" HEIGHT=443 WIDTH=89>&nbsp;
+<BR><IMG SRC="maila.gif" NATURALSIZEFLAG="3" HEIGHT=23 WIDTH=76 ALIGN=BOTTOM>&nbsp;
+<BR><IMG SRC="stata.gif" NATURALSIZEFLAG="3" HEIGHT=23 WIDTH=76 ALIGN=BOTTOM>&nbsp;</TD>
+
+<TD VALIGN=TOP COLSPAN="3" WIDTH="430">
+<CENTER><B><FONT FACE="Arial,Helvetica"><FONT COLOR="#3366FF"><FONT SIZE=+2>AustNet's
+ChanOp Help Guide</FONT></FONT></FONT></B></CENTER>
+
+<CENTER><B><FONT SIZE=+1>/msg chanop help <I>ACCESS</I></FONT></B></CENTER>
+
+<HR WIDTH="100%">
+<BR><FONT SIZE=-1>-ChanOP- [about] [help] [<B><FONT COLOR="#FF0000">commands</FONT></B>]
+[news]&nbsp; [<B><FONT COLOR="#FF0000">austnet online help</FONT></B>]</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- <B>*** Command Help ***</B></FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- <I>This command reports user access levels on
+a specificied</I></FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- <I>channel</I>. You can review the entire channel
+database or</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- review individual user records.&nbsp; For further
+information</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- relating to user levels, /msg ChanOP help levels.</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- Criteria includes [You may use any combination
+in any order]:</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; -min level&nbsp; Users greater than the
+specified level</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; -max level&nbsp; Users smaller than the
+specified level</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; -lm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Who last modified (adduser/setuser) record</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; -ls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When were the users last seen</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; *nick*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users
+matching wildcard *nick*</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP- <B>*** Command Syntax ***</B></FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;<I><U> Syntax:</U></I>&nbsp;&nbsp; access
+&lt;channel> &lt;criteria></FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; <I><U>Access:</U>&nbsp;&nbsp; </I>No channel
+access is required.</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; <I><U>Examples:</U></I>&nbsp; /msg ChanOP
+access #AustOP redtrio</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Display redtrio's access to #AustOP)</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/msg ChanOP access #AustOP * -lm</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Display all records for #AustOP and last modified)</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/msg ChanOP access #AustOP * -min 75</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Display records with level 75 or higher)</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/msg ChanOP access #AustOP -max 130 -min 2 *rog*</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Display records with level less than 130 but greater</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+than level 2, and matches wildcard *rog*)</FONT>&nbsp;
+<BR><FONT SIZE=-1>-ChanOP-&nbsp; <B>See Also: <a href="./adduser.html">ADDUSER</a>, <a href="./setuser.html">SETUSER</a>, <a href="./deluser.html">DELUSER</a></B></FONT>&nbsp;
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+
+<CENTER><FONT SIZE=-1><A href="about/index.html">[About]</A> <A href="services/index.html">[Services]</A>
+<A href="connect.html">[Connect]</A> <A href="support.html">[Support]</A>
+<A href="users/index.html">[Users]</A> <A href="sponsors/index.html">[Sponsors]</A>
+<A href="contact.html">[Contact]</A> <A HREF="http://www.fl.net.au/~ensign/austnet/stats/index.html">[Statistics]</A></FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>Copyright &copy;1997 austnet.org. All rights reserved</FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>For AustNet Support, mail <A HREF="mailto:help@austnet.org">help@austnet.org</A></FONT></CENTER>
+
+<CENTER><FONT SIZE=-2>administrative correspondence: <A HREF="mailto:admin@austnet.org">admin@austnet.org</A>
+www.austnet.org correspondence: <A HREF="mailto:website@austnet.org">website@austnet.org</A>.&nbsp;</FONT></CENTER>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
