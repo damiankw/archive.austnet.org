@@ -1,0 +1,5 @@
+RewriteEngine On
+# Only match /????/*/filename.ext where ext is txt, php, htm, html and file exists
+RewriteCond %{REQUEST_URI} ^/[0-9]{4}/.+\.(txt|php|htm|html)$ [NC]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^([0-9]{4}/.+\.(txt|php|htm|html))$ view.php?path=$1 [QSA,L]
